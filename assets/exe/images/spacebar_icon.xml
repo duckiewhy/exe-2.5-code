@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="spacebar icon.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="spacebar0000" x="0" y="0" width="872" height="797" frameX="-1" frameY="0" frameWidth="873" frameHeight="797"/>
+	<SubTexture name="spacebar0001" x="0" y="0" width="872" height="797" frameX="-1" frameY="0" frameWidth="873" frameHeight="797"/>
+	<SubTexture name="spacebar0002" x="872" y="0" width="873" height="797"/>
+	<SubTexture name="spacebar0003" x="872" y="0" width="873" height="797"/>
+	<SubTexture name="spacebar0004" x="1745" y="0" width="872" height="797" frameX="-1" frameY="0" frameWidth="873" frameHeight="797"/>
+	<SubTexture name="spacebar0005" x="1745" y="0" width="872" height="797" frameX="-1" frameY="0" frameWidth="873" frameHeight="797"/>
+	<SubTexture name="spacebar0006" x="2617" y="0" width="873" height="797"/>
+	<SubTexture name="spacebar0007" x="2617" y="0" width="873" height="797"/>
+	<SubTexture name="spacebar0008" x="1745" y="0" width="872" height="797" frameX="-1" frameY="0" frameWidth="873" frameHeight="797"/>
+	<SubTexture name="spacebar0009" x="1745" y="0" width="872" height="797" frameX="-1" frameY="0" frameWidth="873" frameHeight="797"/>
+	<SubTexture name="spacebar0010" x="2617" y="0" width="873" height="797"/>
+	<SubTexture name="spacebar0011" x="2617" y="0" width="873" height="797"/>
+	<SubTexture name="spacebar0012" x="1745" y="0" width="872" height="797" frameX="-1" frameY="0" frameWidth="873" frameHeight="797"/>
+	<SubTexture name="spacebar0013" x="1745" y="0" width="872" height="797" frameX="-1" frameY="0" frameWidth="873" frameHeight="797"/>
+	<SubTexture name="spacebar0014" x="2617" y="0" width="873" height="797"/>
+	<SubTexture name="spacebar0015" x="2617" y="0" width="873" height="797"/>
+	<SubTexture name="spacebar0016" x="1745" y="0" width="872" height="797" frameX="-1" frameY="0" frameWidth="873" frameHeight="797"/>
+	<SubTexture name="spacebar0017" x="1745" y="0" width="872" height="797" frameX="-1" frameY="0" frameWidth="873" frameHeight="797"/>
+	<SubTexture name="spacebar0018" x="2617" y="0" width="873" height="797"/>
+	<SubTexture name="spacebar0019" x="2617" y="0" width="873" height="797"/>
+	<SubTexture name="spacebar0020" x="1745" y="0" width="872" height="797" frameX="-1" frameY="0" frameWidth="873" frameHeight="797"/>
+	<SubTexture name="spacebar0021" x="1745" y="0" width="872" height="797" frameX="-1" frameY="0" frameWidth="873" frameHeight="797"/>
+	<SubTexture name="spacebar0022" x="0" y="797" width="873" height="797"/>
+	<SubTexture name="spacebar0023" x="0" y="797" width="873" height="797"/>
+	<SubTexture name="spacebar0024" x="873" y="797" width="873" height="797"/>
+	<SubTexture name="spacebar0025" x="873" y="797" width="873" height="797"/>
+</TextureAtlas>

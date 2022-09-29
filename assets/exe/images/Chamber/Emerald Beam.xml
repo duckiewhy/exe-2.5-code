@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Emerald Beam.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Emerald Beam instance 10000" x="0" y="0" width="1662" height="2680"/>
+	<SubTexture name="Emerald Beam instance 10001" x="1662" y="0" width="1660" height="2678" frameX="-1" frameY="-1" frameWidth="1662" frameHeight="2680"/>
+	<SubTexture name="Emerald Beam instance 10002" x="3322" y="0" width="1660" height="2678" frameX="-1" frameY="-1" frameWidth="1662" frameHeight="2680"/>
+	<SubTexture name="Emerald Beam instance 10003" x="4982" y="0" width="1658" height="2676" frameX="-2" frameY="-2" frameWidth="1662" frameHeight="2680"/>
+	<SubTexture name="Emerald Beam instance 10004" x="0" y="2680" width="1656" height="2674" frameX="-3" frameY="-3" frameWidth="1662" frameHeight="2680"/>
+	<SubTexture name="Emerald Beam instance 10005" x="1656" y="2680" width="1658" height="2676" frameX="-2" frameY="-2" frameWidth="1662" frameHeight="2680"/>
+	<SubTexture name="Emerald Beam instance 10006" x="3314" y="2680" width="1660" height="2678" frameX="-1" frameY="-1" frameWidth="1662" frameHeight="2680"/>
+	<SubTexture name="Emerald Beam instance 10007" x="4974" y="2680" width="1658" height="2676" frameX="-2" frameY="-2" frameWidth="1662" frameHeight="2680"/>
+	<SubTexture name="Emerald Beam instance 10008" x="0" y="5358" width="1660" height="2678" frameX="-1" frameY="-1" frameWidth="1662" frameHeight="2680"/>
+	<SubTexture name="Emerald Beam instance 10009" x="0" y="0" width="1662" height="2680"/>
+</TextureAtlas>

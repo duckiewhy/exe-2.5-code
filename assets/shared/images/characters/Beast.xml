@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Beast.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Beast_DOWN0000" x="0" y="0" width="615" height="802" frameX="0" frameY="-49" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0001" x="0" y="0" width="615" height="802" frameX="0" frameY="-49" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0002" x="615" y="0" width="615" height="854"/>
+	<SubTexture name="Beast_DOWN0003" x="615" y="0" width="615" height="854"/>
+	<SubTexture name="Beast_DOWN0004" x="1230" y="0" width="615" height="839" frameX="0" frameY="-14" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0005" x="1230" y="0" width="615" height="839" frameX="0" frameY="-14" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0006" x="1845" y="0" width="611" height="840" frameX="-4" frameY="-14" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0007" x="1845" y="0" width="611" height="840" frameX="-4" frameY="-14" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0008" x="1845" y="0" width="611" height="840" frameX="-4" frameY="-14" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0009" x="1845" y="0" width="611" height="840" frameX="-4" frameY="-14" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0010" x="1845" y="0" width="611" height="840" frameX="-4" frameY="-14" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0011" x="1845" y="0" width="611" height="840" frameX="-4" frameY="-14" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0012" x="1845" y="0" width="611" height="840" frameX="-4" frameY="-14" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0013" x="1845" y="0" width="611" height="840" frameX="-4" frameY="-14" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0014" x="1845" y="0" width="611" height="840" frameX="-4" frameY="-14" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0015" x="1845" y="0" width="611" height="840" frameX="-4" frameY="-14" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0016" x="1845" y="0" width="611" height="840" frameX="-4" frameY="-14" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0017" x="1845" y="0" width="611" height="840" frameX="-4" frameY="-14" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0018" x="1845" y="0" width="611" height="840" frameX="-4" frameY="-14" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_DOWN0019" x="1845" y="0" width="611" height="840" frameX="-4" frameY="-14" frameWidth="615" frameHeight="854"/>
+	<SubTexture name="Beast_IDLE0000" x="2456" y="0" width="541" height="914" frameX="-18" frameY="-23" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0001" x="2456" y="0" width="541" height="914" frameX="-18" frameY="-23" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0002" x="2997" y="0" width="537" height="909" frameX="-18" frameY="-28" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0003" x="2997" y="0" width="537" height="909" frameX="-18" frameY="-28" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0004" x="3534" y="0" width="535" height="914" frameX="-17" frameY="-24" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0005" x="3534" y="0" width="535" height="914" frameX="-17" frameY="-24" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0006" x="4069" y="0" width="534" height="918" frameX="-15" frameY="-20" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0007" x="4069" y="0" width="534" height="918" frameX="-15" frameY="-20" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0008" x="4603" y="0" width="547" height="922" frameX="0" frameY="-17" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0009" x="4603" y="0" width="547" height="922" frameX="0" frameY="-17" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0010" x="5150" y="0" width="538" height="939" frameX="-7" frameY="0" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0011" x="5150" y="0" width="538" height="939" frameX="-7" frameY="0" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0012" x="5688" y="0" width="540" height="940" frameX="-5" frameY="0" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0013" x="5688" y="0" width="540" height="940" frameX="-5" frameY="0" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0014" x="6228" y="0" width="540" height="940" frameX="-5" frameY="0" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0015" x="6228" y="0" width="540" height="940" frameX="-5" frameY="0" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0016" x="6228" y="0" width="540" height="940" frameX="-5" frameY="0" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0017" x="6228" y="0" width="540" height="940" frameX="-5" frameY="0" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0018" x="6228" y="0" width="540" height="940" frameX="-5" frameY="0" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_IDLE0019" x="6228" y="0" width="540" height="940" frameX="-5" frameY="0" frameWidth="559" frameHeight="940"/>
+	<SubTexture name="Beast_LAUGH0000" x="6768" y="0" width="567" height="724"/>
+	<SubTexture name="Beast_LAUGH0001" x="6768" y="0" width="567" height="724"/>
+	<SubTexture name="Beast_LAUGH0002" x="7335" y="0" width="547" height="708" frameX="-1" frameY="-16" frameWidth="567" frameHeight="724"/>
+	<SubTexture name="Beast_LAUGH0003" x="7335" y="0" width="547" height="708" frameX="-1" frameY="-16" frameWidth="567" frameHeight="724"/>
+	<SubTexture name="Beast_LAUGH0004" x="0" y="940" width="522" height="690" frameX="-3" frameY="-34" frameWidth="567" frameHeight="724"/>
+	<SubTexture name="Beast_LAUGH0005" x="0" y="940" width="522" height="690" frameX="-3" frameY="-34" frameWidth="567" frameHeight="724"/>
+	<SubTexture name="Beast_LAUGH0006" x="522" y="940" width="535" height="704" frameX="-3" frameY="-20" frameWidth="567" frameHeight="724"/>
+	<SubTexture name="Beast_LAUGH0007" x="522" y="940" width="535" height="704" frameX="-3" frameY="-20" frameWidth="567" frameHeight="724"/>
+	<SubTexture name="Beast_LAUGH0008" x="522" y="940" width="535" height="704" frameX="-3" frameY="-20" frameWidth="567" frameHeight="724"/>
+	<SubTexture name="Beast_LAUGH0009" x="522" y="940" width="535" height="704" frameX="-3" frameY="-20" frameWidth="567" frameHeight="724"/>
+	<SubTexture name="Beast_LAUGH0010" x="522" y="940" width="535" height="704" frameX="-3" frameY="-20" frameWidth="567" frameHeight="724"/>
+	<SubTexture name="Beast_LAUGH0011" x="522" y="940" width="535" height="704" frameX="-3" frameY="-20" frameWidth="567" frameHeight="724"/>
+	<SubTexture name="Beast_LAUGH0012" x="522" y="940" width="535" height="704" frameX="-3" frameY="-20" frameWidth="567" frameHeight="724"/>
+	<SubTexture name="Beast_LAUGH0013" x="522" y="940" width="535" height="704" frameX="-3" frameY="-20" frameWidth="567" frameHeight="724"/>
+	<SubTexture name="Beast_LEFT0000" x="1057" y="940" width="865" height="852" frameX="0" frameY="-1" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0001" x="1057" y="940" width="865" height="852" frameX="0" frameY="-1" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0002" x="1922" y="940" width="851" height="853" frameX="-25" frameY="0" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0003" x="1922" y="940" width="851" height="853" frameX="-25" frameY="0" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0004" x="2773" y="940" width="815" height="828" frameX="-101" frameY="-25" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0005" x="2773" y="940" width="815" height="828" frameX="-101" frameY="-25" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0006" x="3588" y="940" width="836" height="838" frameX="-80" frameY="-15" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0007" x="3588" y="940" width="836" height="838" frameX="-80" frameY="-15" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0008" x="3588" y="940" width="836" height="838" frameX="-80" frameY="-15" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0009" x="3588" y="940" width="836" height="838" frameX="-80" frameY="-15" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0010" x="3588" y="940" width="836" height="838" frameX="-80" frameY="-15" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0011" x="3588" y="940" width="836" height="838" frameX="-80" frameY="-15" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0012" x="3588" y="940" width="836" height="838" frameX="-80" frameY="-15" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0013" x="3588" y="940" width="836" height="838" frameX="-80" frameY="-15" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0014" x="3588" y="940" width="836" height="838" frameX="-80" frameY="-15" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0015" x="3588" y="940" width="836" height="838" frameX="-80" frameY="-15" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0016" x="3588" y="940" width="836" height="838" frameX="-80" frameY="-15" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0017" x="3588" y="940" width="836" height="838" frameX="-80" frameY="-15" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0018" x="3588" y="940" width="836" height="838" frameX="-80" frameY="-15" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_LEFT0019" x="3588" y="940" width="836" height="838" frameX="-80" frameY="-15" frameWidth="916" frameHeight="853"/>
+	<SubTexture name="Beast_RIGHT0000" x="4424" y="940" width="753" height="872" frameX="-3" frameY="-5" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0001" x="4424" y="940" width="753" height="872" frameX="-3" frameY="-5" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0002" x="5177" y="940" width="748" height="874" frameX="-2" frameY="-3" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0003" x="5177" y="940" width="748" height="874" frameX="-2" frameY="-3" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0004" x="5925" y="940" width="733" height="871" frameX="0" frameY="-6" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0005" x="5925" y="940" width="733" height="871" frameX="0" frameY="-6" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0006" x="6658" y="940" width="733" height="877" frameX="0" frameY="0" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0007" x="6658" y="940" width="733" height="877" frameX="0" frameY="0" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0008" x="6658" y="940" width="733" height="877" frameX="0" frameY="0" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0009" x="6658" y="940" width="733" height="877" frameX="0" frameY="0" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0010" x="6658" y="940" width="733" height="877" frameX="0" frameY="0" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0011" x="6658" y="940" width="733" height="877" frameX="0" frameY="0" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0012" x="6658" y="940" width="733" height="877" frameX="0" frameY="0" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0013" x="6658" y="940" width="733" height="877" frameX="0" frameY="0" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0014" x="6658" y="940" width="733" height="877" frameX="0" frameY="0" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0015" x="6658" y="940" width="733" height="877" frameX="0" frameY="0" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0016" x="6658" y="940" width="733" height="877" frameX="0" frameY="0" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0017" x="6658" y="940" width="733" height="877" frameX="0" frameY="0" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0018" x="6658" y="940" width="733" height="877" frameX="0" frameY="0" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_RIGHT0019" x="6658" y="940" width="733" height="877" frameX="0" frameY="0" frameWidth="756" frameHeight="877"/>
+	<SubTexture name="Beast_UP0000" x="7391" y="940" width="625" height="1020"/>
+	<SubTexture name="Beast_UP0001" x="7391" y="940" width="625" height="1020"/>
+	<SubTexture name="Beast_UP0002" x="0" y="1960" width="625" height="1006" frameX="0" frameY="-13" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0003" x="0" y="1960" width="625" height="1006" frameX="0" frameY="-13" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0004" x="625" y="1960" width="625" height="961" frameX="0" frameY="-55" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0005" x="625" y="1960" width="625" height="961" frameX="0" frameY="-55" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0006" x="1250" y="1960" width="625" height="968" frameX="0" frameY="-47" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0007" x="1250" y="1960" width="625" height="968" frameX="0" frameY="-47" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0008" x="1250" y="1960" width="625" height="968" frameX="0" frameY="-47" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0009" x="1250" y="1960" width="625" height="968" frameX="0" frameY="-47" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0010" x="1250" y="1960" width="625" height="968" frameX="0" frameY="-47" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0011" x="1250" y="1960" width="625" height="968" frameX="0" frameY="-47" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0012" x="1250" y="1960" width="625" height="968" frameX="0" frameY="-47" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0013" x="1250" y="1960" width="625" height="968" frameX="0" frameY="-47" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0014" x="1250" y="1960" width="625" height="968" frameX="0" frameY="-47" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0015" x="1250" y="1960" width="625" height="968" frameX="0" frameY="-47" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0016" x="1250" y="1960" width="625" height="968" frameX="0" frameY="-47" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0017" x="1250" y="1960" width="625" height="968" frameX="0" frameY="-47" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0018" x="1250" y="1960" width="625" height="968" frameX="0" frameY="-47" frameWidth="625" frameHeight="1020"/>
+	<SubTexture name="Beast_UP0019" x="1250" y="1960" width="625" height="968" frameX="0" frameY="-47" frameWidth="625" frameHeight="1020"/>
+</TextureAtlas>

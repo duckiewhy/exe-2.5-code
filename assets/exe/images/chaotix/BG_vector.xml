@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BG vector.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="vector bobbing0000" x="0" y="0" width="55" height="62"/>
+	<SubTexture name="vector bobbing0001" x="55" y="0" width="55" height="62"/>
+	<SubTexture name="vector bobbing0002" x="110" y="0" width="55" height="62"/>
+	<SubTexture name="vector bobbing0003" x="165" y="0" width="55" height="62"/>
+	<SubTexture name="vector bobbing0004" x="220" y="0" width="55" height="62"/>
+	<SubTexture name="vector bobbing0005" x="275" y="0" width="55" height="62"/>
+	<SubTexture name="vector bobbing0006" x="330" y="0" width="55" height="62"/>
+	<SubTexture name="vector bobbing0007" x="385" y="0" width="55" height="62"/>
+	<SubTexture name="vector bobbing0008" x="440" y="0" width="55" height="62"/>
+	<SubTexture name="vector bobbing0009" x="0" y="62" width="55" height="62"/>
+	<SubTexture name="vector bobbing0010" x="55" y="62" width="55" height="62"/>
+	<SubTexture name="vector bobbing0011" x="110" y="62" width="55" height="62"/>
+	<SubTexture name="vector bobbing0012" x="165" y="62" width="55" height="62"/>
+	<SubTexture name="vector bobbing0013" x="220" y="62" width="55" height="62"/>
+	<SubTexture name="vector fear0000" x="275" y="62" width="55" height="62"/>
+	<SubTexture name="vector fear0001" x="330" y="62" width="55" height="62"/>
+	<SubTexture name="vector fear0002" x="385" y="62" width="55" height="62"/>
+	<SubTexture name="vector fear0003" x="440" y="62" width="55" height="62"/>
+</TextureAtlas>

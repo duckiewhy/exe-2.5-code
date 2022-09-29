@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="screenstatic.png">
+	<!-- Created with Adobe Animate version 21.0.3.38773 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="screenSTATIC0000" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="screenSTATIC0001" x="1280" y="0" width="1280" height="720"/>
+	<SubTexture name="screenSTATIC0002" x="2560" y="0" width="1280" height="720"/>
+	<SubTexture name="screenSTATIC0003" x="0" y="720" width="1280" height="720"/>
+	<SubTexture name="screenSTATIC0004" x="1280" y="720" width="1280" height="720"/>
+	<SubTexture name="screenSTATIC0005" x="2560" y="720" width="1280" height="720"/>
+</TextureAtlas>

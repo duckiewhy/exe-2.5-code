@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				1,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "xterion_idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				65,
+				-1
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "xterion_left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-29,
+				3
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "xterion_right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-39,
+				77
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "xterion_up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-30,
+				-1
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "xterion_down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-60,
+				41
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "xterion_right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				62,
+				64
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "xterion_left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-30,
+				-8
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "xterion_down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-39,
+				77
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "xterion_up",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/xterion",
+	"position": [
+		200,
+		450
+	],
+	"healthicon": "pico",
+	"flip_x": false,
+	"healthbar_colors": [
+		183,
+		216,
+		85
+	],
+	"camera_position": [
+		-230,
+		-150
+	],
+	"sing_duration": 4,
+	"scale": 2.3
+}

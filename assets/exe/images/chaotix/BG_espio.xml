@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BG espio.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="espio bobbing0000" x="0" y="0" width="45" height="52"/>
+	<SubTexture name="espio bobbing0001" x="45" y="0" width="45" height="52"/>
+	<SubTexture name="espio bobbing0002" x="90" y="0" width="45" height="52"/>
+	<SubTexture name="espio bobbing0003" x="135" y="0" width="45" height="52"/>
+	<SubTexture name="espio bobbing0004" x="180" y="0" width="45" height="52"/>
+	<SubTexture name="espio bobbing0005" x="0" y="52" width="45" height="52"/>
+	<SubTexture name="espio bobbing0006" x="45" y="52" width="45" height="52"/>
+	<SubTexture name="espio bobbing0007" x="90" y="52" width="45" height="52"/>
+	<SubTexture name="espio bobbing0008" x="135" y="52" width="45" height="52"/>
+	<SubTexture name="espio bobbing0009" x="180" y="52" width="45" height="52"/>
+	<SubTexture name="espio bobbing0010" x="0" y="104" width="45" height="52"/>
+	<SubTexture name="espio bobbing0011" x="45" y="104" width="45" height="52"/>
+	<SubTexture name="espio bobbing0012" x="90" y="104" width="45" height="52"/>
+	<SubTexture name="espio bobbing0013" x="135" y="104" width="45" height="52"/>
+	<SubTexture name="espio fear0000" x="180" y="104" width="45" height="52"/>
+	<SubTexture name="espio fear0001" x="0" y="156" width="45" height="52"/>
+	<SubTexture name="espio fear0002" x="45" y="156" width="45" height="52"/>
+	<SubTexture name="espio fear0003" x="90" y="156" width="45" height="52"/>
+</TextureAtlas>

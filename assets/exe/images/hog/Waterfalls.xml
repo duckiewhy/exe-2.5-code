@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Waterfalls.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="British0000" x="0" y="0" width="3488" height="658"/>
+	<SubTexture name="British0001" x="0" y="658" width="3488" height="658"/>
+	<SubTexture name="British0002" x="0" y="1316" width="3488" height="658"/>
+	<SubTexture name="British0003" x="0" y="1974" width="3488" height="658"/>
+	<SubTexture name="British0004" x="0" y="2632" width="3488" height="658"/>
+</TextureAtlas>

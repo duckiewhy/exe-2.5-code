@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BG charmy.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="charmy bobbing0000" x="0" y="0" width="42" height="53"/>
+	<SubTexture name="charmy bobbing0001" x="42" y="0" width="42" height="53"/>
+	<SubTexture name="charmy bobbing0002" x="84" y="0" width="42" height="53"/>
+	<SubTexture name="charmy bobbing0003" x="126" y="0" width="42" height="53"/>
+	<SubTexture name="charmy bobbing0004" x="168" y="0" width="42" height="53"/>
+	<SubTexture name="charmy bobbing0005" x="210" y="0" width="42" height="53"/>
+	<SubTexture name="charmy bobbing0006" x="0" y="53" width="42" height="53"/>
+	<SubTexture name="charmy bobbing0007" x="42" y="53" width="42" height="53"/>
+	<SubTexture name="charmy bobbing0008" x="84" y="53" width="42" height="53"/>
+	<SubTexture name="charmy bobbing0009" x="126" y="53" width="42" height="53"/>
+	<SubTexture name="charmy bobbing0010" x="168" y="53" width="42" height="53"/>
+	<SubTexture name="charmy bobbing0011" x="210" y="53" width="42" height="53"/>
+	<SubTexture name="charmy bobbing0012" x="0" y="106" width="42" height="53"/>
+	<SubTexture name="charmy bobbing0013" x="42" y="106" width="42" height="53"/>
+	<SubTexture name="charmy fear0000" x="84" y="106" width="42" height="53"/>
+	<SubTexture name="charmy fear0001" x="126" y="106" width="42" height="53"/>
+	<SubTexture name="charmy fear0002" x="168" y="106" width="42" height="53"/>
+	<SubTexture name="charmy fear0003" x="210" y="106" width="42" height="53"/>
+</TextureAtlas>

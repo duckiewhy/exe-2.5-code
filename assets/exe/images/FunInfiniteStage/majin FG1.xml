@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="majin FG1.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="majin front bopper10000" x="0" y="0" width="611" height="505" frameX="-45" frameY="0" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10001" x="0" y="0" width="611" height="505" frameX="-45" frameY="0" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10002" x="611" y="0" width="666" height="504" frameX="0" frameY="-23" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10003" x="611" y="0" width="666" height="504" frameX="0" frameY="-23" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10004" x="1277" y="0" width="654" height="502" frameX="-10" frameY="-20" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10005" x="1277" y="0" width="654" height="502" frameX="-10" frameY="-20" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10006" x="0" y="505" width="624" height="505" frameX="-35" frameY="-5" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10007" x="0" y="505" width="624" height="505" frameX="-35" frameY="-5" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10008" x="624" y="505" width="611" height="505" frameX="-45" frameY="0" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10009" x="624" y="505" width="611" height="505" frameX="-45" frameY="0" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10010" x="0" y="0" width="611" height="505" frameX="-45" frameY="0" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10011" x="0" y="0" width="611" height="505" frameX="-45" frameY="0" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10012" x="611" y="0" width="666" height="504" frameX="0" frameY="-23" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10013" x="611" y="0" width="666" height="504" frameX="0" frameY="-23" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10014" x="1235" y="505" width="654" height="502" frameX="-10" frameY="-20" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10015" x="1235" y="505" width="654" height="502" frameX="-10" frameY="-20" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10016" x="0" y="505" width="624" height="505" frameX="-35" frameY="-5" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10017" x="0" y="505" width="624" height="505" frameX="-35" frameY="-5" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10018" x="624" y="505" width="611" height="505" frameX="-45" frameY="0" frameWidth="666" frameHeight="527"/>
+	<SubTexture name="majin front bopper10019" x="624" y="505" width="611" height="505" frameX="-45" frameY="0" frameWidth="666" frameHeight="527"/>
+</TextureAtlas>

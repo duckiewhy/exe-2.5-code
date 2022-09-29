@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Majin Boppers Front.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="MajinBop1 instance 10000" x="0" y="0" width="2118" height="1106"/>
+	<SubTexture name="MajinBop1 instance 10001" x="0" y="0" width="2118" height="1106"/>
+	<SubTexture name="MajinBop1 instance 10002" x="2118" y="0" width="2118" height="1106"/>
+	<SubTexture name="MajinBop1 instance 10003" x="2118" y="0" width="2118" height="1106"/>
+	<SubTexture name="MajinBop1 instance 10004" x="4236" y="0" width="2118" height="1106"/>
+	<SubTexture name="MajinBop1 instance 10005" x="4236" y="0" width="2118" height="1106"/>
+	<SubTexture name="MajinBop1 instance 10006" x="0" y="1106" width="2118" height="1106"/>
+	<SubTexture name="MajinBop1 instance 10007" x="0" y="1106" width="2118" height="1106"/>
+	<SubTexture name="MajinBop1 instance 10008" x="0" y="0" width="2118" height="1106"/>
+	<SubTexture name="MajinBop1 instance 10009" x="0" y="0" width="2118" height="1106"/>
+</TextureAtlas>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Warning.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Warning Flash0000" x="0" y="0" width="865" height="865"/>
+	<SubTexture name="Warning Flash0001" x="865" y="0" width="865" height="865"/>
+	<SubTexture name="Warning Flash0002" x="1730" y="0" width="865" height="865"/>
+	<SubTexture name="Warning Flash0003" x="2595" y="0" width="865" height="865"/>
+	<SubTexture name="Warning Flash0004" x="0" y="865" width="865" height="865"/>
+	<SubTexture name="Warning Flash0005" x="865" y="865" width="865" height="865"/>
+	<SubTexture name="Warning Flash0006" x="1730" y="865" width="865" height="865"/>
+	<SubTexture name="Warning Flash0007" x="865" y="0" width="865" height="865"/>
+	<SubTexture name="Warning Flash0008" x="1730" y="0" width="865" height="865"/>
+	<SubTexture name="Warning Flash0009" x="2595" y="0" width="865" height="865"/>
+	<SubTexture name="Warning Flash0010" x="0" y="865" width="865" height="865"/>
+	<SubTexture name="Warning Flash0011" x="865" y="865" width="865" height="865"/>
+	<SubTexture name="Warning Flash0012" x="1730" y="865" width="865" height="865"/>
+</TextureAtlas>

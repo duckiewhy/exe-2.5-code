@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="HEXNOTE_assets.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="blue0000" x="2" y="2" width="157" height="154"/>
+	<SubTexture name="green0000" x="161" y="2" width="157" height="154"/>
+	<SubTexture name="purple0000" x="320" y="2" width="154" height="157"/>
+	<SubTexture name="red0000" x="2" y="161" width="154" height="157"/>
+</TextureAtlas>

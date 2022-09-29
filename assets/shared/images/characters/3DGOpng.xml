@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="3DGOpng.png"><SubTexture name="DeathAnim0000" x="0" y="0" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0001" x="1924" y="0" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0002" x="3848" y="0" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0003" x="5772" y="0" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0004" x="7696" y="0" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0005" x="9620" y="0" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0006" x="0" y="1924" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0007" x="1924" y="1924" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0008" x="3848" y="1924" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0009" x="5772" y="1924" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0010" x="7696" y="1924" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0011" x="9620" y="1924" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0012" x="0" y="3848" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0013" x="1924" y="3848" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0014" x="3848" y="3848" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0015" x="5772" y="3848" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0016" x="7696" y="3848" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0017" x="9620" y="3848" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0018" x="0" y="5772" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0019" x="1924" y="5772" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0020" x="3848" y="5772" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0021" x="5772" y="5772" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0022" x="7696" y="5772" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0023" x="9620" y="5772" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0024" x="0" y="7696" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0025" x="1924" y="7696" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0026" x="3848" y="7696" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0027" x="5772" y="7696" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0028" x="7696" y="7696" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0029" x="9620" y="7696" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0030" x="0" y="9620" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0031" x="1924" y="9620" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0032" x="3848" y="9620" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0033" x="5772" y="9620" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0034" x="7696" y="9620" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0035" x="9620" y="9620" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0036" x="0" y="11544" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0037" x="1924" y="11544" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0038" x="3848" y="11544" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="DeathAnim0039" x="5772" y="11544" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+</TextureAtlas>

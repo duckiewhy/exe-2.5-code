@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fatal-bf.png">
+	<!-- Made with CSS sprites, Fuck you animate :imp: -->
+
+    <!-- Normal Animations -->
+
+	<SubTexture name="Down0000" x="132" y="129" width="102" height="99"/>
+	<SubTexture name="Down0001" x="254" y="10" width="102" height="99"/>
+    <SubTexture name="Down0002" x="254" y="129" width="102" height="99"/>
+
+	<SubTexture name="Idle0000" x="10" y="248" width="102" height="99"/>
+    <SubTexture name="Idle0001" x="10" y="248" width="102" height="99"/>
+	<SubTexture name="Idle0002" x="132" y="248" width="102" height="99"/>
+    <SubTexture name="Idle0003" x="132" y="248" width="102" height="99"/>
+	<SubTexture name="Idle0004" x="254" y="248" width="102" height="99"/>
+    <SubTexture name="Idle0005" x="254" y="248" width="102" height="99"/>
+	<SubTexture name="Idle0006" x="376" y="10" width="102" height="99"/>
+    <SubTexture name="Idle0007" x="376" y="10" width="102" height="99"/>
+	<SubTexture name="Idle0008" x="376" y="129" width="102" height="99"/>
+    <SubTexture name="Idle0009" x="376" y="129" width="102" height="99"/>
+
+	<SubTexture name="Left0000" x="254" y="367" width="102" height="99"/>
+    <SubTexture name="Left0001" x="376" y="367" width="102" height="99"/>
+    <SubTexture name="Left0002" x="498" y="10" width="102" height="99"/>
+
+	<SubTexture name="Right0000" x="254" y="486" width="102" height="99"/>
+	<SubTexture name="Right0001" x="376" y="486" width="102" height="99"/>
+    <SubTexture name="Right0002" x="498" y="486" width="102" height="99"/>
+
+	<SubTexture name="Up0000" x="620" y="367" width="102" height="99"/>
+	<SubTexture name="Up0001" x="620" y="486" width="102" height="99"/>
+    <SubTexture name="Up0002" x="10" y="605" width="102" height="99"/>
+
+    <!-- Miss Animations -->
+
+    <SubTexture name="MDown0000" x="132" y="129" width="102" height="99"/>
+	<SubTexture name="MDown0001" x="10" y="10" width="102" height="99"/>
+    <SubTexture name="MDown0002" x="132" y="10" width="102" height="99"/>
+    <SubTexture name="MDown0003" x="10" y="129" width="102" height="99"/>
+    <SubTexture name="MDown0004" x="10" y="129" width="102" height="99"/>
+    <SubTexture name="MDown0005" x="10" y="129" width="102" height="99"/>
+    <SubTexture name="MDown0006" x="10" y="129" width="102" height="99"/>
+    <SubTexture name="MDown0007" x="10" y="129" width="102" height="99"/>
+    <SubTexture name="MDown0008" x="10" y="129" width="102" height="99"/>
+    <SubTexture name="MDown0009" x="10" y="129" width="102" height="99"/>
+    <SubTexture name="MDown0011" x="10" y="129" width="102" height="99"/>
+    <SubTexture name="MDown0012" x="10" y="129" width="102" height="99"/>
+    <SubTexture name="MDown0013" x="10" y="129" width="102" height="99"/>
+    <SubTexture name="MDown0014" x="10" y="129" width="102" height="99"/>
+    <SubTexture name="MDown0015" x="10" y="129" width="102" height="99"/>
+    <SubTexture name="MDown0016" x="10" y="129" width="102" height="99"/>
+    <SubTexture name="MDown0017" x="10" y="129" width="102" height="99"/>
+    <SubTexture name="MDown0018" x="10" y="129" width="102" height="99"/>
+
+    <SubTexture name="MLeft0000" x="254" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0001" x="376" y="248" width="102" height="99"/>
+    <SubTexture name="MLeft0002" x="10" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0003" x="132" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0004" x="132" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0005" x="132" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0006" x="132" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0007" x="132" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0008" x="132" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0009" x="132" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0010" x="132" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0011" x="132" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0012" x="132" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0013" x="132" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0014" x="132" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0015" x="132" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0016" x="132" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0017" x="132" y="367" width="102" height="99"/>
+    <SubTexture name="MLeft0018" x="132" y="367" width="102" height="99"/>
+
+    <SubTexture name="MRight0000" x="254" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0001" x="498" y="367" width="102" height="99"/>
+    <SubTexture name="MRight0002" x="10" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0003" x="132" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0004" x="132" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0005" x="132" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0006" x="132" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0007" x="132" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0008" x="132" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0009" x="132" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0010" x="132" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0011" x="132" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0012" x="132" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0013" x="132" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0014" x="132" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0015" x="132" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0016" x="132" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0017" x="132" y="486" width="102" height="99"/>
+    <SubTexture name="MRight0018" x="132" y="486" width="102" height="99"/>
+
+    <SubTexture name="MUp0000" x="620" y="367" width="102" height="99"/>
+    <SubTexture name="MUp0001" x="620" y="10" width="102" height="99"/>
+    <SubTexture name="MUp0002" x="620" y="129" width="102" height="99"/>
+    <SubTexture name="MUp0003" x="620" y="248" width="102" height="99"/>
+    <SubTexture name="MUp0004" x="620" y="248" width="102" height="99"/>
+    <SubTexture name="MUp0005" x="620" y="248" width="102" height="99"/>
+    <SubTexture name="MUp0006" x="620" y="248" width="102" height="99"/>
+    <SubTexture name="MUp0007" x="620" y="248" width="102" height="99"/>
+    <SubTexture name="MUp0008" x="620" y="248" width="102" height="99"/>
+    <SubTexture name="MUp0009" x="620" y="248" width="102" height="99"/>
+    <SubTexture name="MUp0010" x="620" y="248" width="102" height="99"/>
+    <SubTexture name="MUp0011" x="620" y="248" width="102" height="99"/>
+    <SubTexture name="MUp0012" x="620" y="248" width="102" height="99"/>
+    <SubTexture name="MUp0013" x="620" y="248" width="102" height="99"/>
+    <SubTexture name="MUp0014" x="620" y="248" width="102" height="99"/>
+    <SubTexture name="MUp0015" x="620" y="248" width="102" height="99"/>
+    <SubTexture name="MUp0016" x="620" y="248" width="102" height="99"/>
+    <SubTexture name="MUp0017" x="620" y="248" width="102" height="99"/>
+    <SubTexture name="MUp0018" x="620" y="248" width="102" height="99"/>
+</TextureAtlas>

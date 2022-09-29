@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="NewTitleMenuBG.png">
+	<!-- Created with Adobe Animate version 21.0.3.38773 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="TitleMenuSSBG instance 10000" x="0" y="0" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10001" x="440" y="0" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10002" x="880" y="0" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10003" x="1320" y="0" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10004" x="0" y="248" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10005" x="440" y="248" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10006" x="880" y="248" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10007" x="1320" y="248" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10008" x="0" y="496" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10009" x="440" y="496" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10010" x="880" y="496" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10011" x="1320" y="496" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10012" x="0" y="744" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10013" x="440" y="744" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10014" x="880" y="744" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10015" x="1320" y="744" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10016" x="0" y="992" width="440" height="248"/>
+	<SubTexture name="TitleMenuSSBG instance 10017" x="440" y="992" width="440" height="248"/>
+</TextureAtlas>

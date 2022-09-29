@@ -1,0 +1,153 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-240,
+				-340
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "starved idle"
+		},
+		{
+			"offsets": [
+				-240,
+				-329
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "starved down"
+		},
+		{
+			"offsets": [
+				-240,
+				-342
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "starved up"
+		},
+		{
+			"offsets": [
+				-234,
+				-335
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "starved right"
+		},
+		{
+			"offsets": [
+				-234,
+				-335
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singRIGHT-loop",
+			"indices": [
+				15,
+				16,
+				17,
+				18
+			],
+			"name": "starved right"
+		},
+		{
+			"offsets": [
+				-246,
+				-335
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "starved left"
+		},
+		{
+			"offsets": [
+				-246,
+				-335
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singLEFT-loop",
+			"indices": [
+				12,
+				13,
+				14,
+				15
+			],
+			"name": "starved left"
+		},
+		{
+			"offsets": [
+				-240,
+				-341
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singUP-loop",
+			"indices": [
+				12,
+				13,
+				14,
+				15
+			],
+			"name": "starved up"
+		},
+		{
+			"offsets": [
+				-240,
+				-329
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singDOWN-loop",
+			"indices": [
+				12,
+				13,
+				14,
+				15
+			],
+			"name": "starved down"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-240,
+				-341
+			],
+			"anim": "dialogue",
+			"fps": 24,
+			"name": "starved dialogue",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/starved_sheet",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "starved-pixel",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		36,
+		0
+	],
+	"camera_position": [
+		-160,
+		280
+	],
+	"sing_duration": 6.1,
+	"scale": 6
+}

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="corrupt background.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="corrupt background0000" x="0" y="0" width="4140" height="2466"/>
+	<SubTexture name="corrupt background0001" x="0" y="2466" width="4140" height="2466"/>
+	<SubTexture name="corrupt background0002" x="0" y="4932" width="4140" height="2466"/>
+</TextureAtlas>

@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-10,
+				-50
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "firstDeath",
+			"loop": false,
+			"name": "death"
+		},
+		{
+			"offsets": [
+				-10,
+				-50
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "deathConfirm",
+			"loop": true,
+			"name": "loop"
+		},
+		{
+			"offsets": [
+				-10,
+				-50
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "deathLoop",
+			"loop": true,
+			"name": "loop"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/needlemouse-death",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "needlemouse",
+	"flip_x": true,
+	"healthbar_colors": [
+		101,
+		76,
+		151
+	],
+	"camera_position": [
+		-70,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 2
+}

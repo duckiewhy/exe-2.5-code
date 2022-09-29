@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Porker Lewis.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Porker FG0000" x="0" y="0" width="2374" height="2643" frameX="-47" frameY="0" frameWidth="2421" frameHeight="2643"/>
+	<SubTexture name="Porker FG0001" x="0" y="0" width="2374" height="2643" frameX="-47" frameY="0" frameWidth="2421" frameHeight="2643"/>
+	<SubTexture name="Porker FG0002" x="2374" y="0" width="2386" height="2610" frameX="-35" frameY="0" frameWidth="2421" frameHeight="2643"/>
+	<SubTexture name="Porker FG0003" x="2374" y="0" width="2386" height="2610" frameX="-35" frameY="0" frameWidth="2421" frameHeight="2643"/>
+	<SubTexture name="Porker FG0004" x="4760" y="0" width="2407" height="2598" frameX="-14" frameY="0" frameWidth="2421" frameHeight="2643"/>
+	<SubTexture name="Porker FG0005" x="4760" y="0" width="2407" height="2598" frameX="-14" frameY="0" frameWidth="2421" frameHeight="2643"/>
+	<SubTexture name="Porker FG0006" x="0" y="2643" width="2416" height="2595" frameX="-5" frameY="0" frameWidth="2421" frameHeight="2643"/>
+	<SubTexture name="Porker FG0007" x="0" y="2643" width="2416" height="2595" frameX="-5" frameY="0" frameWidth="2421" frameHeight="2643"/>
+	<SubTexture name="Porker FG0008" x="2416" y="2643" width="2421" height="2591" frameX="0" frameY="0" frameWidth="2421" frameHeight="2643"/>
+	<SubTexture name="Porker FG0009" x="2416" y="2643" width="2421" height="2591" frameX="0" frameY="0" frameWidth="2421" frameHeight="2643"/>
+	<SubTexture name="Porker FG0010" x="2416" y="2643" width="2421" height="2591" frameX="0" frameY="0" frameWidth="2421" frameHeight="2643"/>
+	<SubTexture name="Porker FG0011" x="2416" y="2643" width="2421" height="2591" frameX="0" frameY="0" frameWidth="2421" frameHeight="2643"/>
+	<SubTexture name="Porker FG0012" x="2416" y="2643" width="2421" height="2591" frameX="0" frameY="0" frameWidth="2421" frameHeight="2643"/>
+	<SubTexture name="Porker FG0013" x="2416" y="2643" width="2421" height="2591" frameX="0" frameY="0" frameWidth="2421" frameHeight="2643"/>
+	<SubTexture name="Porker FG0014" x="2416" y="2643" width="2421" height="2591" frameX="0" frameY="0" frameWidth="2421" frameHeight="2643"/>
+</TextureAtlas>

@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				4,
+				519
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Fatal sonic up"
+		},
+		{
+			"offsets": [
+				4,
+				519
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Fatal sonic right"
+		},
+		{
+			"offsets": [
+				4,
+				519
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Fatal sonic left"
+		},
+		{
+			"offsets": [
+				4,
+				519
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Fatal sonic down"
+		},
+		{
+			"offsets": [
+				4,
+				519
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "Fatal sonic idle"
+		},
+		{
+			"offsets": [
+				4,
+				519
+			],
+			"indices": [
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18
+			],
+			"fps": 24,
+			"anim": "idle-loop",
+			"loop": true,
+			"name": "Fatal sonic idle"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/fatal-error-sonic-glitched",
+	"position": [
+		150,
+		360
+	],
+	"healthicon": "fatal-sonic",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		60,
+		110
+	],
+	"camera_position": [
+		-740,
+		-810
+	],
+	"sing_duration": 4,
+	"scale": 4.00000000000001
+}

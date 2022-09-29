@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BG amy.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="amy bobbing0000" x="0" y="0" width="52" height="60"/>
+	<SubTexture name="amy bobbing0001" x="52" y="0" width="52" height="60"/>
+	<SubTexture name="amy bobbing0002" x="104" y="0" width="52" height="60"/>
+	<SubTexture name="amy bobbing0003" x="156" y="0" width="52" height="60"/>
+	<SubTexture name="amy bobbing0004" x="208" y="0" width="52" height="60"/>
+	<SubTexture name="amy bobbing0005" x="260" y="0" width="52" height="60"/>
+	<SubTexture name="amy bobbing0006" x="312" y="0" width="52" height="60"/>
+	<SubTexture name="amy bobbing0007" x="364" y="0" width="52" height="60"/>
+	<SubTexture name="amy bobbing0008" x="416" y="0" width="52" height="60"/>
+	<SubTexture name="amy bobbing0009" x="0" y="60" width="52" height="60"/>
+	<SubTexture name="amy bobbing0010" x="52" y="60" width="52" height="60"/>
+	<SubTexture name="amy bobbing0011" x="104" y="60" width="52" height="60"/>
+	<SubTexture name="amy bobbing0012" x="156" y="60" width="52" height="60"/>
+	<SubTexture name="amy bobbing0013" x="208" y="60" width="52" height="60"/>
+	<SubTexture name="amy fear0000" x="260" y="60" width="52" height="60"/>
+	<SubTexture name="amy fear0001" x="312" y="60" width="52" height="60"/>
+	<SubTexture name="amy fear0002" x="364" y="60" width="52" height="60"/>
+	<SubTexture name="amy fear0003" x="416" y="60" width="52" height="60"/>
+</TextureAtlas>

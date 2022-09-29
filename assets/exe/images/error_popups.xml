@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="error_popups.png">
+	<!-- Made with CSS sprites, Fuck you animate :imp: -->
+
+    <!-- Normal Animations -->
+
+	<SubTexture name="idle0000" x="10" y="10" width="273" height="174"/>
+	<SubTexture name="idle0001" x="303" y="10" width="273" height="174"/>
+    <SubTexture name="idle0002" x="10" y="204" width="273" height="174"/>
+    <SubTexture name="idle0003" x="303" y="204" width="273" height="174"/>
+    <SubTexture name="idle0004" x="10" y="398" width="273" height="174"/>
+</TextureAtlas>

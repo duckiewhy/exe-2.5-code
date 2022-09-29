@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="HillsandHills.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DumbassMF0000" x="0" y="0" width="2079" height="996"/>
+	<SubTexture name="DumbassMF0001" x="0" y="996" width="2079" height="996"/>
+	<SubTexture name="DumbassMF0002" x="0" y="1992" width="2079" height="996"/>
+	<SubTexture name="DumbassMF0003" x="0" y="996" width="2079" height="996"/>
+	<SubTexture name="DumbassMF0004" x="0" y="0" width="2079" height="996"/>
+	<SubTexture name="DumbassMF0005" x="0" y="996" width="2079" height="996"/>
+	<SubTexture name="DumbassMF0006" x="0" y="1992" width="2079" height="996"/>
+	<SubTexture name="DumbassMF0007" x="0" y="996" width="2079" height="996"/>
+</TextureAtlas>

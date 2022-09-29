@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="slash warning sheet.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="slash warning0000" x="0" y="0" width="311" height="205"/>
+	<SubTexture name="slash warning0001" x="311" y="0" width="311" height="205"/>
+	<SubTexture name="slash warning0002" x="622" y="0" width="311" height="205"/>
+	<SubTexture name="slash warning0003" x="0" y="205" width="311" height="205"/>
+	<SubTexture name="slash warning0004" x="311" y="205" width="311" height="205"/>
+	<SubTexture name="slash warning0005" x="622" y="205" width="311" height="205"/>
+	<SubTexture name="slash warning0006" x="0" y="410" width="311" height="205"/>
+	<SubTexture name="slash warning0007" x="311" y="410" width="311" height="205"/>
+	<SubTexture name="slash warning0008" x="622" y="410" width="311" height="205"/>
+	<SubTexture name="slash warning0009" x="0" y="615" width="311" height="205"/>
+</TextureAtlas>

@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				40,
+				-55
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "coldsteel left"
+		},
+		{
+			"offsets": [
+				-214,
+				203
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "coldsteel right"
+		},
+		{
+			"offsets": [
+				-108,
+				109
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "coldsteel up"
+		},
+		{
+			"offsets": [
+				220,
+				-268
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "coldsteel down"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-170,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "coldsteel idle",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/coldsteel_assets",
+	"position": [
+		-150,
+		-60
+	],
+	"healthicon": "coldsteel",
+	"flip_x": false,
+	"healthbar_colors": [
+		160,
+		77,
+		164
+	],
+	"camera_position": [
+		-50,
+		250
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

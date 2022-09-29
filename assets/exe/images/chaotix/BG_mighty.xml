@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BG mighty.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="mighty bobbing0000" x="0" y="0" width="48" height="57"/>
+	<SubTexture name="mighty bobbing0001" x="48" y="0" width="48" height="57"/>
+	<SubTexture name="mighty bobbing0002" x="96" y="0" width="48" height="57"/>
+	<SubTexture name="mighty bobbing0003" x="144" y="0" width="48" height="57"/>
+	<SubTexture name="mighty bobbing0004" x="192" y="0" width="48" height="57"/>
+	<SubTexture name="mighty bobbing0005" x="0" y="57" width="48" height="57"/>
+	<SubTexture name="mighty bobbing0006" x="48" y="57" width="48" height="57"/>
+	<SubTexture name="mighty bobbing0007" x="96" y="57" width="48" height="57"/>
+	<SubTexture name="mighty bobbing0008" x="144" y="57" width="48" height="57"/>
+	<SubTexture name="mighty bobbing0009" x="192" y="57" width="48" height="57"/>
+	<SubTexture name="mighty bobbing0010" x="0" y="114" width="48" height="57"/>
+	<SubTexture name="mighty bobbing0011" x="48" y="114" width="48" height="57"/>
+	<SubTexture name="mighty bobbing0012" x="96" y="114" width="48" height="57"/>
+	<SubTexture name="mighty bobbing0013" x="144" y="114" width="48" height="57"/>
+	<SubTexture name="mighty fear0000" x="192" y="114" width="48" height="57"/>
+	<SubTexture name="mighty fear0001" x="0" y="171" width="48" height="57"/>
+	<SubTexture name="mighty fear0002" x="48" y="171" width="48" height="57"/>
+	<SubTexture name="mighty fear0003" x="96" y="171" width="48" height="57"/>
+</TextureAtlas>

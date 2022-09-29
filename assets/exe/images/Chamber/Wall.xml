@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Wall.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Wall Broken instance 10000" x="0" y="0" width="5680" height="2533"/>
+	<SubTexture name="Wall instance 10000" x="0" y="2533" width="5680" height="2534"/>
+</TextureAtlas>

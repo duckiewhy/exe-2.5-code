@@ -1,0 +1,94 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				4,
+				519
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Fatal sonic idle"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				519
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Fatal sonic up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				519
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Fatal sonic right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				519
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Fatal sonic left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				519
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Fatal sonic down",
+			"indices": []
+		},
+		{
+			"offsets": [
+				4,
+				519
+			],
+			"loop": true,
+			"fps": 25,
+			"anim": "singLEFT-loop",
+			"indices": [
+				15,
+				16,
+				17,
+				18
+			],
+			"name": "Fatal sonic left"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/fatal-error-sonic",
+	"position": [
+		150,
+		360
+	],
+	"healthicon": "icon-fatal-sonic",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		60,
+		110
+	],
+	"camera_position": [
+		-740,
+		-810
+	],
+	"sing_duration": 4,
+	"scale": 4.00000000000001
+}

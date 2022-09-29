@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="FleetwayBGshit.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="BGblue0000" x="0" y="0" width="5848" height="2913"/>
+	<SubTexture name="BGyellow0000" x="0" y="2913" width="5848" height="2913"/>
+</TextureAtlas>

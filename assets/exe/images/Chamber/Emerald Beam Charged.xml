@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Emerald Beam Charged.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Emerald Beam Charged instance 10000" x="0" y="0" width="1895" height="2678" frameX="-144" frameY="-120" frameWidth="2181" frameHeight="2918"/>
+	<SubTexture name="Emerald Beam Charged instance 10001" x="1895" y="0" width="2038" height="2798" frameX="-72" frameY="-60" frameWidth="2181" frameHeight="2918"/>
+	<SubTexture name="Emerald Beam Charged instance 10002" x="3933" y="0" width="2181" height="2918"/>
+</TextureAtlas>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="NotKnuckles_Assets.png">
+	<!-- Created with Adobe Animate version 20.0.3.25487 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Notknuckles0000" x="0" y="0" width="1491" height="1646" frameX="-72" frameY="-15" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0001" x="0" y="0" width="1491" height="1646" frameX="-72" frameY="-15" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0002" x="0" y="0" width="1491" height="1646" frameX="-72" frameY="-15" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0003" x="1491" y="0" width="1479" height="1642" frameX="-86" frameY="-19" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0004" x="1491" y="0" width="1479" height="1642" frameX="-86" frameY="-19" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0005" x="1491" y="0" width="1479" height="1642" frameX="-86" frameY="-19" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0006" x="2970" y="0" width="1467" height="1661" frameX="-91" frameY="0" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0007" x="2970" y="0" width="1467" height="1661" frameX="-91" frameY="0" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0008" x="2970" y="0" width="1467" height="1661" frameX="-91" frameY="0" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0009" x="4437" y="0" width="1455" height="1631" frameX="-103" frameY="-30" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0010" x="4437" y="0" width="1455" height="1631" frameX="-103" frameY="-30" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0011" x="4437" y="0" width="1455" height="1631" frameX="-103" frameY="-30" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0012" x="5892" y="0" width="1452" height="1616" frameX="-106" frameY="-45" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0013" x="5892" y="0" width="1452" height="1616" frameX="-106" frameY="-45" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0014" x="5892" y="0" width="1452" height="1616" frameX="-106" frameY="-45" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0015" x="0" y="1661" width="1558" height="1642" frameX="0" frameY="-19" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0016" x="0" y="1661" width="1558" height="1642" frameX="0" frameY="-19" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0017" x="0" y="1661" width="1558" height="1642" frameX="0" frameY="-19" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0018" x="1558" y="1661" width="1478" height="1646" frameX="-80" frameY="-15" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0019" x="1558" y="1661" width="1478" height="1646" frameX="-80" frameY="-15" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0020" x="1558" y="1661" width="1478" height="1646" frameX="-80" frameY="-15" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0021" x="3036" y="1661" width="1488" height="1626" frameX="-95" frameY="-35" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0022" x="3036" y="1661" width="1488" height="1626" frameX="-95" frameY="-35" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0023" x="3036" y="1661" width="1488" height="1626" frameX="-95" frameY="-35" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0024" x="4524" y="1661" width="1528" height="1627" frameX="-28" frameY="-34" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0025" x="4524" y="1661" width="1528" height="1627" frameX="-28" frameY="-34" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0026" x="4524" y="1661" width="1528" height="1627" frameX="-28" frameY="-34" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0027" x="6052" y="1661" width="1530" height="1626" frameX="-26" frameY="-35" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0028" x="6052" y="1661" width="1530" height="1626" frameX="-26" frameY="-35" frameWidth="1583" frameHeight="1661"/>
+	<SubTexture name="Notknuckles0029" x="6052" y="1661" width="1530" height="1626" frameX="-26" frameY="-35" frameWidth="1583" frameHeight="1661"/>
+</TextureAtlas>

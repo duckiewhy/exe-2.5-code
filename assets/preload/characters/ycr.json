@@ -1,0 +1,151 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				18,
+				-51
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "laugh",
+			"indices": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			],
+			"name": "laugh_Instance"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				360,
+				7
+			],
+			"anim": "scream",
+			"fps": 24,
+			"name": "scream",
+			"indices": []
+		},
+		{
+			"offsets": [
+				17,
+				-51
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "laugh"
+		},
+		{
+			"offsets": [
+				-69,
+				129
+			],
+			"loop": false,
+			"fps": 42,
+			"anim": "singUP",
+			"indices": [],
+			"name": "normal_up"
+		},
+		{
+			"offsets": [
+				184,
+				22
+			],
+			"loop": false,
+			"fps": 38,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "normal_left"
+		},
+		{
+			"offsets": [
+				21,
+				-6
+			],
+			"loop": false,
+			"fps": 40,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "normal_down"
+		},
+		{
+			"offsets": [
+				-18,
+				67
+			],
+			"loop": true,
+			"fps": 26,
+			"anim": "idle",
+			"indices": [],
+			"name": "normal_idle"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-69,
+				129
+			],
+			"anim": "singUP-alt",
+			"fps": 42,
+			"name": "normal_up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-26,
+				-31
+			],
+			"anim": "singRIGHT",
+			"fps": 35,
+			"name": "normal_right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-26,
+				-30
+			],
+			"anim": "singRIGHT-alt",
+			"fps": 35,
+			"name": "normal_right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				183,
+				22
+			],
+			"anim": "singLEFT-alt",
+			"fps": 34,
+			"name": "normal_left",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/YCR",
+	"position": [
+		0,
+		380
+	],
+	"healthicon": "ycr",
+	"flip_x": false,
+	"healthbar_colors": [
+		22,
+		13,
+		135
+	],
+	"camera_position": [
+		-80,
+		90
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

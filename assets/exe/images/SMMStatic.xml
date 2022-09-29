@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SMMStatic.png">
+	<!-- Created with Adobe Animate version 21.0.3.38773 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="damfstatic0000" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="damfstatic0001" x="1280" y="0" width="1280" height="720"/>
+	<SubTexture name="damfstatic0002" x="2560" y="0" width="1280" height="720"/>
+	<SubTexture name="damfstatic0003" x="0" y="720" width="1280" height="720"/>
+	<SubTexture name="damfstatic0004" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="damfstatic0005" x="1280" y="0" width="1280" height="720"/>
+	<SubTexture name="damfstatic0006" x="2560" y="0" width="1280" height="720"/>
+	<SubTexture name="damfstatic0007" x="0" y="720" width="1280" height="720"/>
+	<SubTexture name="damfstatic0008" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="damfstatic0009" x="1280" y="0" width="1280" height="720"/>
+	<SubTexture name="damfstatic0010" x="2560" y="0" width="1280" height="720"/>
+	<SubTexture name="damfstatic0011" x="0" y="720" width="1280" height="720"/>
+	<SubTexture name="damfstatic0012" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="damfstatic0013" x="1280" y="0" width="1280" height="720"/>
+	<SubTexture name="damfstatic0014" x="2560" y="0" width="1280" height="720"/>
+	<SubTexture name="damfstatic0015" x="0" y="720" width="1280" height="720"/>
+</TextureAtlas>

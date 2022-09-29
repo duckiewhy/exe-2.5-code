@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="my_horizon_title_card.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="my horizon title0000" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="my horizon title0001" x="1280" y="0" width="1280" height="720"/>
+	<SubTexture name="my horizon title0002" x="2560" y="0" width="1280" height="720"/>
+	<SubTexture name="my horizon title0003" x="3840" y="0" width="1280" height="720"/>
+	<SubTexture name="my horizon title0004" x="5120" y="0" width="1280" height="720"/>
+	<SubTexture name="my horizon title0005" x="6400" y="0" width="1280" height="720"/>
+	<SubTexture name="my horizon title0006" x="0" y="720" width="1280" height="720"/>
+	<SubTexture name="my horizon title0007" x="1280" y="720" width="1280" height="720"/>
+	<SubTexture name="my horizon title0008" x="2560" y="720" width="1280" height="720"/>
+	<SubTexture name="my horizon title0009" x="3840" y="720" width="1280" height="720"/>
+	<SubTexture name="my horizon title0010" x="5120" y="720" width="1280" height="720"/>
+	<SubTexture name="my horizon title0011" x="6400" y="720" width="1280" height="720"/>
+	<SubTexture name="my horizon title0012" x="0" y="1440" width="1280" height="720"/>
+	<SubTexture name="my horizon title0013" x="1280" y="1440" width="1280" height="720"/>
+	<SubTexture name="my horizon title0014" x="2560" y="1440" width="1280" height="720"/>
+	<SubTexture name="my horizon title0015" x="3840" y="1440" width="1280" height="720"/>
+	<SubTexture name="my horizon title0016" x="5120" y="1440" width="1280" height="720"/>
+	<SubTexture name="my horizon title0017" x="6400" y="1440" width="1280" height="720"/>
+	<SubTexture name="my horizon title0018" x="0" y="2160" width="1280" height="720"/>
+	<SubTexture name="my horizon title0019" x="1280" y="2160" width="1280" height="720"/>
+	<SubTexture name="my horizon title0020" x="2560" y="2160" width="1280" height="720"/>
+	<SubTexture name="my horizon title0021" x="3840" y="2160" width="1280" height="720"/>
+	<SubTexture name="my horizon title0022" x="5120" y="2160" width="1280" height="720"/>
+	<SubTexture name="my horizon title0023" x="6400" y="2160" width="1280" height="720"/>
+	<SubTexture name="my horizon title0024" x="0" y="2880" width="1280" height="720"/>
+	<SubTexture name="my horizon title0025" x="1280" y="2880" width="1280" height="720"/>
+	<SubTexture name="my horizon title0026" x="2560" y="2880" width="1280" height="720"/>
+	<SubTexture name="my horizon title0027" x="3840" y="2880" width="1280" height="720"/>
+</TextureAtlas>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="launchbase.png">
+	<!-- Made with CSS sprites, Fuck you animate :imp: -->
+
+    <!-- Normal Animations -->
+
+	<SubTexture name="idle0000" x="10" y="10" width="721" height="354"/>
+	<SubTexture name="idle0001" x="751" y="10" width="721" height="354"/>
+    <SubTexture name="idle0002" x="10" y="384" width="721" height="354"/>
+    <SubTexture name="idle0003" x="751" y="384" width="721" height="354"/>
+    <SubTexture name="idle0004" x="10" y="758" width="721" height="354"/>
+    <SubTexture name="idle0005" x="751" y="758" width="721" height="354"/>
+    <SubTexture name="idle0006" x="1492" y="10" width="721" height="354"/>
+    <SubTexture name="idle0007" x="1492" y="348" width="721" height="354"/>
+    <SubTexture name="idle0008" x="1492" y="758" width="721" height="354"/>
+    <SubTexture name="idle0009" x="10" y="1132" width="721" height="354"/>
+</TextureAtlas>

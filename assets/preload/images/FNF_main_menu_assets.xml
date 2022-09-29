@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="FNF_main_menu_assets.png">
+	<!-- Created with Adobe Animate version 21.0.3.38773 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="donate basic0000" x="0" y="0" width="381" height="214"/>
+	<SubTexture name="donate basic0001" x="0" y="0" width="381" height="214"/>
+	<SubTexture name="donate basic0002" x="0" y="0" width="381" height="214"/>
+	<SubTexture name="donate basic0003" x="0" y="0" width="381" height="214"/>
+	<SubTexture name="donate basic0004" x="0" y="0" width="381" height="214"/>
+	<SubTexture name="donate white0000" x="381" y="0" width="380" height="214"/>
+	<SubTexture name="donate white0001" x="381" y="0" width="380" height="214"/>
+	<SubTexture name="donate white0002" x="381" y="0" width="380" height="214"/>
+	<SubTexture name="donate white0003" x="381" y="0" width="380" height="214"/>
+	<SubTexture name="donate white0004" x="381" y="0" width="380" height="214"/>
+	<SubTexture name="freeplay basic0000" x="761" y="0" width="381" height="214"/>
+	<SubTexture name="freeplay basic0001" x="761" y="0" width="381" height="214"/>
+	<SubTexture name="freeplay basic0002" x="761" y="0" width="381" height="214"/>
+	<SubTexture name="freeplay basic0003" x="761" y="0" width="381" height="214"/>
+	<SubTexture name="freeplay basic0004" x="761" y="0" width="381" height="214"/>
+	<SubTexture name="freeplay white0000" x="1142" y="0" width="380" height="214"/>
+	<SubTexture name="freeplay white0001" x="1142" y="0" width="380" height="214"/>
+	<SubTexture name="freeplay white0002" x="1142" y="0" width="380" height="214"/>
+	<SubTexture name="freeplay white0003" x="1142" y="0" width="380" height="214"/>
+	<SubTexture name="freeplay white0004" x="1142" y="0" width="380" height="214"/>
+	<SubTexture name="options basic0000" x="1522" y="0" width="381" height="214"/>
+	<SubTexture name="options basic0001" x="1522" y="0" width="381" height="214"/>
+	<SubTexture name="options basic0002" x="1522" y="0" width="381" height="214"/>
+	<SubTexture name="options basic0003" x="1522" y="0" width="381" height="214"/>
+	<SubTexture name="options basic0004" x="1522" y="0" width="381" height="214"/>
+	<SubTexture name="options white0000" x="0" y="214" width="380" height="214"/>
+	<SubTexture name="options white0001" x="0" y="214" width="380" height="214"/>
+	<SubTexture name="options white0002" x="0" y="214" width="380" height="214"/>
+	<SubTexture name="options white0003" x="0" y="214" width="380" height="214"/>
+	<SubTexture name="options white0004" x="0" y="214" width="380" height="214"/>
+	<SubTexture name="sound test basic0000" x="380" y="214" width="381" height="214"/>
+	<SubTexture name="sound test basic0001" x="380" y="214" width="381" height="214"/>
+	<SubTexture name="sound test basic0002" x="380" y="214" width="381" height="214"/>
+	<SubTexture name="sound test basic0003" x="380" y="214" width="381" height="214"/>
+	<SubTexture name="sound test basic0004" x="380" y="214" width="381" height="214"/>
+	<SubTexture name="sound test white0000" x="761" y="214" width="380" height="214"/>
+	<SubTexture name="sound test white0001" x="761" y="214" width="380" height="214"/>
+	<SubTexture name="sound test white0002" x="761" y="214" width="380" height="214"/>
+	<SubTexture name="sound test white0003" x="761" y="214" width="380" height="214"/>
+	<SubTexture name="sound test white0004" x="761" y="214" width="380" height="214"/>
+	<SubTexture name="sound test locked basic0000" x="1141" y="214" width="384" height="219"/>
+	<SubTexture name="sound test locked basic0001" x="1141" y="214" width="384" height="219"/>
+	<SubTexture name="sound test locked basic0002" x="1141" y="214" width="384" height="219"/>
+	<SubTexture name="sound test locked basic0003" x="1141" y="214" width="384" height="219"/>
+	<SubTexture name="sound test locked basic0004" x="1141" y="214" width="384" height="219"/>
+	<SubTexture name="sound test locked white0000" x="761" y="214" width="380" height="214"/>
+	<SubTexture name="sound test locked white0001" x="761" y="214" width="380" height="214"/>
+	<SubTexture name="sound test locked white0002" x="761" y="214" width="380" height="214"/>
+	<SubTexture name="sound test locked white0003" x="761" y="214" width="380" height="214"/>
+	<SubTexture name="story mode basic0000" x="1525" y="214" width="381" height="214"/>
+	<SubTexture name="story mode basic0001" x="1525" y="214" width="381" height="214"/>
+	<SubTexture name="story mode basic0002" x="1525" y="214" width="381" height="214"/>
+	<SubTexture name="story mode basic0003" x="1525" y="214" width="381" height="214"/>
+	<SubTexture name="story mode basic0004" x="1525" y="214" width="381" height="214"/>
+	<SubTexture name="story mode white0000" x="0" y="433" width="380" height="214"/>
+	<SubTexture name="story mode white0001" x="0" y="433" width="380" height="214"/>
+	<SubTexture name="story mode white0002" x="0" y="433" width="380" height="214"/>
+	<SubTexture name="story mode white0003" x="0" y="433" width="380" height="214"/>
+	<SubTexture name="story mode white0004" x="0" y="433" width="380" height="214"/>
+</TextureAtlas>

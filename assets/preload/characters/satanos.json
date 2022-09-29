@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-190,
+				-290
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "Pyscho_Sonic_IDLE"
+		},
+		{
+			"offsets": [
+				-96,
+				-225
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "Psycho_Sonic_LEFT"
+		},
+		{
+			"offsets": [
+				-158,
+				-151
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "Pyscho_Sonic_UP"
+		},
+		{
+			"offsets": [
+				-250,
+				-134
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Psycho_Sonic_RIGHT"
+		},
+		{
+			"offsets": [
+				-110,
+				-138
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "Psycho_Sonic_DOWN"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Psycho_Sonic_Poses",
+	"position": [
+		-150,
+		-60
+	],
+    	"healthicon": "satanos",
+	"flip_x": false,
+	"healthbar_colors": [
+		60,
+		88,
+		183
+	],
+	"camera_position": [
+		50,
+		120
+	],
+	"sing_duration": 4,
+	"scale": 1.3
+}

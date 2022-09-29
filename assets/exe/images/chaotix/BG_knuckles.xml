@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BG knuckles.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="knuckles bobbing0000" x="0" y="0" width="51" height="64"/>
+	<SubTexture name="knuckles bobbing0001" x="0" y="0" width="51" height="64"/>
+	<SubTexture name="knuckles bobbing0002" x="51" y="0" width="51" height="64"/>
+	<SubTexture name="knuckles bobbing0003" x="51" y="0" width="51" height="64"/>
+	<SubTexture name="knuckles bobbing0004" x="102" y="0" width="51" height="64"/>
+	<SubTexture name="knuckles bobbing0005" x="102" y="0" width="51" height="64"/>
+	<SubTexture name="knuckles bobbing0006" x="153" y="0" width="51" height="64"/>
+	<SubTexture name="knuckles bobbing0007" x="153" y="0" width="51" height="64"/>
+	<SubTexture name="knuckles bobbing0008" x="204" y="0" width="51" height="64"/>
+	<SubTexture name="knuckles bobbing0009" x="204" y="0" width="51" height="64"/>
+	<SubTexture name="knuckles bobbing0010" x="204" y="0" width="51" height="64"/>
+	<SubTexture name="knuckles bobbing0011" x="204" y="0" width="51" height="64"/>
+	<SubTexture name="knuckles bobbing0012" x="204" y="0" width="51" height="64"/>
+	<SubTexture name="knuckles bobbing0013" x="204" y="0" width="51" height="64"/>
+	<SubTexture name="knuckles fear0000" x="0" y="64" width="51" height="64"/>
+	<SubTexture name="knuckles fear0001" x="0" y="64" width="51" height="64"/>
+	<SubTexture name="knuckles fear0002" x="51" y="64" width="51" height="64"/>
+	<SubTexture name="knuckles fear0003" x="51" y="64" width="51" height="64"/>
+</TextureAtlas>

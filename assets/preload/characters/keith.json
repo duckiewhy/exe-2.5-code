@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "Coldsteel meme BF idle"
+		},
+		{
+			"offsets": [
+				-15,
+				14
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "Coldsteel meme BF left"
+		},
+		{
+			"offsets": [
+				-10,
+				9
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "Coldsteel meme BF down"
+		},
+		{
+			"offsets": [
+				-25,
+				5
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "Coldsteel meme BF up"
+		},
+		{
+			"offsets": [
+				-24,
+				13
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Coldsteel meme BF right"
+		},
+		{
+			"offsets": [
+				-14,
+				16
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "Coldsteel meme BF miss left"
+		},
+		{
+			"offsets": [
+				-15,
+				11
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "Coldsteel meme BF miss down"
+		},
+		{
+			"offsets": [
+				-24,
+				8
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "Coldsteel meme BF miss up"
+		},
+		{
+			"offsets": [
+				-24,
+				18
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "Coldsteel meme BF miss right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/keith",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

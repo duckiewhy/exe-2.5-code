@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="staticBACKGROUND2.png">
+	<!-- Created with Adobe Animate version 21.0.3.38773 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="menuSTATICNEW instance 10000" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10001" x="1280" y="0" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10002" x="2560" y="0" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10003" x="3840" y="0" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10004" x="5120" y="0" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10005" x="6400" y="0" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10006" x="0" y="720" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10007" x="1280" y="720" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10008" x="2560" y="720" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10009" x="3840" y="720" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10010" x="5120" y="720" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10011" x="6400" y="720" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10012" x="0" y="1440" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10013" x="1280" y="1440" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10014" x="2560" y="1440" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10015" x="3840" y="1440" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10016" x="5120" y="1440" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10017" x="6400" y="1440" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10018" x="0" y="2160" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10019" x="1280" y="2160" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10020" x="2560" y="2160" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10021" x="3840" y="2160" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10022" x="5120" y="2160" width="1280" height="720"/>
+	<SubTexture name="menuSTATICNEW instance 10023" x="6400" y="2160" width="1280" height="720"/>
+</TextureAtlas>
