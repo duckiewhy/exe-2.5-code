@@ -34,7 +34,7 @@ jobs:
           haxelib setup C:/haxelib
           haxelib install lime 7.9.0
           haxelib install flixel 4.11.0
-          haxelib flixel-addons 2.11.0
+          haxelib install flixel-addons 2.11.0
           haxelib install flixel-ui
           haxelib install hscript
           haxelib install newgrounds
