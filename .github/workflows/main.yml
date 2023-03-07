@@ -33,8 +33,8 @@ jobs:
         run: |
           haxelib setup C:/haxelib
           haxelib install lime 7.9.0
-          haxelib install flixel
-          haxelib flixel-addons
+          haxelib install flixel 4.11.0
+          haxelib flixel-addons 2.11.0
           haxelib install flixel-ui
           haxelib install hscript
           haxelib install newgrounds
@@ -43,6 +43,11 @@ jobs:
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
           haxelib git flixel-addons https://github.com/HaxeFlixel/flixel-addons
           haxelib install linc_luajit
+      - name: Setup Lime
+          haxelib set lime 7.9.0
+          haxelib set flixel 4.11.0
+          haxelib set flixel-addons 2.11.0
+        run: |
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
       - name: Compile
