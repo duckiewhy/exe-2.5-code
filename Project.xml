@@ -55,18 +55,18 @@
 	<define name="PRELOAD_ALL" unless="web" />
 	<define name="NO_PRELOAD_ALL" unless="PRELOAD_ALL"/>
 
-	<library name="videos"        preload="true" />
 	<section if="PRELOAD_ALL">
 		<library name="songs"         preload="true" />
 		<library name="shared"        preload="true" />
-		<library name="exe"        preload="true" />
-
+		<library name="exe"           preload="true" />
+	        <library name="videos"        preload="true" />
 	</section>
 
 	<section if="NO_PRELOAD_ALL">
 		<library name="songs"         preload="false" />
 		<library name="shared"        preload="false" />
-		<library name="exe"        preload="false" />
+		<library name="exe"           preload="false" />
+                <library name="videos"        preload="true" />
 	</section>
 
 	<assets path="plugins/"             rename=''               if="VIDEOS_ALLOWED windows" />
