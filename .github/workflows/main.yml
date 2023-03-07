@@ -50,5 +50,5 @@ jobs:
       - name: Publish Artifact
         uses: actions/upload-artifact@v2.2.4
         with:
-          name: htmlBuild
+          name: windowsBuild
           path: export/release/windows/bin
