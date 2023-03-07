@@ -44,10 +44,10 @@ jobs:
           haxelib git flixel-addons https://github.com/HaxeFlixel/flixel-addons
           haxelib install linc_luajit
       - name: Setup Lime
+        run: |
           haxelib set lime 7.9.0
           haxelib set flixel 4.11.0
           haxelib set flixel-addons 2.11.0
-        run: |
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
       - name: Compile
