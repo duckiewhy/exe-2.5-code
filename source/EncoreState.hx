@@ -88,11 +88,10 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 
 					fuck += 1;
 				
-				else 
+				else
 				{
 					songArray.remove(songArray[fuck]);
 				}
-				
 			}
 		
 		else songArray = ['lol'];
@@ -161,10 +160,6 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 
 			switch (songArray[curSelected]) // Some charts don't include -hard in their file name so i decided to get focken lazy.
 			{
-				case "milk":
-					PlayState.SONG = Song.loadFromJson('milk', 'milk');
-				case "sunshine":
-					PlayState.SONG = Song.loadFromJson('sunshine', 'sunshine');
 				default:
 					PlayState.SONG = Song.loadFromJson(songArray[curSelected].toLowerCase() + '-hard', songArray[curSelected].toLowerCase());
 			}
