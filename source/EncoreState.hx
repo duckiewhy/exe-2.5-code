@@ -147,7 +147,6 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 					PlayState.SONG = Song.loadFromJson(songArray[curSelected].toLowerCase() + '-hard', songArray[curSelected].toLowerCase());
 			}
 
-			PlayState.isFreeplay = true;
 			PlayState.isStoryMode = false;
 			PlayState.storyDifficulty = 2;
 			PlayState.storyWeek = 1;
