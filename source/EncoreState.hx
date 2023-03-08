@@ -25,7 +25,6 @@ using StringTools;
 
 class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 {
- /*
 	var whiteshit:FlxSprite;
 
 	var curSelected:Int = 0;
@@ -68,34 +67,17 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 		
 		add(prevsongtext);
 
-			for (i in 0...songArray.length)
-			{
-					FlxG.log.add(songArray[i] + ' found');
+		for (i in 0...songArray.length) {
+			FlxG.log.add(songArray[i] + ' found');
 	
-					var box:FlxSprite = new FlxSprite(fuck * 780, 0).loadGraphic(Paths.image('FreeBox'));
-					boxgrp.add(box);
+			var box:FlxSprite = new FlxSprite(fuck * 780, 0).loadGraphic(Paths.image('FreeBox'));
+			boxgrp.add(box);
 
-					var char:FlxSprite = new FlxSprite(fuck * 780, 0).loadGraphic(Paths.image('fpstuff/' + songArray[fuck].toLowerCase()));
-					boxgrp.add(char);
+			var char:FlxSprite = new FlxSprite(fuck * 780, 0).loadGraphic(Paths.image('fpstuff/' + songArray[fuck].toLowerCase()));
+			boxgrp.add(char);
 
-					var daStatic:FlxSprite = new FlxSprite();		
-					daStatic.frames = Paths.getSparrowAtlas('daSTAT');	
-					daStatic.alpha = 0.2;	
-					daStatic.setGraphicSize(620, 465);			
-					daStatic.setPosition((fuck * 780) + 440, 211);	
-					daStatic.animation.addByPrefix('static','staticFLASH', 24, true);			
-					boxgrp.add(daStatic);
-					daStatic.animation.play('static');
-
-					fuck += 1;
-				
-				else
-				{
-					songArray.remove(songArray[fuck]);
-				}
-			}
-		
-		else songArray = ['lol'];
+			fuck += 1;
+		}
 
 		if (songArray[0] == 'lol')
 		{
@@ -225,5 +207,4 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 		if (curSelected < 0) curSelected = 0;
 		else if (curSelected > songArray.length - 1) curSelected = songArray.length - 1;
 	}
-	*/
 }
