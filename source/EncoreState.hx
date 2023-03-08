@@ -25,27 +25,222 @@ using StringTools;
 
 class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 {
+	var whiteshit:FlxSprite;
 
-	public static var talk:FlxText;
+	var curSelected:Int = 0;
+
+	var songArray:Array<String> = ["too-slow-encore", "you-cant-run-encore", "triple-trouble-encore"];
+
+	var boxgrp:FlxTypedSpriteGroup<FlxSprite>;
+
+	var bg:FlxSprite;
+
+	var cdman:Bool = true;
+
+	var fuck:Int = 0;
+
+	var songtext:FlxText;
+	var prevsongtext:FlxText;
 
 	override function create()
 	{
-		talk = new FlxText();
-		talk.text = "I wish I could've made a bigger impact to this team.\nI really did kinda feel like a wasted slot, everyone else around me being much more skilled and whatnot.\nI do miss the team, I miss the progress it made. I miss it a lot.\nTeam did feel like a family, despite everything that happened.\nI figured a message like this would appear from someone like me in this state,\nconsidering its the one that people went after me for.\nThe story portraits were not by divide, they were by scorch, only triple trouble's portrait had a concept by divide.\nRegardless, if I had known divide had a hand in their creation, i wouldnt had laid a finger on them. I am beyond sorry.\nI hope exe finally falls and rots like it should.\nRest in peace to the dream that was exe mod, and let anything that tries to recreate it, rot. just like the real mod.\n \n-DuskieWhy";
-		talk.alignment = CENTER;
-		talk.scale.set(2.3,2.3);
-		talk.updateHitbox();
-		talk.screenCenter();
-		add(talk);
+		whiteshit = new FlxSprite().makeGraphic(1280, 720, FlxColor.WHITE);
+		whiteshit.alpha = 0;
+
+		bg = new FlxSprite().loadGraphic(Paths.image('backgroundlool'));
+		bg.screenCenter();
+		bg.setGraphicSize(1280, 720);
+		add(bg);
+
+		boxgrp = new FlxTypedSpriteGroup<FlxSprite>();
+
+		songtext = new FlxText(0, FlxG.height - 100, songArray[curSelected], 25);
+		songtext.setFormat("Sonic CD Menu Font Regular", 25, FlxColor.fromRGB(255, 255, 255));
+		songtext.x = (FlxG.width / 2) - (25 / 2 * songArray[curSelected].length);
+		add(songtext);
+
+		FlxG.log.add('sexo: ' + (songtext.width / songArray[curSelected].length));
+
+		prevsongtext = new FlxText(0, FlxG.height - 100, songArray[curSelected], 25);
+		prevsongtext.x = (FlxG.width / 2) - (25 / 2 * songArray[curSelected].length);
+		prevsongtext.setFormat("Sonic CD Menu Font Regular", 25, FlxColor.fromRGB(255, 255, 255));
+		
+		add(prevsongtext);
+
+			for (i in 0...songArray.length)
+			{
+					FlxG.log.add(songArray[i] + ' found');
+	
+					var box:FlxSprite = new FlxSprite(fuck * 780, 0).loadGraphic(Paths.image('FreeBox'));
+					boxgrp.add(box);
+
+					var char:FlxSprite = new FlxSprite(fuck * 780, 0).loadGraphic(Paths.image('fpstuff/' + songArray[fuck].toLowerCase()));
+					boxgrp.add(char);
+
+					var daStatic:FlxSprite = new FlxSprite();		
+					daStatic.frames = Paths.getSparrowAtlas('daSTAT');	
+					daStatic.alpha = 0.2;	
+					daStatic.setGraphicSize(620, 465);			
+					daStatic.setPosition((fuck * 780) + 440, 211);	
+					daStatic.animation.addByPrefix('static','staticFLASH', 24, true);			
+					boxgrp.add(daStatic);
+					daStatic.animation.play('static');
+
+					fuck += 1;
+				
+				else 
+				{
+					songArray.remove(songArray[fuck]);
+				}
+				
+			}
+		
+		else songArray = ['lol'];
+
+		if (songArray[0] == 'lol')
+		{
+			remove(songtext);
+			remove(prevsongtext);
+		}
+		
+		add(boxgrp);
+
+		 #if windows
+		 // Updating Discord Rich Presence
+		 DiscordClient.changePresence("In the Encore Menu", null);
+		 #end
+
+		add(whiteshit);
+
 		super.create();
 	}
-	
 
 	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
 
-		if(controls.ACCEPT)
-			MusicBeatState.switchState(new MainMenuState());
+		var upP = FlxG.keys.justPressed.LEFT || FlxG.keys.justPressed.A;
+		var downP = FlxG.keys.justPressed.RIGHT || FlxG.keys.justPressed.D;
+		var accepted = controls.ACCEPT;
+		
+		
+		var gamepad:FlxGamepad = FlxG.gamepads.lastActive;
+
+		if (gamepad != null)
+		{
+			if (gamepad.justPressed.DPAD_UP)
+			{
+				changeSelection(-1);
+			}
+			if (gamepad.justPressed.DPAD_DOWN)
+			{
+				changeSelection(1);
+			}
+		}
+
+		if (cdman)
+		{
+			if (upP)
+			{
+				changeSelection(-1);
+			}
+			if (downP)
+			{
+				changeSelection(1);
+			}
+		}
+
+		if (controls.BACK)
+		{
+			FlxG.switchState(new MainMenuState());
+		}
+
+		if (accepted && cdman && songArray[0] != 'lol')
+		{
+			cdman = false;
+
+			switch (songArray[curSelected]) // Some charts don't include -hard in their file name so i decided to get focken lazy.
+			{
+				case "milk":
+					PlayState.SONG = Song.loadFromJson('milk', 'milk');
+				case "sunshine":
+					PlayState.SONG = Song.loadFromJson('sunshine', 'sunshine');
+				default:
+					PlayState.SONG = Song.loadFromJson(songArray[curSelected].toLowerCase() + '-hard', songArray[curSelected].toLowerCase());
+			}
+
+			PlayState.isFreeplay = true;
+			PlayState.isStoryMode = false;
+			PlayState.storyDifficulty = 2;
+			PlayState.storyWeek = 1;
+			FlxTween.tween(whiteshit, {alpha: 1}, 0.4);
+			FlxG.sound.play(Paths.sound('confirmMenu'));
+			FlxTransitionableState.skipNextTransIn = true;
+			FlxTransitionableState.skipNextTransOut = true;
+			PlayStateChangeables.nocheese = false;
+			new FlxTimer().start(2, function(tmr:FlxTimer)
+			{
+				LoadingState.loadAndSwitchState(new PlayState());
+			});
+		}
+		
+	}
+
+	
+	function changeSelection(change:Int = 0)
+	{
+
+		#if !switch
+		// NGio.logEvent('Fresh');
+		#end
+	
+		if (change == 1 && curSelected != songArray.length - 1) 
+		{
+			cdman = false;
+			FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
+			FlxTween.tween(boxgrp ,{x: boxgrp.x - 780}, 0.2, {ease: FlxEase.expoOut, onComplete: function(sus:FlxTween)
+				{
+					cdman = true;
+				}
+			});
+			
+		}
+		else if (change == -1 && curSelected != 0) 
+		{
+			cdman = false;
+			FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
+			FlxTween.tween(boxgrp ,{x: boxgrp.x + 780}, 0.2, {ease: FlxEase.expoOut, onComplete: function(sus:FlxTween)
+				{
+					cdman = true;
+				}
+			});
+
+		}
+		if ((change == 1 && curSelected != songArray.length - 1) || (change == -1 && curSelected > 0)) // This is a.
+		{
+			songtext.alpha = 0;
+			songtext.text = songArray[curSelected + change];
+			if (songArray[curSelected + change] == 'black-sun') songtext.text = 'black sun';
+			FlxTween.tween(songtext ,{alpha: 1, x: (FlxG.width / 2) - (25 / 2 * songArray[curSelected + change].length)}, 0.2, {ease: FlxEase.expoOut});
+			FlxTween.tween(prevsongtext ,{alpha: 0, x: (FlxG.width / 2) - (25 / 2 * songArray[curSelected + change].length)}, 0.2, {ease: FlxEase.expoOut});
+		}
+
+		curSelected += change;
+		if (curSelected < 0) curSelected = 0;
+		else if (curSelected > songArray.length - 1) curSelected = songArray.length - 1;
+	}
+}
+
+class SongMetadata
+{
+	public var songName:String = "";
+	public var week:Int = 0;
+	public var songCharacter:String = "";
+
+	public function new(song:String, week:Int, songCharacter:String)
+	{
+		this.songName = song;
+		this.week = week;
+		this.songCharacter = songCharacter;
 	}
 }
