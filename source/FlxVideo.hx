@@ -3,6 +3,9 @@ import openfl.net.NetConnection;
 import openfl.net.NetStream;
 import openfl.events.NetStatusEvent;
 import openfl.media.Video;
+#elseif android
+import extension.videoview.VideoView;
+import android.Tools;
 #else
 import openfl.events.Event;
 import vlc.VlcBitmap;
@@ -46,27 +49,29 @@ class FlxVideo extends FlxBasic {
 		});
 		netStream.play(name);
 
+	        #elseif android
+
+                VideoView.playVideo(Tools.getFileUrl(name));
+                VideoView.onCompletion = function(){
+		        if (finishCallback != null){
+			        finishCallback();
+		        }
+                }             
+
 		#elseif desktop
 		// by Polybius, check out PolyEngine! https://github.com/polybiusproxy/PolyEngine
 
 		vlcBitmap = new VlcBitmap();
-		if (FlxG.stage.stageHeight / 9 < FlxG.stage.stageWidth / 16)
-		{
-			vlcBitmap.set_height(FlxG.stage.stageHeight);
-			vlcBitmap.set_width(FlxG.stage.stageHeight * (16 / 9));
-		}
-		else
-		{
-			vlcBitmap.set_height(FlxG.stage.stageWidth / (16 / 9));
-			vlcBitmap.set_width(FlxG.stage.stageWidth);	
-		}
-		
+		vlcBitmap.set_height(FlxG.stage.stageHeight);
+		vlcBitmap.set_width(FlxG.stage.stageHeight * (16 / 9));
 
 		vlcBitmap.onComplete = onVLCComplete;
 		vlcBitmap.onError = onVLCError;
 
 		FlxG.stage.addEventListener(Event.ENTER_FRAME, fixVolume);
 		vlcBitmap.repeat = 0;
+		vlcBitmap.inWindow = false;
+		vlcBitmap.fullscreen = false;
 		fixVolume(null);
 
 		FlxG.addChildBelowMouse(vlcBitmap);
