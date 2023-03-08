@@ -25,6 +25,7 @@ using StringTools;
 
 class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 {
+ /*
 	var whiteshit:FlxSprite;
 
 	var curSelected:Int = 0;
@@ -222,4 +223,5 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 		if (curSelected < 0) curSelected = 0;
 		else if (curSelected > songArray.length - 1) curSelected = songArray.length - 1;
 	}
+	*/
 }
