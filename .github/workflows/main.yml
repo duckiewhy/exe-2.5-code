@@ -78,6 +78,7 @@ jobs:
           haxelib install hscript
           haxelib install newgrounds
           haxelib install openfl
+          haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
           haxelib git polymod https://github.com/larsiusprime/polymod.git
           haxelib install linc_luajit
       - name: Setup Lime
