@@ -70,8 +70,10 @@ class FlxVideo extends FlxBasic {
 
 		FlxG.stage.addEventListener(Event.ENTER_FRAME, fixVolume);
 		vlcBitmap.repeat = 0;
+	 #if android
 		vlcBitmap.inWindow = false;
 		vlcBitmap.fullscreen = false;
+	#end
 		fixVolume(null);
 
 		FlxG.addChildBelowMouse(vlcBitmap);
