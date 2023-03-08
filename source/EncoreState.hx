@@ -68,7 +68,6 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 		add(prevsongtext);
 
 			for (i in 0...songArray.length)
-			{
 					FlxG.log.add(songArray[i] + ' found');
 	
 					var box:FlxSprite = new FlxSprite(fuck * 780, 0).loadGraphic(Paths.image('FreeBox'));
@@ -92,7 +91,6 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 				{
 					songArray.remove(songArray[fuck]);
 				}
-			}
 		
 		else songArray = ['lol'];
 
