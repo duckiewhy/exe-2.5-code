@@ -143,6 +143,12 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 
 			switch (songArray[curSelected]) // Some charts don't include -hard in their file name so i decided to get focken lazy.
 			{
+          case "too-slow-encore":
+					PlayState.SONG = Song.loadFromJson('too-slow-encore', 'too-slow-encore');
+          case "you-cant-run-encore":
+					PlayState.SONG = Song.loadFromJson('you-cant-run-encore', 'you-cant-run-encore');
+          case "triple-trouble-encore":
+					PlayState.SONG = Song.loadFromJson('triple-trouble-encore', 'triple-trouble-encore');
 				default:
 					PlayState.SONG = Song.loadFromJson(songArray[curSelected].toLowerCase() + '-hard', songArray[curSelected].toLowerCase());
 			}
