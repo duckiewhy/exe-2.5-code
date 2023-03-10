@@ -1,7 +1,7 @@
 {
 	"song": {
 		"player1": "bf",
-		"player2": "tails",
+		"player2": "Tails",
 		"notes": [
 			{
 				"lengthInSteps": 16,
@@ -7044,6 +7044,13 @@
 						"startstatic",
 						"",
 						""
+					],
+					[
+						133122.431506849,
+						-1,
+						"strum swap1",
+						"dad",
+						"bf"
 					]
 				],
 				"altAnim": false,
@@ -15127,6 +15134,13 @@
 						"eggjump",
 						"",
 						""
+					],
+					[
+						290940.924657535,
+						-1,
+						"strum swap2",
+						"bf",
+						"dad"
 					]
 				],
 				"typeOfSection": 0,
@@ -21012,6 +21026,20 @@
 						3,
 						0,
 						"Static Note"
+					],
+					[
+						406637.36796501,
+						-1,
+						"Change Character",
+						"dad",
+						"BEAST"
+					],
+					[
+						406621.554711998,
+						-1,
+						"Change Character",
+						"bf",
+						"bf-perspective-right"
 					]
 				],
 				"altAnim": false,
@@ -25996,6 +26024,26 @@
 				"bpm": 146
 			},
 			{
+				"lengthInSteps": 16,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"altAnim": false,
+				"gfSection": false,
+				"bpm": 146,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"lengthInSteps": 16,
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 146
+			},
+			{
 				"gfSection": false,
 				"lengthInSteps": 16,
 				"altAnim": false,
@@ -26009,9 +26057,9 @@
 		"isRing": true,
 		"player3": "gf",
 		"song": "triple-trouble",
-		"stage": "trioStage",
 		"needsVoices": true,
 		"validScore": true,
+		"stage": "trioStage",
 		"speed": 3.2,
 		"noteStyle": null,
 		"bpm": 146
