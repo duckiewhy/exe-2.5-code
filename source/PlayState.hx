@@ -7648,7 +7648,10 @@ class PlayState extends MusicBeatState
 					var olddy = dad.y;
 					dad = new Character(olddx, olddy, 'fatal-glitched');
 					dadGroup.add(dad);
-       #if windows
+			 #if android
+        case 1984:
+        fatalTransistionThingDos();
+       #else
 				case 1984:
 					Xamount += 2;
 					Yamount += 2;
