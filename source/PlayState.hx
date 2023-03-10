@@ -357,6 +357,7 @@ class PlayState extends MusicBeatState
 	var pose:FlxSprite;
 	var sunker:FlxSprite;
 	var spoOoOoOky:FlxSprite;
+	#if windows
 	// fatal error shit
 	var base:FlxSprite;
 	var domain:FlxSprite;
@@ -369,6 +370,7 @@ class PlayState extends MusicBeatState
 	var Yamount:Float = 0;
 	var IsWindowMoving:Bool = false;
 	var IsWindowMoving2:Bool = false;
+	#end
 	var errorRandom:FlxRandom = new FlxRandom(666); // so that every time you play the song, the error popups are in the same place
 	// keeps it all nice n fair n shit
 	//fleetways shit
@@ -1587,6 +1589,7 @@ class PlayState extends MusicBeatState
 				//oOOOoO nothing!
 		}
 
+    #if windows
 		// use this for 4:3 aspect ratio shit lmao
 		switch (SONG.song.toLowerCase())
 		{
@@ -1595,6 +1598,7 @@ class PlayState extends MusicBeatState
 			default:
 				isFixedAspectRatio = false;
 		}
+    #end
 
 		if (isFixedAspectRatio)
 		{
@@ -4194,6 +4198,8 @@ class PlayState extends MusicBeatState
 			boyfriend.angle = boyfriend.angle + SpinAmount;
 			SpinAmount = SpinAmount + 0.00003;
 		}
+
+   #if windows
 		if (SONG.song.toLowerCase() == 'fatality' && IsWindowMoving)
 		{
 			var thisX:Float = Math.sin(Xamount * (Xamount)) * 100;
@@ -4212,6 +4218,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 	 */  //what?
+#end
 
 	 switch (SONG.song.toLowerCase()) //ass code
 		{
@@ -7641,6 +7648,7 @@ class PlayState extends MusicBeatState
 					var olddy = dad.y;
 					dad = new Character(olddx, olddy, 'fatal-glitched');
 					dadGroup.add(dad);
+       #if windows
 				case 1984:
 					Xamount += 2;
 					Yamount += 2;
@@ -7682,6 +7690,7 @@ class PlayState extends MusicBeatState
 					IsWindowMoving = false;
 					IsWindowMoving2 = false;
 					 windowGoBack();
+        #end
 			}
 		}
 		if (curStage == 'sunkStage' && SONG.song.toLowerCase()=='milk')
@@ -8878,12 +8887,14 @@ class PlayState extends MusicBeatState
 			FlxG.mouse.visible = false;
 		}
 
+   #if windows
 		if(isFixedAspectRatio){
 			Lib.application.window.resizable = true;
 			FlxG.scaleMode = new RatioScaleMode(false);
 			FlxG.resizeGame(1280, 720);
 			FlxG.resizeWindow(1280, 720);
 		}
+    #end
 
 		return super.switchTo(state);
 	}
