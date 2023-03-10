@@ -13,7 +13,7 @@ class CharSongList
       "starved" => ["prey", "fight-or-flight"],
       "xterion" => ["substantial", "digitalized"],
       "needlemouse" => ["round-a-bout"],
-      "hog" => ["manual-blast"],
+      "hog" => ["hedge", "manual-blast"],
       "sunky" => ["milk"],
       "sanic" => ["too-fest"],
       "coldsteel" => ["personel"]
