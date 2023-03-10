@@ -1638,7 +1638,7 @@
 		"song": "manual-blast",
 		"validScore": true,
 		"needsVoices": true,
-		"stage": "testing",
+		"stage": "hog",
 		"bpm": 181,
 		"speed": 2.5
 	}
