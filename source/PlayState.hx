@@ -357,13 +357,13 @@ class PlayState extends MusicBeatState
 	var pose:FlxSprite;
 	var sunker:FlxSprite;
 	var spoOoOoOky:FlxSprite;
-	#if windows
 	// fatal error shit
 	var base:FlxSprite;
 	var domain:FlxSprite;
 	var domain2:FlxSprite;
 	var trueFatal:FlxSprite;
 	// mechanic shit + moving funne window for fatal error
+	#if windows
 	var windowX:Float = Lib.application.window.x;
 	var windowY:Float = Lib.application.window.y;
 	var Xamount:Float = 0;
