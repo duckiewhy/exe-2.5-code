@@ -7417,6 +7417,15 @@ class PlayState extends MusicBeatState
 				case 4111:
 					timeBar.createFilledBar(0x00D416E3, 0xFFD416E3);
 					timeBar.updateBar();
+
+					defaultCamZoom = 0.9;
+
+					fgTree1.alpha = 0;
+					fgTree2.alpha = 0;
+
+					backtreesXeno.visible = true;
+					grassXeno.visible = true;
+					p3staticbg.visible = true;
 			}
 		}
 		if (SONG.song.toLowerCase()=='personel')
