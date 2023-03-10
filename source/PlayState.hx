@@ -1598,7 +1598,6 @@ class PlayState extends MusicBeatState
 			default:
 				isFixedAspectRatio = false;
 		}
-    #end
 
 		if (isFixedAspectRatio)
 		{
@@ -1608,6 +1607,7 @@ class PlayState extends MusicBeatState
 			FlxG.resizeGame(960, 720);
 			FlxG.resizeWindow(960, 720);
 		}
+   #end
 
 		switch (curStage)
 		{
