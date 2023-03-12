@@ -7,6 +7,7 @@ import flash.text.TextField;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.addons.display.FlxGridOverlay;
+import flixel.addons.transition.FlxTransitionableState;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.math.FlxMath;
 import flixel.text.FlxText;
@@ -59,7 +60,20 @@ class OptionsState extends MusicBeatState
 			optionText.y += (100 * (i - (options.length / 2))) + 50;
 			grpOptions.add(optionText);
 		}
+
+		#if android
+		var tipText:FlxText = new FlxText(10, 12, 0, 'Press C to Go In Android Controls Menu', 16);
+		tipText.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		tipText.borderSize = 2;
+		tipText.scrollFactor.set();
+		add(tipText);
+		#end
+
 		changeSelection();
+
+   #if android
+   addVirtualPad(UP_DOWN, A_B_C);
+   #end
 
 		super.create();
 	}
@@ -84,6 +98,14 @@ class OptionsState extends MusicBeatState
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 			MusicBeatState.switchState(new MainMenuState());
 		}
+
+		#if android
+		if (_virtualpad.buttonC.justPressed) {
+			FlxTransitionableState.skipNextTransIn = true;
+			FlxTransitionableState.skipNextTransOut = true;
+			MusicBeatState.switchState(new android.AndroidControlsMenu());
+		}
+		#end
 
 		if (controls.ACCEPT) {
 			for (item in grpOptions.members) {
