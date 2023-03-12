@@ -58,7 +58,7 @@ jobs:
           haxelib git polymod https://github.com/larsiusprime/polymod.git
           haxelib git linc_luajit https://github.com/Sirox228/linc_luajit
           haxelib git extension-androidtools https://github.com/MaysLastPlay77/extension-androidtools.git
-          haxelib git extension-videoview https://github.com/MaysLastPlay77/extension-videoview.git
+          haxelib git extension-weboview https://github.com/Daninnocent/extension-webview.git
           haxelib install hxcpp-debug-server
           haxelib list
       - name: Create Version Tag
