@@ -1,5 +1,6 @@
 package;
 
+#if windows
 import openfl.events.Event;
 import flixel.FlxG;
 
@@ -120,3 +121,4 @@ class MP4Handler extends vlc.VlcBitmap
 		#end
 	}
 }
+#end
