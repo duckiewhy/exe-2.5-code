@@ -1499,10 +1499,6 @@ class PlayState extends MusicBeatState
 				add(dad2Group);
 				add(dadGroup);
 				add(boyfriendGroup);
-			case 'requite':
-				add(dadGroup);
-				add(boyfriendGroup);
-				add(gfGroup);
 			default:
 				add(gfGroup);
 				add(dadGroup);
@@ -2896,25 +2892,6 @@ class PlayState extends MusicBeatState
 				iconP2.x += 150;
 				healthBarBG.x += 150;
 			}
-
-			if(curStage == 'requite')
-				{
-					if (!ClientPrefs.middleScroll)
-						{
-						playerStrums.forEach(function(spr:FlxSprite)
-							{
-								spr.x -= 645;
-							});
-						opponentStrums.forEach(function(spr:FlxSprite)
-							{
-								spr.x += 645;
-							});
-						bfIsLeft = true;
-						iconP1.changeIcon(dad.healthIcon);
-						iconP2.changeIcon(boyfriend.healthIcon);
-						reloadHealthBarColors();
-						}
-				}
 
 			if (curStage == 'starved')
 				{
