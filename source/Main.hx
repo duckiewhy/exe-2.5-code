@@ -68,7 +68,7 @@ class Main extends Sprite
 		}
 
 		#if !debug
-		initialState = TitleState; //idk how to make Intro Work so for now will put titlestate
+		initialState = Intro; //idk how to make Intro Work so for now will put titlestate
 		#end
 
 		//
