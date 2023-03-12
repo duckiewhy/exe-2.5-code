@@ -68,9 +68,6 @@ import flixel.system.scaleModes.StageSizeScaleMode;
 import flixel.system.scaleModes.BaseScaleMode;
 using StringTools;
 
-#if VIDEOS_ALLOWED
-import hxcodec.VideoHandler;
-#end
 #if desktop
 import Discord.DiscordClient;
 #end
@@ -2796,29 +2793,68 @@ class PlayState extends MusicBeatState
 		char.y += char.positionArray[1];
 	}
 
-function playCutscene(name:String, atEndOfSong:Bool = false)
-{
-	inCutscene = true;
-	FlxG.sound.music.stop();
-
-	var video:VideoHandler = new VideoHandler();
-	video.finishCallback = function()
+	public function startVideo(name:String):Void
 	{
-		if (atEndOfSong)
+	#if VIDEOS_ALLOWED
+	var foundFile:Bool = false;
+	var fileName:String = #if MODS_ALLOWED Paths.modFolders('videos/' + name + '.' + Paths.VIDEO_EXT); #else ''; #end
+	#if sys
+	if (FileSystem.exists(fileName))
+	{
+		foundFile = true;
+	}
+	#end
+
+	if (!foundFile)
+	{
+		fileName = Paths.video(name);
+		#if sys
+		if (FileSystem.exists(fileName))
 		{
-			if (storyPlaylist.length <= 0)
-				FlxG.switchState(new StoryMenuState());
-			else
+		#else
+		if (OpenFlAssets.exists(fileName))
+		{
+		#end
+			foundFile = true;
+		}
+		} if (foundFile)
+
+		{
+			inCutscene = true;
+			var bg = new FlxSprite(-FlxG.width, -FlxG.height).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
+			bg.scrollFactor.set();
+			bg.cameras = [camHUD];
+			add(bg);
+
+			(new FlxVideo(fileName)).finishCallback = function()
 			{
-				SONG = Song.loadFromJson(storyPlaylist[0].toLowerCase());
-				FlxG.switchState(new PlayState());
+				remove(bg);
+				if (endingSong)
+				{
+					endSong();
+				}
+				else
+				{
+					startCountdown();
+				}
 			}
+			return;
 		}
 		else
+		{
+			FlxG.log.warn('Couldnt find video file: ' + fileName);
+		}
+		#end
+		if (endingSong)
+		{
+			endSong();
+		}
+		else
+		{
 			startCountdown();
+		}
 	}
-	video.playVideo(Paths.video(name));
-}
+
 
 	var startTimer:FlxTimer;
 	var finishTimer:FlxTimer = null;
