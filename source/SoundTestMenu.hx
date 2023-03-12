@@ -58,7 +58,9 @@ class SoundTestMenu extends MusicBeatState
 			cam.bgColor.alpha = 0;
 			FlxCamera.defaultCameras = [cam];
 
+      #if desktop
 			DiscordClient.changePresence('In the Sound Test Menu', null);
+      #end
 
 			new FlxTimer().start(0.1, function(tmr:FlxTimer)
 				{
