@@ -94,6 +94,10 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 
 		add(whiteshit);
 
+    #if android
+    addVirtualPad(LEFT_RIGHT, A_B)
+    #end
+
 		super.create();
 	}
 
