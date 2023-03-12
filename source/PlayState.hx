@@ -3763,6 +3763,7 @@ class PlayState extends MusicBeatState
 		super.onFocusLost();
 	}
 
+  #if windows
 	function windowGoBack()
 	{
 		new FlxTimer().start(0.01, function(tmr:FlxTimer)
@@ -3772,6 +3773,7 @@ class PlayState extends MusicBeatState
 			Lib.application.window.move(Std.int(xLerp), Std.int(yLerp));
 		}, 20);
 	}
+  #end
 
 	function resyncVocals():Void
 	{
