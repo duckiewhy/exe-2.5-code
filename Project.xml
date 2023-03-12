@@ -150,10 +150,6 @@
 	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
 
 	<section if="android">
-		<!--Permissions-->
-		<config:android permission="android.permission.WRITE_EXTERNAL_STORAGE" />
-		<config:android permission="android.permission.READ_EXTERNAL_STORAGE" />
-
 		<!--Gradle-->
 	<config:android gradle-version="7.4.2" gradle-plugin="7.3.1" />
 		</section>
