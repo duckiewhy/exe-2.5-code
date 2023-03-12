@@ -9,6 +9,7 @@ import openfl.Lib;
 import openfl.display.FPS;
 import openfl.display.Sprite;
 import openfl.events.Event;
+import lime.system.System;
 
 class Main extends Sprite
 {
@@ -22,6 +23,7 @@ class Main extends Sprite
 	public static var fpsVar:FPS;
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
+ 	public static var path:String = System.applicationStorageDirectory;
 
 	public static function main():Void {
 		Lib.current.addChild(new Main());
@@ -66,7 +68,7 @@ class Main extends Sprite
 		}
 
 		#if !debug
-		initialState = Intro;
+		initialState = TitleState; //idk how to make Intro Work so for now will put titlestate
 		#end
 
 		//
