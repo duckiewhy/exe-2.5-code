@@ -140,7 +140,9 @@ class SoundTestMenu extends MusicBeatState
 
 			add(whiteshit);
 
-			
+      #if android
+      addVirtualPad(FULL, A_B);
+      #end
         }
 
 	function changeNumber(selection:Int) 
