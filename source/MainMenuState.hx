@@ -177,6 +177,11 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollow, null, 0.60 * (60 / FlxG.save.data.fpsCap));
 
+    var credits:FlxText = new FlxText(FlxG.width - 280, FlxG.heigh - 18 * 2, 280, "Android Port By MaysLastPlay, MarioMaster, Stefan2008", 3);
+	credits.scrollFactor.set();
+	credits.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		add(credits);
+
 		var dataerase:FlxText = new FlxText(FlxG.width - 300, FlxG.height - 18 * 2, 300, "Hold DEL to erase ALL data (this doesn't include ALL options)", 3);
 		dataerase.scrollFactor.set();
 		dataerase.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
