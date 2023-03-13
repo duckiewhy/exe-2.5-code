@@ -75,7 +75,7 @@ import Discord.DiscordClient;
 import sys.FileSystem;
 #end
 #if VIDEOS_ALLOWED
-import VideoHandler;
+import hxcodec.VideoHandler;
 #end
 
 typedef BasicSpeedChange = {
