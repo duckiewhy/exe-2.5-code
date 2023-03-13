@@ -19,7 +19,7 @@ import flixel.system.FlxSound;
 import sys.FileSystem;
 import flixel.addons.display.FlxBackdrop;
 import flixel.addons.effects.FlxSkewedSprite;
-
+import openfl.utils.Assets as OpenFlAssets; //hola soy mariomaestro
 
 #if windows
 import Discord.DiscordClient;
@@ -103,7 +103,7 @@ class FreeplayState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!
 
 				if (charUnlocked.contains(charArray[i]))
 				{
-					if (FileSystem.exists('assets/images/fpstuff/' + charArray[i].toLowerCase() + '.png'))
+					if (OpenFlAssets.exists('assets/images/fpstuff/' + charArray[i].toLowerCase() + '.png'))
 					{
 						FlxG.log.add(charArray[i] + ' found');
 						var char:FlxSkewedSprite = new FlxSkewedSprite(0, i * 415);
