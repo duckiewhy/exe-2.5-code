@@ -226,24 +226,19 @@ class Paths
 		return sound(key + FlxG.random.int(min, max), library);
 	}
 
-	inline static public function music(key:String, ?library:String):Dynamic
+	inline static public function music(key:String, ?library:String):Any
 	{
-		var file:Sound = returnSound('music', key, library);
-		return file;
+		return getPath('music/$key.$SOUND_EXT', MUSIC, library);
 	}
 
 	inline static public function voices(song:String):Any
 	{
-		var songKey:String = '${song.toLowerCase().replace(' ', '-')}/Voices';
-		var voices = returnSound('songs', songKey);
-		return voices;
+		return 'songs:assets/songs/${song.toLowerCase().replace(' ', '-')}/Voices.$SOUND_EXT';
 	}
 
 	inline static public function inst(song:String):Any
 	{
-		var songKey:String = '${song.toLowerCase().replace(' ', '-')}/Inst';
-		var inst = returnSound('songs', songKey);
-		return inst;
+		return 'songs:assets/songs/${song.toLowerCase().replace(' ', '-')}/Inst.$SOUND_EXT';
 	}
 
 	inline static public function image(key:String, ?library:String):Dynamic
@@ -255,11 +250,11 @@ class Paths
 
 	static public function getTextFromFile(key:String, ?ignoreMods:Bool = false):String
 	{
-		#if sys
+		
 		#if MODS_ALLOWED
 		if (!ignoreMods && FileSystem.exists(mods(key)))
 			return File.getContent(mods(key));
-		#end
+		#e
 
 		if (FileSystem.exists(getPreloadPath(key)))
 			return File.getContent(getPreloadPath(key));
