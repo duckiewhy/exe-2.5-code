@@ -178,6 +178,11 @@ class Paths
 	{
 		return 'assets/$file';
 	}
+	
+	inline public static function getPreloadPathlua(file:String = '')
+	{
+		return Main.path + 'assets/$file';
+	}
 
 	inline static public function file(file:String, type:AssetType = TEXT, ?library:String)
 	{
@@ -200,6 +205,11 @@ class Paths
 	}
 
 	inline static public function lua(key:String, ?library:String)
+	{
+		return Main.path + getPath('$key.lua', TEXT, library);
+	}
+	
+	inline static public function luaAsset(key:String, ?library:String)
 	{
 		return getPath('$key.lua', TEXT, library);
 	}
