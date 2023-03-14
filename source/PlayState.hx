@@ -1473,7 +1473,8 @@ class PlayState extends MusicBeatState
 				satFgFlower.setGraphicSize(Std.int(satFgFlower.width * 0.85));
 				satFgFlower.scrollFactor.set(1.1, 0.9);
 				
-				default: //sus;
+			default: 
+				//sus;
 		}
 
     #if windows
