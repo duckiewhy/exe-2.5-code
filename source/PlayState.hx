@@ -6745,9 +6745,9 @@ class PlayState extends MusicBeatState
 		// have it go fucking insane in some parts and disable the drain and reenable when needed
 	}
 
-
+  #if VIDEOS_ALLOWED
 	function chromaVideo(name:String){
-		var video = new VideoSprite(0,0);
+		var video:VideoHandler = new VideoHandler(0,0);
 		video.scrollFactor.set();
 		video.cameras = [camHUD];
 		video.shader = new GreenScreenShader();
@@ -6763,6 +6763,7 @@ class PlayState extends MusicBeatState
 		}
 		add(video);
 	}
+  #end
 
 	function majinSaysFuck(numb:Int):Void
 		{
