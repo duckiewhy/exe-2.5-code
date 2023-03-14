@@ -1472,6 +1472,8 @@ class PlayState extends MusicBeatState
 				satFgFlower = new FlxSprite(-1300, -700).loadGraphic(Paths.image("satanos/fgFlower"));
 				satFgFlower.setGraphicSize(Std.int(satFgFlower.width * 0.85));
 				satFgFlower.scrollFactor.set(1.1, 0.9);
+				default:
+				//sus;
 		}
 
     #if windows
