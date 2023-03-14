@@ -7833,7 +7833,6 @@ class PlayState extends MusicBeatState
 									boyfriend.animation.finishCallback=null;
 								});
 						}
-
 				}
 
 			if (SONG.song.toLowerCase() == 'too-fest')
