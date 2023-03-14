@@ -4,6 +4,7 @@ import flixel.graphics.FlxGraphic;
 import flixel.FlxG;
 import flixel.FlxGame;
 import flixel.FlxState;
+import sys.FileSystem;
 import openfl.Assets;
 import openfl.Lib;
 import openfl.display.FPS;
