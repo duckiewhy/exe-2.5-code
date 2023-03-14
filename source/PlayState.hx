@@ -1472,9 +1472,6 @@ class PlayState extends MusicBeatState
 				satFgFlower = new FlxSprite(-1300, -700).loadGraphic(Paths.image("satanos/fgFlower"));
 				satFgFlower.setGraphicSize(Std.int(satFgFlower.width * 0.85));
 				satFgFlower.scrollFactor.set(1.1, 0.9);
-				
-			default: 
-				//sus;
 		}
 
     #if windows
@@ -6761,10 +6758,9 @@ class PlayState extends MusicBeatState
 			video.destroy();
 		}
 		video.playVideo(Paths.video(name));
-		video.openingCallback = function(){
+		video.readyCallback = function(){
 			video.visible=true;
 		}
-		
 		add(video);
 	}
   #end
