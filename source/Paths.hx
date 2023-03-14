@@ -432,7 +432,7 @@ class Paths
 
   #if MODS_ALLOWED
 	inline static public function modsVideo(key:String) {
-		r eturn modFolders('videos/' + key + '.' + VIDEO_EXT);
+		return modFolders('videos/' + key + '.' + VIDEO_EXT);
 	}
    #end
 
