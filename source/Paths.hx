@@ -430,9 +430,11 @@ class Paths
 		return modFolders('data/' + key + '.json');
 	}
 
+  #if MODS_ALLOWED
 	inline static public function modsVideo(key:String) {
-		return modFolders('videos/' + key + '.' + VIDEO_EXT);
+		r eturn modFolders('videos/' + key + '.' + VIDEO_EXT);
 	}
+   #end
 
 	inline static public function modsSounds(path:String, key:String) {
 		return modFolders(path + '/' + key + '.' + SOUND_EXT);
