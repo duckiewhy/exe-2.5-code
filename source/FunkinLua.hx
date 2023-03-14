@@ -879,7 +879,8 @@ class FunkinLua {
 			luaTrace("Object " + obj + " doesn't exist!");
 			return false;
 		});
-   #if sys
+
+   #if MODS_ALLOWED
 		Lua_helper.add_callback(lua, "startVideo", function(videoFile:String) {
 			#if VIDEOS_ALLOWED
 			if(FileSystem.exists(Paths.modsVideo(videoFile))) {
