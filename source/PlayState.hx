@@ -76,6 +76,7 @@ import sys.FileSystem;
 #end
 #if VIDEOS_ALLOWED
 import hxcodec.VideoHandler;
+import hxcodec.VideoSprite;
 #end
 
 typedef BasicSpeedChange = {
@@ -1548,7 +1549,21 @@ class PlayState extends MusicBeatState
 				add(hogRocks);
 				add(hogOverlay);
 				hogOverlay.blend = LIGHTEN;
-      case 'xterion' | 'starved-pixel' | 'starved' | 'chamber' | 'sanicStage' | 'void' | 'fatality' | 'cycles-hills':
+			case 'xterion':
+				gfGroup.visible = false;
+			case 'starved-pixel':
+				gfGroup.visible = false;
+			case 'starved':
+				gfGroup.visible = false;
+			case 'chamber':
+				gfGroup.visible = false;
+			case 'sanicStage':
+				gfGroup.visible = false;
+			case 'void':
+				gfGroup.visible = false;
+			case 'fatality':
+				gfGroup.visible = false;
+			case 'cycles-hills':
 				gfGroup.visible = false;
 			}
 
@@ -6746,7 +6761,7 @@ class PlayState extends MusicBeatState
 
   #if VIDEOS_ALLOWED
 	function chromaVideo(name:String){
-		var video:VideoHandler = new VideoHandler(0,0);
+		var video:VideoSprite = new VideoSprite(0,0);
 		video.scrollFactor.set();
 		video.cameras = [camHUD];
 		video.shader = new GreenScreenShader();
