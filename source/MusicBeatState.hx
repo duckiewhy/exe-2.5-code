@@ -75,7 +75,6 @@ class MusicBeatState extends FlxUIState
 				controls.setHitBox(androidc.hbox);
 	   	}
     default:
-		}
 
 		trackedinputsNOTES = controls.trackedinputsNOTES;
 		controls.trackedinputsNOTES = [];
@@ -88,7 +87,7 @@ class MusicBeatState extends FlxUIState
 		androidc.visible = false;
 
 		add(androidc);
-	
+	}
 	#end
 
 	#if android
