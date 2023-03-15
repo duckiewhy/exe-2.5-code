@@ -1,5 +1,10 @@
 package;
 
+#if android
+import flixel.input.actions.FlxActionInput;
+import android.AndroidControls.AndroidControls;
+import android.FlxVirtualPad;
+#end
 import Conductor.BPMChangeEvent;
 import flixel.FlxG;
 import flixel.addons.ui.FlxUIState;
@@ -15,11 +20,6 @@ import flixel.FlxState;
 import flixel.FlxBasic;
 import openfl.Lib;
 import flixel.system.scaleModes.RatioScaleMode;
-#if android
-import flixel.input.actions.FlxActionInput;
-import android.AndroidControls.AndroidControls;
-import android.FlxVirtualPad;
-#end
 
 class MusicBeatState extends FlxUIState
 {
