@@ -108,9 +108,6 @@ class MusicBeatState extends FlxUIState
 		super.destroy();
 	}
 
-		super.destroy();
-	}
-
 	override function create() {
 
 		super.create();
