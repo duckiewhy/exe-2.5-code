@@ -5,6 +5,7 @@ import flixel.input.actions.FlxActionInput;
 import android.AndroidControls.AndroidControls;
 import android.FlxVirtualPad;
 #end
+import Controls;
 import Conductor.BPMChangeEvent;
 import flixel.FlxG;
 import flixel.addons.ui.FlxUIState;
@@ -101,6 +102,7 @@ class MusicBeatState extends FlxUIState
 	
 	override function destroy() {
 		#if android
+		controls.removeFlxInput(trackedinputsNOTES);
 		controls.removeFlxInput(trackedinputsUI);
 		#end
 
