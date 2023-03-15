@@ -87,7 +87,7 @@ class MusicBeatState extends FlxUIState
 		androidc.visible = false;
 
 		add(androidc);
-	}
+	
 	#end
 
 	#if android
