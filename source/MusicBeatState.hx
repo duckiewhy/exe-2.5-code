@@ -15,7 +15,6 @@ import flixel.FlxState;
 import flixel.FlxBasic;
 import openfl.Lib;
 import flixel.system.scaleModes.RatioScaleMode;
-
 #if android
 import flixel.input.actions.FlxActionInput;
 import android.AndroidControls.AndroidControls;
@@ -37,6 +36,7 @@ class MusicBeatState extends FlxUIState
 
 	inline function get_controls():Controls
 		return PlayerSettings.player1.controls;
+
 	#if android
 	var _virtualpad:FlxVirtualPad;
 	var androidc:AndroidControls;
@@ -104,6 +104,9 @@ class MusicBeatState extends FlxUIState
 		controls.removeFlxInput(trackedinputsNOTES);
 		controls.removeFlxInput(trackedinputsUI);
 		#end
+
+		super.destroy();
+	}
 
 		super.destroy();
 	}
