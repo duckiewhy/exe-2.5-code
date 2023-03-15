@@ -43,6 +43,12 @@ class AndroidControlsMenu extends MusicBeatState
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 
+		var titleText:Alphabet = new Alphabet(75, 60, "Android Controls", true);
+		titleText.scaleX = 0.6;
+		titleText.scaleY = 0.6;
+		titleText.alpha = 0.4;
+		add(titleText);
+
 		vpad = new FlxVirtualPad(RIGHT_FULL, NONE, 0.75, ClientPrefs.globalAntialiasing);
 		vpad.alpha = 0;
 		add(vpad);
@@ -126,7 +132,7 @@ class AndroidControlsMenu extends MusicBeatState
 			save();
 			FlxTransitionableState.skipNextTransIn = true;
 			FlxTransitionableState.skipNextTransOut = true;
-			MusicBeatState.switchState(new OptionsState());
+			MusicBeatState.switchState(new options.OptionsState());
 		}
 		#end
 	}
