@@ -74,7 +74,7 @@ class MusicBeatState extends FlxUIState
 			case HITBOX:
 				controls.setHitBox(androidc.hbox);
 				}
-			default:
+			default: HITBOX;
 		}
 
 		trackedinputsNOTES = controls.trackedinputsNOTES;
