@@ -100,6 +100,7 @@ class MusicBeatState extends FlxUIState
 	#end
 	
 	override function destroy() {
+
 		#if android
 		controls.removeFlxInput(trackedinputsNOTES);
 		controls.removeFlxInput(trackedinputsUI);
