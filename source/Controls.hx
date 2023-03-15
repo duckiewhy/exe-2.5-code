@@ -10,7 +10,6 @@ import flixel.input.actions.FlxActionSet;
 import flixel.input.gamepad.FlxGamepadButton;
 import flixel.input.gamepad.FlxGamepadInputID;
 import flixel.input.keyboard.FlxKey;
-
 #if android
 import flixel.group.FlxGroup;
 import android.FlxHitbox;
@@ -386,7 +385,7 @@ class Controls extends FlxActionSet
 	}
   #end
 	
-		#if android
+	#if android
 	public var trackedinputsUI:Array<FlxActionInput> = [];
 	public var trackedinputsNOTES:Array<FlxActionInput> = [];	
 
@@ -540,6 +539,7 @@ class Controls extends FlxActionSet
 			case NONE:
 		}
 	}
+	
 
 	public function removeFlxInput(Tinputs) {
 		for (action in this.digitalActions)
