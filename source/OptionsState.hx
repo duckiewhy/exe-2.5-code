@@ -97,6 +97,12 @@ class OptionsState extends MusicBeatState
 				case 'Controls':
 					openSubState(new ControlsSubstate());
 
+				case 'Mobile Controls':
+				#if mobile
+        removeVirtualPad();
+        #end
+				  openSubState(new mobile.MobileControlsSubState());
+
 				case 'Preferences':
 					openSubState(new PreferencesSubstate());
 			}
