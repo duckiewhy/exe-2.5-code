@@ -61,19 +61,7 @@ class OptionsState extends MusicBeatState
 			grpOptions.add(optionText);
 		}
 
-		#if android
-		var tipText:FlxText = new FlxText(10, 12, 0, 'Press C to Go In Android Controls Menu', 16);
-		tipText.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		tipText.borderSize = 2;
-		tipText.scrollFactor.set();
-		add(tipText);
-		#end
-
 		changeSelection();
-
-   #if android
-   addVirtualPad(UP_DOWN, A_B_C);
-   #end
 
 		super.create();
 	}
