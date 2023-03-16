@@ -2162,10 +2162,10 @@ class PlayState extends MusicBeatState
 			dodgething.cameras = [camHUD];
 		}
 
-		#if android
+		/*#if android
 		addAndroidControls();
 		androidc.visible = false;
-		#end
+		#end*/
 
 		sonicHUD.cameras = [camHUD];
 		startCircle.cameras = [camOther];
@@ -2859,9 +2859,9 @@ class PlayState extends MusicBeatState
 		var ret:Dynamic = callOnLuas('onStartCountdown', []);
 		if (ret != FunkinLua.Function_Stop)
 		{
-			#if android
+			/*#if android
 			androidc.visible = true;
-			#end
+			#end*/
 			generateStaticArrows(0);
 			generateStaticArrows(1);
 			if (useModchart)
@@ -4093,7 +4093,7 @@ class PlayState extends MusicBeatState
 		}
 		botplayTxt.visible = cpuControlled;
 
-		if (controls.PAUSE #if android || FlxG.android.justReleased.BACK #end && startedCountdown && canPause)
+		if (controls.PAUSE #if mobile || FlxG.android.justReleased.BACK #end && startedCountdown && canPause)
 		{
 			// B-B-BB-B-B-B-BUT MR. CRYBIT!!! THIS IS UNOPTIMIZED!!! shut up you're literally like 5 years old you stupid child why do you exist in this plane of existance cease to exist in t-90 seconds or i will persnally manually have to remove you from the mortal realm you wretched fool.
 			FlxTween.globalManager.forEach(function(tween:FlxTween)
@@ -5792,9 +5792,9 @@ class PlayState extends MusicBeatState
 			FlxG.mouse.visible = false;
 			FlxG.mouse.unload();
 		}
-		#if android
+		/*#if android
 		androidc.visible = false;
-		#end
+		#end*/
 		timeBarBG.visible = false;
 		timeBar.visible = false;
 		timeTxt.visible = false;
