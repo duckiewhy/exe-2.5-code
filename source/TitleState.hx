@@ -60,7 +60,7 @@ class TitleState extends MusicBeatState
 
 	override public function create():Void
 	{
-		#if android
+		#if mobile
 		FlxG.android.preventDefaultKeys = [BACK];
 		#end
 		// flixel automatically saves your volume!
@@ -309,7 +309,7 @@ class TitleState extends MusicBeatState
 
 		var pressedEnter:Bool = FlxG.keys.justPressed.ENTER;
 
-		#if android
+		#if mobile
 		for (touch in FlxG.touches.list)
 		{
 			if (touch.justPressed)
