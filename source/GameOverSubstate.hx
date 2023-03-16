@@ -187,9 +187,6 @@ class GameOverSubstate extends MusicBeatSubstate
 						});
 					}});
 				}
-      #if android
-      addVirtualPad(NONE, A_B);
-      #end
 		}
 		
 
