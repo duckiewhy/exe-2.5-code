@@ -2162,11 +2162,6 @@ class PlayState extends MusicBeatState
 			dodgething.cameras = [camHUD];
 		}
 
-		/*#if android
-		addAndroidControls();
-		androidc.visible = false;
-		#end*/
-
 		sonicHUD.cameras = [camHUD];
 		startCircle.cameras = [camOther];
 		startText.cameras = [camOther];
@@ -2859,9 +2854,6 @@ class PlayState extends MusicBeatState
 		var ret:Dynamic = callOnLuas('onStartCountdown', []);
 		if (ret != FunkinLua.Function_Stop)
 		{
-			/*#if android
-			androidc.visible = true;
-			#end*/
 			generateStaticArrows(0);
 			generateStaticArrows(1);
 			if (useModchart)
@@ -5792,9 +5784,7 @@ class PlayState extends MusicBeatState
 			FlxG.mouse.visible = false;
 			FlxG.mouse.unload();
 		}
-		/*#if android
-		androidc.visible = false;
-		#end*/
+
 		timeBarBG.visible = false;
 		timeBar.visible = false;
 		timeTxt.visible = false;
