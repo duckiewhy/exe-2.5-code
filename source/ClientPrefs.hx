@@ -31,6 +31,7 @@ class ClientPrefs {
 	public static var soundTestUnlocked:Bool = false;
 	public static var hideTime:Bool = false;
 	public static var gore:Bool = true;
+	public static var mariomaster:Bool = true;
 
 	//Every key has two binds, these binds are defined on defaultKeys! If you want your control to be changeable, you have to add it on ControlsSubState (inside OptionsState.hx)'s list
 	public static var keyBinds:Map<String, Dynamic> = new Map<String, Dynamic>();
@@ -70,6 +71,7 @@ class ClientPrefs {
 		FlxG.save.data.framerate = framerate;
 
 		FlxG.save.data.gore = gore;
+		FlxG.save.data.mariomaster = mariomaster;
 		FlxG.save.data.schmovin = schmovin;
 		//FlxG.save.data.cursing = cursing;
 		//FlxG.save.data.violence = violence;
@@ -135,6 +137,9 @@ class ClientPrefs {
 		}
 		if(FlxG.save.data.gore != null) {
 			gore = FlxG.save.data.gore;
+		}
+		if(FlxG.save.data.mariomaster != null) {
+			mariomaster = FlxG.save.data.mariomaster;
 		}
 		if(FlxG.save.data.schmovin!=null){
 			schmovin = FlxG.save.data.schmovin;
