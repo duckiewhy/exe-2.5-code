@@ -2169,6 +2169,11 @@ class PlayState extends MusicBeatState
 		topBar.cameras = [camOther];
 		bottomBar.cameras = [camOther];
 
+		#if mobile
+		addMobileControls(false);
+    mobileControls.visible = false;
+		#end
+
 		var centerP = new FlxSprite(0, 0);
 		centerP.screenCenter(XY);
 
@@ -2849,6 +2854,10 @@ class PlayState extends MusicBeatState
 			callOnLuas('onStartCountdown', []);
 			return;
 		}
+
+                #if mobile
+                mobileControls.visible = true;
+                #end
 
 		inCutscene = false;
 		var ret:Dynamic = callOnLuas('onStartCountdown', []);
@@ -5784,7 +5793,9 @@ class PlayState extends MusicBeatState
 			FlxG.mouse.visible = false;
 			FlxG.mouse.unload();
 		}
-
+                #if mobile
+                mobileControls.visible = false;
+                #end
 		timeBarBG.visible = false;
 		timeBar.visible = false;
 		timeTxt.visible = false;

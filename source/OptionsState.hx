@@ -32,7 +32,7 @@ using StringTools;
 // TO DO: Redo the menu creation system for not being as dumb
 class OptionsState extends MusicBeatState
 {
-	var options:Array<String> = ['Controls', 'Preferences'];
+	var options:Array<String> = ['Controls', 'Mobile Controls', 'Preferences'];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
@@ -96,6 +96,12 @@ class OptionsState extends MusicBeatState
 
 				case 'Controls':
 					openSubState(new ControlsSubstate());
+
+				case 'Mobile Controls':
+				#if mobile
+        removeVirtualPad();
+        #end
+				  openSubState(new mobile.MobileControlsSubState());
 
 				case 'Preferences':
 					openSubState(new PreferencesSubstate());
