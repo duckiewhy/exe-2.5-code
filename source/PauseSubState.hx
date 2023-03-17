@@ -223,7 +223,7 @@ class PauseSubState extends MusicBeatSubstate
 		FlxTween.tween(iconP1, {angle: 0}, 0.8, {ease: FlxEase.circOut});
 		FlxTween.tween(timeBar, {alpha: 1}, 0.5, {ease: FlxEase.circOut});
 		cameras = [camThing];
-
+                #if mobile addVirtualPad(UP_DOWN, A_B); #end
 	}
 
 	override function update(elapsed:Float)
