@@ -192,7 +192,7 @@ class GameOverSubstate extends MusicBeatSubstate
 
 		var exclude:Array<Int> = [];
 
-		
+                #if mobile addVirtualPad(NONE, A_B); #end
 	}
 
 	override function update(elapsed:Float)
