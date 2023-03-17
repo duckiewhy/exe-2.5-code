@@ -101,9 +101,6 @@ class SoundTestMenu extends MusicBeatState
 			daNO.setFormat("Sonic CD Menu Font Regular", 23, FlxColor.fromRGB(174, 179, 251));
 			daNO.setBorderStyle(SHADOW, FlxColor.fromRGB(106, 110, 159), 4, 1);
 
-
-
-			
 			pcmNO.y -= 70;
 			pcmNO.x += 100;
 
@@ -113,14 +110,12 @@ class SoundTestMenu extends MusicBeatState
 
 			add(daNO);
 
-			
 			pcmNO_NUMBER.y -= 70;
 			pcmNO_NUMBER.x += 270;
 			pcmNO_NUMBER.setFormat("Sonic CD Menu Font Regular", 23, FlxColor.fromRGB(174, 179, 251));
 			pcmNO_NUMBER.setBorderStyle(SHADOW, FlxColor.fromRGB(106, 110, 159), 4, 1);
 			add(pcmNO_NUMBER);
 
-			
 			daNO_NUMBER.y -= 70;
 			daNO_NUMBER.x += daNO.x - 70;
 			daNO_NUMBER.setFormat("Sonic CD Menu Font Regular", 23, FlxColor.fromRGB(174, 179, 251));
@@ -136,9 +131,9 @@ class SoundTestMenu extends MusicBeatState
 			cameoImg.visible = false;
 			add(cameoImg);
 
-
-
 			add(whiteshit);
+
+                #if mobile addVirtualPad(LEFT_FULL, A_B); #end
         }
 
 	function changeNumber(selection:Int) 
