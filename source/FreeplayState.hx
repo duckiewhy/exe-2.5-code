@@ -203,8 +203,8 @@ class FreeplayState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!
 
 		super.update(elapsed);
 
-		var upP = FlxG.keys.justPressed.UP || FlxG.keys.justPressed.W;
-		var downP = FlxG.keys.justPressed.DOWN || FlxG.keys.justPressed.S;
+		var upP = FlxG.keys.justPressed.UP || controls.UI_UP_P;
+		var downP = FlxG.keys.justPressed.DOWN || controls.UI_DOWN_P;
 		var accepted = controls.ACCEPT;
 
 
