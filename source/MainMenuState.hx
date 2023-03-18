@@ -104,7 +104,6 @@ class MainMenuState extends MusicBeatState
 		bgdesat.antialiasing = true;
 		bgdesat.color = 0xFFfd719b;
 		add(bgdesat);
-		// bgdesat.scrollFactor.set();
 
 
 		camFollow = new FlxObject(0, 0, 1, 1);
@@ -133,7 +132,6 @@ class MainMenuState extends MusicBeatState
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
 			menuItem.animation.addByPrefix('lock', optionShit[i] + " locked", 24);
 		if (!ClientPrefs.beatweek && optionShit[i] == 'sound_test') {
-				//menuItem.color = FlxColor.fromHSL(menuItem.color.hue, menuItem.color.saturation, 0.2, 1);
 				menuItem.animation.play('lock');
 				menuItem.animation.addByPrefix('idle', optionShit[i] + " locked", 24);
 			}
@@ -150,7 +148,6 @@ class MainMenuState extends MusicBeatState
 			if(optionShit.length < 6) scr = 0;
 			menuItem.scrollFactor.set(0, scr);
 			menuItem.antialiasing = ClientPrefs.globalAntialiasing;
-			//menuItem.setGraphicSize(Std.int(menuItem.width * 0.58));
 			menuItem.updateHitbox();
 
 			
@@ -178,16 +175,14 @@ class MainMenuState extends MusicBeatState
 		FlxG.camera.follow(camFollow, null, 0.60 * (60 / FlxG.save.data.fpsCap));
 
     var credits:FlxText = new FlxText(FlxG.width - 320, FlxG.height - 20 * 2, 320, "Android Port By MaysLastPlay, MarioMaster, Stefan2008", 3);
-	credits.scrollFactor.set();
-	credits.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+	 credits.scrollFactor.set();
+	 credits.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(credits);
 
 		var dataerase:FlxText = new FlxText(FlxG.width - 300, FlxG.height - 18 * 2, 300, "Hold C to erase ALL data (this doesn't include ALL options)", 3);
 		dataerase.scrollFactor.set();
 		dataerase.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(dataerase);
-
-		// NG.core.calls.event.logEvent('swag').send();
 
 		changeItem();
 
@@ -208,7 +203,7 @@ class MainMenuState extends MusicBeatState
 				urmom += 1;
 				if (urmom == 30)
 				{
-					FlxG.save.data.storyProgress = 0; // lol.
+					FlxG.save.data.storyProgress = 0;
 					FlxG.save.data.soundTestUnlocked = false;
 					FlxG.save.data.songArray = [];
 					FlxG.switchState(new MainMenuState());
@@ -307,17 +302,14 @@ class MainMenuState extends MusicBeatState
 			if (FlxG.keys.justPressed.SIX)
 			{
 				MusicBeatState.switchState(new EncoreState());
-				//changeItem(1);
 			}
 			if (FlxG.keys.justPressed.SEVEN)
 			{
 				MusicBeatState.switchState(new MasterEditorMenu());
-				//changeItem(1);
 			}
 			if (FlxG.keys.justPressed.EIGHT)
 			{
 				MusicBeatState.switchState(new FreeplayState());
-				//changeItem(1);
 			}
 		}
 
