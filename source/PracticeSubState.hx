@@ -115,6 +115,7 @@ class PracticeSubState extends MusicBeatSubstate
 			changeSelection();
 		});
         cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
+                #if mobile addVirtualPad(UP_DOWN, A); #end
 	}
 
 	override function update(elapsed:Float)
@@ -134,7 +135,7 @@ class PracticeSubState extends MusicBeatSubstate
         }
 		super.update(elapsed);
 
-		var upP = controls.UI_UP_P;
+  	var upP = controls.UI_UP_P;
 		var downP = controls.UI_DOWN_P;
 		var accepted = controls.ACCEPT;
 
