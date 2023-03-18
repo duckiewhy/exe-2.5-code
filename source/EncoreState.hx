@@ -103,8 +103,8 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 	{
 		super.update(elapsed);
 
-		var upP = FlxG.keys.justPressed.LEFT || FlxG.keys.justPressed.A;
-		var downP = FlxG.keys.justPressed.RIGHT || FlxG.keys.justPressed.D;
+		var upP = FlxG.keys.justPressed.LEFT || controls.UI_LEFT_P;
+		var downP = FlxG.keys.justPressed.RIGHT || controls.UI_RIGHT_P;
 		var accepted = controls.ACCEPT;
 		
 		
