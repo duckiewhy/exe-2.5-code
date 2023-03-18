@@ -177,7 +177,7 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollow, null, 0.60 * (60 / FlxG.save.data.fpsCap));
 
-    var credits:FlxText = new FlxText(FlxG.width - 300, FlxG.height - 16 * 2, 300, "Android Port By MaysLastPlay, MarioMaster, Stefan2008", 3);
+    var credits:FlxText = new FlxText(FlxG.width - 320, FlxG.height - 16 * 2, 320, "Android Port By MaysLastPlay, MarioMaster, Stefan2008", 3);
 	credits.scrollFactor.set();
 	credits.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(credits);
@@ -191,7 +191,7 @@ class MainMenuState extends MusicBeatState
 
 		changeItem();
 
-                #if mobile addVirtualPad(UP_DOWN, A_B); #end
+                #if mobile addVirtualPad(UP_DOWN, A_B_C); #end
 
 		super.create();
 	}
@@ -200,7 +200,7 @@ class MainMenuState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
-		if (FlxG.keys.justPressed.DELETE)
+		if (FlxG.keys.justPressed.DELETE #if android || virtualPad.buttonC.justPressed #end)
 		{
 			var urmom = 0;
 			new FlxTimer().start(0.1, function(hello:FlxTimer)
