@@ -290,8 +290,8 @@ class PauseSubState extends MusicBeatSubstate
 
 		//super.update(elapsed);
 
-		var upP = controls.UI_UP_P;
-		var downP = controls.UI_DOWN_P;
+		var upP = controls.UI_UP_P #if mobile || virtualPad.buttonUp.justPressed #end;
+		var downP = controls.UI_DOWN_P #if mobile || virtualPad.buttonDown.justPressed #end;
 		var accepted = controls.ACCEPT;
 
 		if (coolDown)
