@@ -19,7 +19,11 @@ class FlxHitbox extends FlxSpriteGroup
 	public var buttonDown:FlxButton = new FlxButton(0, 0);
 	public var buttonUp:FlxButton = new FlxButton(0, 0);
 	public var buttonRight:FlxButton = new FlxButton(0, 0);
-
+    /*if (PlayState.SONG.song.toLowerCase() == "triple-trouble" && PlayState.SONG.song.toLowerCase() == "chaos" && MobileControls.mode == "Hitbox")
+      {
+   public var buttonDodge:FlxButton = new FlxButton(0,0);
+      }*/
+ 
 	/**
 	 * Create the zone.
 	 */
@@ -31,6 +35,10 @@ class FlxHitbox extends FlxSpriteGroup
 		add(buttonDown = createHint(FlxG.width / 4, 0, Std.int(FlxG.width / 4), FlxG.height, 0x00FFFF));
 		add(buttonUp = createHint(FlxG.width / 2, 0, Std.int(FlxG.width / 4), FlxG.height, 0x00FF00));
 		add(buttonRight = createHint((FlxG.width / 2) + (FlxG.width / 4), 0, Std.int(FlxG.width / 4), FlxG.height, 0xFF0000));
+   /*if (PlayState.SONG.song.toLowerCase() == "triple-trouble" && PlayState.SONG.song.toLowerCase() == "chaos" && MobileControls.mode == "Hitbox")
+      {
+      add(buttonDodge = createHint((FlxG.width / 2) + (FlxG.width / 5), 0 Std.int(FlxG.width / 5), FlxG.height, 0xFF0000));
+      }*/
 
 		scrollFactor.set();
 	}
@@ -46,6 +54,7 @@ class FlxHitbox extends FlxSpriteGroup
 		buttonUp = FlxDestroyUtil.destroy(buttonUp);
 		buttonDown = FlxDestroyUtil.destroy(buttonDown);
 		buttonRight = FlxDestroyUtil.destroy(buttonRight);
+		//buttonDodge = FlxDestroyUtil.destroy(buttonDodge);
 	}
 
 	private function createHintGraphic(Width:Int, Height:Int, Color:Int = 0xFFFFFF):BitmapData
