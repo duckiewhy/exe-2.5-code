@@ -99,21 +99,12 @@ class OptionsState extends MusicBeatState
 			switch(options[curSelected]) {
 
 				case 'Controls':
-        #if mobile
-        removeVirtualPad();
-        #end
 					openSubState(new ControlsSubstate());
 
 				case 'Mobile Controls':
-				#if mobile
-        removeVirtualPad();
-        #end
 				  openSubState(new mobile.MobileControlsSubState());
 
 				case 'Preferences':
-        #if mobile
-        removeVirtualPad();
-        #end
 					openSubState(new PreferencesSubstate());
 			}
 		}
@@ -239,11 +230,6 @@ class ControlsSubstate extends MusicBeatSubstate {
 				});
 				close();
 				FlxG.sound.play(Paths.sound('cancelMenu'));
-
-         #if mobile
-         addVirtualPad(UP_DOWN, A_B);
-         #end
-
 			}
 
 			if(controls.ACCEPT && nextAccept <= 0) {
@@ -618,10 +604,6 @@ class PreferencesSubstate extends MusicBeatSubstate
 			descText.alpha = 0;
 			close();
 			FlxG.sound.play(Paths.sound('cancelMenu'));
-
-         #if mobile
-         addVirtualPad(UP_DOWN, A_B);
-         #end
 		}
 
 		var usesCheckbox = true;
