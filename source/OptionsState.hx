@@ -63,7 +63,9 @@ class OptionsState extends MusicBeatState
 
 		changeSelection();
 
-                #if mobile addVirtualPad(UP_DOWN, A_B); #end
+                #if mobile
+                addVirtualPad(UP_DOWN, A_B);
+                #end
 
 		super.create();
 	}
@@ -207,10 +209,12 @@ class ControlsSubstate extends MusicBeatSubstate {
 				if(curSelected < 0) curSelected = i;
 			}
 		}
-		changeSelection();
+
         #if mobile
-       addVirtualPad(UP_DOWN, A_B);
+        addVirtualPad(UP_DOWN, A_B);
         #end
+
+		changeSelection();
 	}
 
 	var leaving:Bool = false;
@@ -235,6 +239,11 @@ class ControlsSubstate extends MusicBeatSubstate {
 				});
 				close();
 				FlxG.sound.play(Paths.sound('cancelMenu'));
+
+         #if mobile
+         addVirtualPad(UP_DOWN, A_B);
+         #end
+
 			}
 
 			if(controls.ACCEPT && nextAccept <= 0) {
@@ -568,9 +577,11 @@ class PreferencesSubstate extends MusicBeatSubstate
 				break;
 			}
 		}
+
         #if mobile
         addVirtualPad(LEFT_FULL, A_B);
         #end
+
 		changeSelection();
 		reloadValues();
 	}
@@ -607,6 +618,10 @@ class PreferencesSubstate extends MusicBeatSubstate
 			descText.alpha = 0;
 			close();
 			FlxG.sound.play(Paths.sound('cancelMenu'));
+
+         #if mobile
+         addVirtualPad(UP_DOWN, A_B);
+         #end
 		}
 
 		var usesCheckbox = true;
