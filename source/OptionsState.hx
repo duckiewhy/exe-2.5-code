@@ -72,6 +72,9 @@ class OptionsState extends MusicBeatState
 
 	override function closeSubState() {
 		super.closeSubState();
+    #if mobile 
+    addVirtualPad(UP_DOWN, A_B);
+    #end
 		ClientPrefs.saveSettings();
 		changeSelection();
 	}
@@ -99,12 +102,21 @@ class OptionsState extends MusicBeatState
 			switch(options[curSelected]) {
 
 				case 'Controls':
+				#if mobile
+        removeVirtualPad();
+        #end
 					openSubState(new ControlsSubstate());
 
-				case 'Mobile Controls':
+				case 'Mobile Controls
+				#if mobile
+        removeVirtualPad();
+        #end
 				  openSubState(new mobile.MobileControlsSubState());
 
 				case 'Preferences':
+				#if mobile
+        removeVirtualPad();
+        #end
 					openSubState(new PreferencesSubstate());
 			}
 		}
