@@ -34,10 +34,6 @@
 			"type": "haxelib"
 		},
 		{
-			"name": "flxanimate",
-			"type": "haxelib"
-		},
-		{
 			"name": "hxCodec",
 			"type": "git",
 			"ref": "main",
