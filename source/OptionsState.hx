@@ -97,6 +97,9 @@ class OptionsState extends MusicBeatState
 			switch(options[curSelected]) {
 
 				case 'Controls':
+        #if mobile
+        removeVirtualPad();
+        #end
 					openSubState(new ControlsSubstate());
 
 				case 'Mobile Controls':
@@ -106,6 +109,9 @@ class OptionsState extends MusicBeatState
 				  openSubState(new mobile.MobileControlsSubState());
 
 				case 'Preferences':
+        #if mobile
+        removeVirtualPad();
+        #end
 					openSubState(new PreferencesSubstate());
 			}
 		}
@@ -202,6 +208,9 @@ class ControlsSubstate extends MusicBeatSubstate {
 			}
 		}
 		changeSelection();
+        #if mobile
+       addVirtualPad(UP_DOWN, A_B);
+        #end
 	}
 
 	var leaving:Bool = false;
@@ -559,6 +568,9 @@ class PreferencesSubstate extends MusicBeatSubstate
 				break;
 			}
 		}
+        #if mobile
+        addVirtualPad(LEFT_FULL, A_B);
+        #end
 		changeSelection();
 		reloadValues();
 	}
