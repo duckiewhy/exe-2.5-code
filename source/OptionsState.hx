@@ -107,7 +107,7 @@ class OptionsState extends MusicBeatState
         #end
 					openSubState(new ControlsSubstate());
 
-				case 'Mobile Controls
+				case 'Mobile Controls':
 				#if mobile
         removeVirtualPad();
         #end
