@@ -2188,7 +2188,7 @@ class PlayState extends MusicBeatState
 
 		#if LUA_ALLOWED
 		var doPush:Bool = false;
-		if(OpenFlAssets.exists("assets/data/" + Paths.formatToSongPath(SONG.song) + "/" + "script.lua")) //openfl best										   
+		if(OpenFlAssets.exists("assets/data/" + Paths.formatToSongPath(SONG.song) + "/" + "nothing.lua")) //i just wanna see if lua makes fight or flight die		   
 		{
 			var path = Paths.luaAsset("data/" + Paths.formatToSongPath(SONG.song) + "/" + "script");
 			var luaFile = openfl.Assets.getBytes(path);
