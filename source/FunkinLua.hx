@@ -20,7 +20,7 @@ import flixel.FlxBasic;
 import flixel.FlxObject;
 import flixel.FlxSprite;
 import openfl.display.BlendMode;
-#if sys
+#if MODS_ALLOWED
 import sys.FileSystem;
 import sys.io.File;
 #end
@@ -880,7 +880,7 @@ class FunkinLua {
 			return false;
 		});
 
-   #if MODS_ALLOWED
+   /*#if MODS_ALLOWED
 		Lua_helper.add_callback(lua, "startVideo", function(videoFile:String) {
 			#if VIDEOS_ALLOWED
 			if(FileSystem.exists(Paths.modsVideo(videoFile))) {
@@ -897,7 +897,7 @@ class FunkinLua {
 			#end
 		});
    #end
-	
+	*/
 		Lua_helper.add_callback(lua, "playMusic", function(sound:String, volume:Float = 1, loop:Bool = false) {
 			FlxG.sound.playMusic(Paths.music(sound), volume, loop);
 		});
