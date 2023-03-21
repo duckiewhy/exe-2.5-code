@@ -2188,24 +2188,28 @@ class PlayState extends MusicBeatState
 
 		#if LUA_ALLOWED
 		var doPush:Bool = false;
-		if(OpenFlAssets.exists("assets/data/" + Paths.formatToSongPath(SONG.song) + "/" + "nothing.lua")) //i just wanna see if lua makes fight or flight die		   
+
+		if(OpenFlAssets.exists("assets/data/" + Paths.formatToSongPath(SONG.song) + "/" + "script.lua"))
 		{
 			var path = Paths.luaAsset("data/" + Paths.formatToSongPath(SONG.song) + "/" + "script");
 			var luaFile = openfl.Assets.getBytes(path);
-
+			
+      FileSystem.createDirectory(Main.path + "assets");
 			FileSystem.createDirectory(Main.path + "assets/data");
 			FileSystem.createDirectory(Main.path + "assets/data/");
 			FileSystem.createDirectory(Main.path + "assets/data/" + Paths.formatToSongPath(SONG.song));
-			
+				  
 			File.saveBytes(Paths.lua("data/" + Paths.formatToSongPath(SONG.song) + "/" + "script"), luaFile);
-
+	
 			doPush = true;
+   
 		}
-		
 		if(doPush) 
 			luaArray.push(new FunkinLua(Paths.lua("data/" + Paths.formatToSongPath(SONG.song) + "/" + "script")));
-  					 
-		#end // i made luas in og psych no folder btw -el mario maestro
+	   //idk
+			
+		#end
+		
 		add(barbedWires);
 		add(wireVignette);
 		var daSong:String = Paths.formatToSongPath(curSong);
