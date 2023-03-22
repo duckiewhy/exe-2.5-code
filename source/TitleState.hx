@@ -388,7 +388,7 @@ class TitleState extends MusicBeatState
 				{
 					remove(titleText); // incase someone turned flashing off
 					FlxG.sound.music.stop();
-					MusicBeatState.switchState(new MainMenuState());
+					MusicBeatState.switchState(new EXEInfoState());
 					/*var video = new MP4Handler();
 					video.finishCallback = function()
 					{
