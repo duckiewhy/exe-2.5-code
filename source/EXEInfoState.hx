@@ -16,11 +16,6 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import lime.utils.Assets;
 
-
-#if windows
-import Discord.DiscordClient;
-#end
-
 using StringTools;
 
 class EXEInfoState extends MusicBeatState
@@ -37,6 +32,11 @@ class EXEInfoState extends MusicBeatState
 		talk.updateHitbox();
 		talk.screenCenter();
 		add(talk);
+
+    #if mobile
+    addVirtualPad(NONE, A);
+    #end
+
 		super.create();
 	}
 	
