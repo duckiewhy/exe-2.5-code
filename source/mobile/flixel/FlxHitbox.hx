@@ -21,6 +21,8 @@ class FlxHitbox extends FlxSpriteGroup
 	public var buttonUp:FlxButton = new FlxButton(0, 0);
 	public var buttonRight:FlxButton = new FlxButton(0, 0);
 
+	public var altpos:Bool = false;
+
 	/**
 	 * Create the zone.
 	 */
@@ -28,6 +30,8 @@ class FlxHitbox extends FlxSpriteGroup
 	{
 		super();
   
+		//altpos = ClientPrefs.dodgepos; not yet
+
     if(isdodge && PlayState.SONG.song.toLowerCase() == 'chaos'){
      if(!altpos){
      add(buttonLeft = createHint(0, 0, Std.int(FlxG.width / 4), Std.int(FlxG.height / 4) * 3, 0xFF00FF));
