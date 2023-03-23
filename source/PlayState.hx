@@ -136,15 +136,6 @@ class PlayState extends MusicBeatState
 	public var gfMap:Map<String, Character> = new Map<String, Character>();
 	#end
 
-  if(SONG.song.toLowerCase() == 'fight-or-flight')
-     {
-  public var BF_X:Float = 200;
-  public var BF_Y:Float = 0;
-     }
- else {
-	public var BF_X:Float = 770;
-	public var BF_Y:Float = 100;
-      }
 	public var DAD_X:Float = 100;
 	public var DAD_Y:Float = 100;
 	public var GF_X:Float = 400;
