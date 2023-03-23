@@ -2172,15 +2172,6 @@ class PlayState extends MusicBeatState
 		topBar.cameras = [camOther];
 		bottomBar.cameras = [camOther];
 
-		var currenthbox:HitboxType = DEFAULT;
-
-		if (SONG.isRing) {
-			currenthbox = DODGE;
-		} else {
-			currenthbox = DEFAULT;
-		}
-		hitbox = new FlxHitbox(currenthbox);
-
 		#if mobile
 		addMobileControls(false);
     mobileControls.visible = false;
