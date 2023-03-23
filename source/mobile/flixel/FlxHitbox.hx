@@ -27,6 +27,8 @@ class FlxHitbox extends FlxSpriteGroup
 	public function new(?isdodge:Bool = false, ?ring:Bool = false)
 	{
 		super();
+
+             trace(type);
   
    switch (type){
     case DODGE:
