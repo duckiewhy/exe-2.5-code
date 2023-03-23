@@ -27,8 +27,6 @@ class FlxHitbox extends FlxSpriteGroup
 	public function new(?isdodge:Bool = false, ?ring:Bool = false)
 	{
 		super();
-		
-		//altpos = ClientPrefs.dodgepos; not yet
   
    switch (type){
     case DODGE:
