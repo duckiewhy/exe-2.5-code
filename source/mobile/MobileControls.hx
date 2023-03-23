@@ -58,14 +58,14 @@ class MobileControls extends FlxSpriteGroup
 	{
 		if (FlxG.save.data.controlsMode == null)
 		{
-			FlxG.save.data.controlsMode = 'Pad-Right';
+			FlxG.save.data.controlsMode = 'Hitbox';
 			FlxG.save.flush();
 		}
 
 		return FlxG.save.data.controlsMode;
 	}
 
-	private static function set_mode(mode:String = 'Pad-Right'):String
+	private static function set_mode(mode:String = 'Hitbox'):String
 	{
 		FlxG.save.data.controlsMode = mode;
 		FlxG.save.flush();
