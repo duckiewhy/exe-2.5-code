@@ -24,7 +24,7 @@ class FlxHitbox extends FlxSpriteGroup
 	/**
 	 * Create the zone.
 	 */
-	public function new(?isdodge:Bool = false, ?ring:Bool = false)
+	public function new()
 	{
 		super();
 
