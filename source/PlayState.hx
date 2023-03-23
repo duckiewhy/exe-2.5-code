@@ -1249,7 +1249,7 @@ class PlayState extends MusicBeatState
 
     public var BF_X:Float = 200;
     public var BF_Y:Float = 0;
- 
+
 				GameOverSubstate.deathSoundName = 'starved-death';
 				GameOverSubstate.loopSoundName = 'starved-loop';
 				GameOverSubstate.endSoundName = 'starved-retry';
