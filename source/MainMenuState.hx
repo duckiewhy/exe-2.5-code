@@ -195,7 +195,7 @@ class MainMenuState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
-		if (FlxG.keys.justPressed.DELETE #if android || virtualPad.buttonC.justPressed #end)
+		if (FlxG.keys.justPressed.DELETE #if mobile || virtualPad.buttonC.justPressed #end)
 		{
 			var urmom = 0;
 			new FlxTimer().start(0.1, function(hello:FlxTimer)
