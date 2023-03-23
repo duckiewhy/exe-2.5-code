@@ -20,8 +20,6 @@ class FlxHitbox extends FlxSpriteGroup
 	public var buttonDodge:FlxButton = new FlxButton(0, 0); //real
 	public var buttonUp:FlxButton = new FlxButton(0, 0);
 	public var buttonRight:FlxButton = new FlxButton(0, 0);
-	
-	public var altpos:Bool = false;
 
 	/**
 	 * Create the zone.
