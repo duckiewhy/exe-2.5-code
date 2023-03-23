@@ -23,7 +23,6 @@ class FlxHitbox extends FlxSpriteGroup
 	
 	public var altpos:Bool = false;
 
- 
 	/**
 	 * Create the zone.
 	 */
@@ -33,7 +32,7 @@ class FlxHitbox extends FlxSpriteGroup
 		
 		//altpos = ClientPrefs.dodgepos; not yet
   
-    if(isdodge){
+    if(isdodge && PlayState.SONG.song.toLowerCase() == 'chaos'){
      if(!altpos){
      add(buttonLeft = createHint(0, 0, Std.int(FlxG.width / 4), Std.int(FlxG.height / 4) * 3, 0xFF00FF));
      add(buttonDown = createHint(FlxG.width / 4, 0, Std.int(FlxG.width / 4), Std.int(FlxG.height / 4) * 3, 0x00FFFF));
@@ -48,7 +47,7 @@ class FlxHitbox extends FlxSpriteGroup
      add(buttonRight = createHint((FlxG.width / 2) + (FlxG.width / 4), Std.int(FlxG.height / 4), Std.int(FlxG.width / 4), Std.int(FlxG.height / 4) * 3, 0xFF0000));
      }
     }
-    else if(ring){
+    else if(ring && PlayState.SONG.song.toLowerCase() == 'triple-trouble'){
     add(buttonLeft = createHint(0, 0, Std.int(FlxG.width / 5), FlxG.height, 0xFF00FF));
 		add(buttonDown = createHint(FlxG.width / 5, 0, Std.int(FlxG.width / 5), FlxG.height, 0x00FFFF));
 		add(buttonDodge = createHint(FlxG.width / 2.5, 0, Std.int(FlxG.width / 5), FlxG.height, 0xFFD000));
