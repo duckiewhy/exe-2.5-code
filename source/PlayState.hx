@@ -2176,7 +2176,7 @@ class PlayState extends MusicBeatState
 		#if mobile
 		var curcontrol:FlxHitboxType = DEFAULT;
 
-		if (SONG.isRing && SONG.song.toLowerCase == 'triple-trouble') {
+		if (SONG.isRing) {
 			curcontrol = SPACE;
 		} else {
 			curcontrol = DEFAULT;
