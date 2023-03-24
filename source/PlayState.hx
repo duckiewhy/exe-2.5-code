@@ -88,6 +88,8 @@ typedef BasicSpeedChange = {
 
 class PlayState extends MusicBeatState
 {
+	var _hitbox:FlxHitbox;
+
 	var modchartedSongs:Array<String> = ['perdition', 'hedge']; // PUT THE SONG NAME HERE IF YOU WANT TO USE THE ANDROMEDA MODIFIER SYSTEM!!
 
 	// THEN GOTO MODCHARTSHIT.HX TO DEFINE MODIFIERS ETC
@@ -2172,6 +2174,16 @@ class PlayState extends MusicBeatState
 		bottomBar.cameras = [camOther];
 
 		#if mobile
+		var curcontrol:FlxHitboxType = DEFAULT;
+
+		if (SONG.isRing && SONG.song.toLowerCase == 'triple-trouble') {
+			curcontrol = SPACE;
+		}
+    else if (!SONG.isRing && SONG.song.toLowerCase != 'triple-trouble') {
+			curcontrol = DEFAULT;
+		}
+		_hitbox = new FlxHitbox(curcontrol);
+
 		addMobileControls(false);
     mobileControls.visible = false;
 		#end

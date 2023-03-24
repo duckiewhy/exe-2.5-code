@@ -7,6 +7,12 @@ import openfl.display.BitmapData;
 import openfl.display.Shape;
 import mobile.flixel.FlxButton;
 
+enum FlxHitboxType
+{
+	DEFAULT;
+	SPACE;
+}
+
 /**
  * A zone with 4 hint's (A hitbox).
  * It's really easy to customize the layout.
@@ -26,40 +32,29 @@ class FlxHitbox extends FlxSpriteGroup
 	/**
 	 * Create the zone.
 	 */
-	public function new(?isdodge:Bool = false, ?ring:Bool = false)
+	public function new(type:FlxHitboxType)
 	{
 		//altpos = ClientPrefs.dodgepos; not yet
 
 		super();
-  
-    if(isdodge && PlayState.SONG.song.toLowerCase() == 'chaos'){
-     if(!altpos){
-     add(buttonLeft = createHint(0, 0, Std.int(FlxG.width / 4), Std.int(FlxG.height / 4) * 3, 0xFF00FF));
-     add(buttonDown = createHint(FlxG.width / 4, 0, Std.int(FlxG.width / 4), Std.int(FlxG.height / 4) * 3, 0x00FFFF));
-     add(buttonDodge = createHint(0, Std.int(FlxG.height / 4) * 3, FlxG.width, Std.int(FlxG.height / 4), 0xFF7700));
-     add(buttonUp = createHint(FlxG.width / 2, 0, Std.int(FlxG.width / 4), Std.int(FlxG.height / 4) * 3, 0x00FF00));
-     add(buttonRight = createHint((FlxG.width / 2) + (FlxG.width / 4), 0, Std.int(FlxG.width / 4), Std.int(FlxG.height / 4) * 3, 0xFF0000));
-     }else{
-     add(buttonLeft = createHint(0, Std.int(FlxG.height / 4), Std.int(FlxG.width / 4), Std.int(FlxG.height / 4) * 3, 0xFF00FF));
-     add(buttonDown = createHint(FlxG.width / 4, Std.int(FlxG.height / 4), Std.int(FlxG.width / 4), Std.int(FlxG.height / 4) * 3, 0x00FFFF));
-     add(buttonDodge = createHint(0, 0, FlxG.width, Std.int(FlxG.height / 4), 0xFF7700));
-     add(buttonUp = createHint(FlxG.width / 2, Std.int(FlxG.height / 4), Std.int(FlxG.width / 4), Std.int(FlxG.height / 4) * 3, 0x00FF00));
-     add(buttonRight = createHint((FlxG.width / 2) + (FlxG.width / 4), Std.int(FlxG.height / 4), Std.int(FlxG.width / 4), Std.int(FlxG.height / 4) * 3, 0xFF0000));
-     }
-    }
 
-    else if(ring && PlayState.SONG.isRing && PlayState.SONG.song.toLowerCase() == 'triple-trouble'){
+		switch (type)
+		{
+
+    case SPACE:
     add(buttonLeft = createHint(0, 0, Std.int(FlxG.width / 5), FlxG.height, 0xFF00FF));
 		add(buttonDown = createHint(FlxG.width / 5, 0, Std.int(FlxG.width / 5), FlxG.height, 0x00FFFF));
 		add(buttonDodge = createHint(FlxG.width / 2.5, 0, Std.int(FlxG.width / 5), FlxG.height, 0xFFD000));
 		add(buttonUp = createHint(FlxG.width / 2.5 + (FlxG.width / 5), 0, Std.int(FlxG.width / 4), FlxG.height, 0x00FF00));
 		add(buttonRight = createHint(FlxG.width / 2.5 * 2, 0, Std.int(FlxG.width / 4), FlxG.height, 0xFF0000)); 
-    }else{
-    add(buttonLeft = createHint(0, 0, Std.int(FlxG.width / 4), FlxG.height, 0xFF00FF));
-		add(buttonDown = createHint(FlxG.width / 4, 0, Std.int(FlxG.width / 4), FlxG.height, 0x00FFFF));
-		add(buttonUp = createHint(FlxG.width / 2, 0, Std.int(FlxG.width / 4), FlxG.height, 0x00FF00));
-		add(buttonRight = createHint((FlxG.width / 2) + (FlxG.width / 4), 0, Std.int(FlxG.width / 4), FlxG.height, 0xFF0000));
-    }
+
+     case DEFAULT:
+     add(buttonLeft = createHint(0, Std.int(FlxG.height / 4), Std.int(FlxG.width / 4), Std.int(FlxG.height / 4) * 3, 0xFF00FF));
+     add(buttonDown = createHint(FlxG.width / 4, Std.int(FlxG.height / 4), Std.int(FlxG.width / 4), Std.int(FlxG.height / 4) * 3, 0x00FFFF));
+     add(buttonDodge = createHint(0, 0, FlxG.width, Std.int(FlxG.height / 4), 0xFF7700));
+     add(buttonUp = createHint(FlxG.width / 2, Std.int(FlxG.height / 4), Std.int(FlxG.width / 4), Std.int(FlxG.height / 4) * 3, 0x00FF00));
+     add(buttonRight = createHint((FlxG.width / 2) + (FlxG.width / 4), Std.int(FlxG.height / 4), Std.int(FlxG.width / 4), Std.int(FlxG.height / 4) * 3, 0xFF0000));
+		}
 
 		scrollFactor.set();
 	}
