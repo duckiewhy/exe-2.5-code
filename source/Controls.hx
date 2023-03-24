@@ -402,7 +402,7 @@ class Controls extends FlxActionSet
 		action.add(input);
 	}
 
-	public function set(Hitbox:FlxHitbox, Type:FlxHitboxType)
+	public function setHitBox(Hitbox:FlxHitbox, Type:FlxHitboxType)
 	{
 		switch (Type)
 {
