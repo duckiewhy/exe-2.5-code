@@ -65,7 +65,7 @@ class Paths
 				&& !dumpExclusions.contains(key)) {
 				// get rid of it
 				var obj = currentTrackedAssets.get(key);
-				@:privateAccess
+				@:privateAccessa
 				if (obj != null) {
 					openfl.Assets.cache.removeBitmapData(key);
 					FlxG.bitmap._cache.remove(key);
@@ -303,7 +303,7 @@ class Paths
 		}
 		#end
 
-		if(OpenFlAssets.exists(Paths.getPath(key, type))) {
+		if(OpenFlAssets.exists(getPath(key, type))) {
 			return true;
 		}
 		return false;
