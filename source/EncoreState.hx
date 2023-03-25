@@ -44,6 +44,10 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 
 	override function create()
 	{
+		
+		Paths.clearStoredMemory();
+		Paths.clearUnusedMemory();
+		
 		whiteshit = new FlxSprite().makeGraphic(1280, 720, FlxColor.WHITE);
 		whiteshit.alpha = 0;
 
