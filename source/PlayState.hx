@@ -4743,7 +4743,7 @@ class PlayState extends MusicBeatState
 			var left = controls.NOTE_LEFT;
 			var holdControls:Array<Bool> = [left, down, up, right];
 			if (SONG.isRing)
-				holdControls = [left, down, _hitbox.buttonDodge.justPressed, up, right];
+				holdControls = [left, down, FlxG.keys.pressed.SPACE, up, right];
 	       if(ClientPrefs.mariomaster) //dont ask, thanks
 		{
 			var controlArray:Array<Bool> = [controls.NOTE_LEFT_P, controls.NOTE_DOWN_P, controls.NOTE_UP_P, controls.NOTE_RIGHT_P];
