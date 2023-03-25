@@ -62,6 +62,10 @@ class FreeplayState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!
 
 	override function create()
 	{
+		
+		Paths.clearStoredMemory();
+		Paths.clearUnusedMemory();
+		
 		CharSongList.init();
 
 

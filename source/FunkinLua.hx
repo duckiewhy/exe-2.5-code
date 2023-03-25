@@ -20,7 +20,8 @@ import flixel.FlxBasic;
 import flixel.FlxObject;
 import flixel.FlxSprite;
 import openfl.display.BlendMode;
-#if sys
+											
+#if MODS_ALLOWED
 import sys.FileSystem;
 import sys.io.File;
 #end
@@ -28,9 +29,9 @@ import Type.ValueType;
 import Controls;
 import DialogueBoxPsych;
 
-#if desktop
-import Discord;
-#end
+
+
+
 
 using StringTools;
 
@@ -561,6 +562,9 @@ class FunkinLua {
 			}
 			lePlayState.addCharacterToList(name, charType);
 		});
+																	   
+							 
+	 
 		Lua_helper.add_callback(lua, "precacheSound", function(name:String) {
 			CoolUtil.precacheSound(name);
 		});
@@ -627,6 +631,7 @@ class FunkinLua {
 			if(target == 'dad') {
 				isDad = true;
 			}
+								 
 		});
 		Lua_helper.add_callback(lua, "cameraShake", function(camera:String, intensity:Float, duration:Float) {
 			cameraFromString(camera).shake(intensity, duration);
@@ -879,15 +884,34 @@ class FunkinLua {
 			luaTrace("Object " + obj + " doesn't exist!");
 			return false;
 		});
+																									
+																								  
+												
 
-   #if MODS_ALLOWED
+ 
+ 
+								  
+											
+											  
+			
+														
+	 
+		   
+										
+								
+						   
+			
+								  
+	 
+	
+	 
 		Lua_helper.add_callback(lua, "startVideo", function(videoFile:String) {
 			#if VIDEOS_ALLOWED
-			if(FileSystem.exists(Paths.modsVideo(videoFile))) {
+//			if(FileSystem.exists(Paths.modsVideo(videoFile))) {
 				lePlayState.startVideo(videoFile);
-			} else {
-				luaTrace('Video file not found: ' + videoFile);
-			}
+//			} else {
+//				luaTrace('Video file not found: ' + videoFile);
+//			}
 			#else
 			if(lePlayState.endingSong) {
 				lePlayState.endSong();
@@ -896,8 +920,8 @@ class FunkinLua {
 			}
 			#end
 		});
-   #end
-	
+		
+   
 		Lua_helper.add_callback(lua, "playMusic", function(sound:String, volume:Float = 1, loop:Bool = false) {
 			FlxG.sound.playMusic(Paths.music(sound), volume, loop);
 		});
@@ -1121,9 +1145,8 @@ class FunkinLua {
 			luaTrace('musicFadeOut is deprecated! Use soundFadeOut instead.', false, true);
 		});
 
-   #if desktop
-		Discord.DiscordClient.addLuaCallbacks(lua);
-	 #end
+ 
+ 
 
 		call('onCreate', []);
 		#end
@@ -1256,18 +1279,40 @@ class FunkinLua {
 		}
 		#end
 	}
+		 
+  
+	 
+			
+	  
+	 
+   
+  
 	
 	public function call(event:String, args:Array<Dynamic>):Dynamic {
+  
 		#if LUA_ALLOWED
+  
+   
 		if(lua == null) {
 			return Function_Continue;
 		}
 
 		Lua.getglobal(lua, event);
 
+		  
+			
+  
+		 
+	
+ 
 		for (arg in args) {
 			Convert.toLua(lua, arg);
 		}
+	 
+  
+		 
+			   
+		 
 
 		var result:Null<Int> = Lua.pcall(lua, args.length, 1, 0);
 		if(result != null && resultIsAllowed(lua, result)) {
@@ -1278,13 +1323,28 @@ class FunkinLua {
 				var error:String = Lua.tostring(lua, -1);
 				Lua.pop(lua, 1);
 				if(error == 'attempt to call a nil value') { //Makes it ignore warnings and not break stuff if you didn't put the functions on your lua file
+   
+  
+		 
 					return Function_Continue;
 				}
+  
+  
+			 
+	  
+	   
+		  
+	 
+  
 			}
 
 			var conv:Dynamic = Convert.fromLua(lua, result);
 			return conv;
 		}
+	   
+   
+   
+   
 		#end
 		return Function_Continue;
 	}
