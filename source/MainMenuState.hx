@@ -72,6 +72,9 @@ class MainMenuState extends MusicBeatState
 			optionShit.push('sound_test');
 			optionShit.push('encore');
 		}*/
+		
+		Paths.clearStoredMemory();
+		Paths.clearUnusedMemory();
 
 
 		#if windows
