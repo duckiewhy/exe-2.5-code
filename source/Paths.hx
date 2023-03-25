@@ -58,7 +58,7 @@ class Paths
 	public static var currentTrackedTextures:Map<String, Texture> = [];
 	public static var currentTrackedSounds:Map<String, Sound> = [];
 
-	public static var localTrackedAssets:Array<String> = [];
+	public static var localTrackedAssets:Array<String> = [];			 
 	/// haya I love you for the base cache dump I took to the max
 	public static function clearUnusedMemory() {
 		// clear non local assets in the tracked assets list
@@ -86,21 +86,19 @@ class Paths
 					OpenFlAssets.cache.clearBitmapData(key);
 	  
 					OpenFlAssets.cache.clear(key);
-					FlxG.bitmap._cache.remove(key);
-									 
+					FlxG.bitmap._cache.remove(key);																 
 					obj.destroy();
 					currentTrackedAssets.remove(key);
 			   
 				}
 			}
-		}
-								   
+		}							   
 		// run the garbage collector for good measure lmfao
 		System.gc();
 	}
 
 	// define the locally tracked assets
-	
+
 	public static function clearStoredMemory(?cleanUnused:Bool = false) {
 		// clear anything not in the tracked assets list
 		@:privateAccess
@@ -108,14 +106,13 @@ class Paths
 		{
 			var obj = FlxG.bitmap._cache.get(key);
 			if (obj != null && !currentTrackedAssets.exists(key)) {
-	 
+  
 				OpenFlAssets.cache.removeBitmapData(key);
 				OpenFlAssets.cache.clearBitmapData(key);
 				OpenFlAssets.cache.clear(key);
 				FlxG.bitmap._cache.remove(key);
 				obj.destroy();
-	 
-			}
+	        }
 		}
 
 		// clear all sounds that are cached
@@ -128,7 +125,7 @@ class Paths
 				OpenFlAssets.cache.clearSounds(key);
 				currentTrackedSounds.remove(key);
 	 
-			}	   
+			}		   
 		}
 
       for (key in OpenFlAssets.cache.getKeys())	
@@ -157,7 +154,7 @@ class Paths
 		if (library != null)
 			return getLibraryPath(file, library);
 
-	if (currentLevel != null)
+		if (currentLevel != null)
 		{
 			var levelPath:String = '';
 			if(currentLevel != 'shared') {
@@ -189,6 +186,11 @@ class Paths
 	{
 		return 'assets/$file';
 	}
+	
+	/*inline public static function getPreloadPathlua(file:String = '')
+	{
+		return Main.path + 'assets/$file';
+	}*/
 
 	inline static public function file(file:String, type:AssetType = TEXT, ?library:String)
 	{
@@ -247,7 +249,7 @@ class Paths
 		return file;
 	}
 
-	nline static public function voices(song:String):Any
+	inline static public function voices(song:String):Any
 	{
 		var songKey:String = '${song.toLowerCase().replace(' ', '-')}/Voices';
 		var voices = returnSound('songs', songKey);
@@ -355,8 +357,7 @@ class Paths
 	}
 
 	// completely rewritten asset loading? fuck!
-
-
+	
 
 	public static function returnGraphic(key:String, ?library:String, ?textureCompression:Bool = false) {
 		#if MODS_ALLOWED
@@ -421,7 +422,7 @@ class Paths
 		if(!currentTrackedSounds.exists(gottenPath))
 				  
 			currentTrackedSounds.set(gottenPath, Sound.fromFile(gottenPath));
-	  
+	
 		localTrackedAssets.push(gottenPath);
 		return currentTrackedSounds.get(gottenPath);
 	}
