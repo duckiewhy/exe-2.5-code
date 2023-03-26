@@ -2877,6 +2877,7 @@ class PlayState extends MusicBeatState
 				hitbox.visible = true;
 			} else {
 				mobileControls.visible = true;
+			}
 		#end
 
 		inCutscene = false;
@@ -5845,6 +5846,7 @@ class PlayState extends MusicBeatState
 				hitbox.visible = false;
 			} else {
 				mobileControls.visible = false;
+			}
 		#end
 
 		timeBarBG.visible = false;
