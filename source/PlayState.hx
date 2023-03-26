@@ -2177,11 +2177,12 @@ class PlayState extends MusicBeatState
 		
 		#if mobile
 			if (SONG.song.toLowerCase()=='triple-trouble') {
-				addHitbox(false);
+				addHitbox(true);
+				hitbox.visible = false;
 			} else {
 				addMobileControls(false);  
+				mobileControls.visible = false;
 			}
-			mobileControls.visible = false;
 		#end
 
 		var centerP = new FlxSprite(0, 0);
