@@ -18,7 +18,7 @@ class MobileControls extends FlxSpriteGroup
 	public var virtualPad:FlxVirtualPad;
 	public var hitbox:FlxHitbox;
 
-	public var shutYoAss = FlxHitbox.buttonDodge;
+	//public var shutYoAss = FlxHitbox.buttonDodge;
 
 	public function new(usesDodge:Bool = false)
 	{
