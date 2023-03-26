@@ -2580,12 +2580,11 @@ class PlayState extends MusicBeatState
 			];
 		} //Ralsei' fix, when triple trouble, it'll go get 5k input
 
-        if(!ClientPrefs.mariomaster) //what
-		{
-		FlxG.stage.addEventListener(KeyboardEvent.KEY_DOWN, onKeyPress);
-		FlxG.stage.addEventListener(KeyboardEvent.KEY_UP, onKeyRelease);
-        }
-		
+		if(!ClientPrefs.mariomaster) {
+			FlxG.stage.addEventListener(KeyboardEvent.KEY_DOWN, onKeyPress);
+			FlxG.stage.addEventListener(KeyboardEvent.KEY_UP, onKeyRelease);
+		} //for PC
+
 		#if desktop
 		// Updating Discord Rich Presence.
 		DiscordClient.changePresence(detailsText, songRPC + " (" + storyDifficultyText + ")", iconP2.getCharacter());
@@ -4745,50 +4744,47 @@ class PlayState extends MusicBeatState
 			var right = controls.NOTE_RIGHT;
 			var down = controls.NOTE_DOWN;
 			var left = controls.NOTE_LEFT;
-			var holdControls:Array<Bool> = [left, down, up, right];
-			if (SONG.isRing)
-				holdControls = [left, down, controls.NOTE_SPACE, up, right];
-	       if(ClientPrefs.mariomaster) //dont ask, thanks
-		{
-			var controlArray:Array<Bool> = [controls.NOTE_LEFT_P, controls.NOTE_DOWN_P, controls.NOTE_UP_P, controls.NOTE_RIGHT_P];
-			if(controlArray.contains(true))
-			{
-				for (i in 0...controlArray.length)
-				{
-					if(controlArray[i])
-						onKeyPress(new KeyboardEvent(KeyboardEvent.KEY_DOWN, true, true, -1, keysArray[i][0]));
-				}
+			var spaceB = controls.NOTE_SPACE;
+
+			var holdControls:Array<Bool> = [left, down, up, right]; //default one
+			if (SONG.isRing) {
+				holdControls = [left, down, spaceB, up, right];
 			}
-			if (holdControls.contains(true) && /*!boyfriend.stunned && */ generatedMusic)
-			{
-				notes.forEachAlive(function(daNote:Note)
-				{
+
+			if(ClientPrefs.mariomaster) {
+				var controlArray:Array<Bool> = [controls.NOTE_LEFT_P, controls.NOTE_DOWN_P, controls.NOTE_UP_P, controls.NOTE_RIGHT_P];
+				if(controlArray.contains(true)) {
+					for (i in 0...controlArray.length) {
+						if(controlArray[i]) {
+							onKeyPress(new KeyboardEvent(KeyboardEvent.KEY_DOWN, true, true, -1, keysArray[i][0]));
+						}
+					}
+				}
+			if (holdControls.contains(true) && generatedMusic) {
+				notes.forEachAlive(function(daNote:Note) {
 					if ((daNote.parentNote != null && daNote.parentNote.wasGoodHit)
 						&& daNote.isSustainNote
 						&& daNote.canBeHit
 						&& daNote.mustPress
 						&& holdControls[daNote.noteData]
-						&& !daNote.tooLate)
+						&& !daNote.tooLate) {
 						goodNoteHit(daNote);
+					}
 				});
 			}
 
 			if ((boyfriend != null && boyfriend.animation != null)
-				&& (boyfriend.holdTimer > Conductor.stepCrochet * (4 / 1000) && (!holdControls.contains(true) || cpuControlled)))
-			{
-				if (boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss'))
-					boyfriend.dance();
+				&& (boyfriend.holdTimer > Conductor.stepCrochet * (4 / 1000) && (!holdControls.contains(true) || cpuControlled))) {
+					if (boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss'))
+						boyfriend.dance();
+				}
+				cameraDisplacement(boyfriend, true);
+				cameraDisplacement(dad, false);
 			}
-			cameraDisplacement(boyfriend, true);
-			cameraDisplacement(dad, false);
-		}
-		if(ClientPrefs.mariomaster)	  
-			{
+			if(ClientPrefs.mariomaster {
 				var controlArray:Array<Bool> = [controls.NOTE_LEFT_R, controls.NOTE_DOWN_R, controls.NOTE_UP_R, controls.NOTE_RIGHT_R];
-				if(controlArray.contains(true))										  
-				{
-					for (i in 0...controlArray.length)
-					{
+				if(controlArray.contains(true)) {
+					for (i in 0...controlArray.length) {
 						if(controlArray[i])
 							onKeyRelease(new KeyboardEvent(KeyboardEvent.KEY_UP, true, true, -1, keysArray[i][0]));
 					}
@@ -6894,7 +6890,7 @@ class PlayState extends MusicBeatState
 
 	override function destroy()
 	{
-	    if(!ClientPrefs.mariomaster){
+	    if (!ClientPrefs.mariomaster) {
 		FlxG.stage.removeEventListener(KeyboardEvent.KEY_DOWN, onKeyPress);
 		FlxG.stage.removeEventListener(KeyboardEvent.KEY_UP, onKeyRelease);
 		}
