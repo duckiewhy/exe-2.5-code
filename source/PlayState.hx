@@ -2574,7 +2574,7 @@ class PlayState extends MusicBeatState
 			keysArray = [
 				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_left')),
 				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_down')),
-				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_')),
+				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_space')),
 				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_up')),
 				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_right'))
 			];
@@ -6386,7 +6386,7 @@ class PlayState extends MusicBeatState
 
 	function noteMissPress(direction:Int = 1, ?ghostMiss:Bool = false):Void // You pressed a key when there was no notes to press for this key
 	{
-		if (!boyfriend.stunned && !(SONG.g && direction == 2))
+		if (!boyfriend.stunned && !(SONG.isRing && direction == 2))
 		{
 			var cHealth:Float = health;
 			if (isFear && cNum==0)
