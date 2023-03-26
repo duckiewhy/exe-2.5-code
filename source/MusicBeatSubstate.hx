@@ -36,6 +36,8 @@ class MusicBeatSubstate extends FlxSubState
 	var trackedInputsHitbox:Array<FlxActionInput> = [];
 	var trackedInputsVirtualPad:Array<FlxActionInput> = [];
 
+	var hitboxDiff:Dynamic;
+
 	public function addVirtualPad(DPad:FlxDPadMode, Action:FlxActionMode)
 	{
 		if (virtualPad != null)
@@ -81,13 +83,14 @@ class MusicBeatSubstate extends FlxSubState
 			hitbox = new FlxHitbox(SPACE);
 			hitbox.visible = visible;
 			add(hitbox);
+			hitboxDiff = SPACE;
 		} else {
 			hitbox = new FlxHitbox(DEFAULT);
 			hitbox.visible = visible;
-			add(hitbox);
+			hitboxDiff = DEFAULT;
 		}
 
-		controls.setHitBox(hitbox);
+		controls.setHitBox(hitbox, hitboxDiff);
 		trackedInputsHitbox = controls.trackedInputsNOTES;
 		controls.trackedInputsNOTES = [];
 	}
