@@ -4782,6 +4782,18 @@ class PlayState extends MusicBeatState
 			cameraDisplacement(boyfriend, true);
 			cameraDisplacement(dad, false);
 		}
+		if(ClientPrefs.mariomaster)	  
+			{
+				var controlArray:Array<Bool> = [controls.NOTE_LEFT_R, controls.NOTE_DOWN_R, controls.NOTE_UP_R, controls.NOTE_RIGHT_R];
+				if(controlArray.contains(true))										  
+				{
+					for (i in 0...controlArray.length)
+					{
+						if(controlArray[i])
+							onKeyRelease(new KeyboardEvent(KeyboardEvent.KEY_UP, true, true, -1, keysArray[i][0]));
+					}
+				}
+			}
 		checkEventNote();
 
 		if (!inCutscene)
