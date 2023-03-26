@@ -68,7 +68,6 @@ class MusicBeatSubstate extends FlxSubState
 			virtualPad.cameras = [camControls];
 		}
 	}
-	#end
 
 	public function addHitbox(?visible = true):Void
 	{
