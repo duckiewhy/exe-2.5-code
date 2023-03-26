@@ -66,7 +66,8 @@ import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
 import flixel.tweens.FlxTween.FlxTweenManager;
 import flixel.system.scaleModes.StageSizeScaleMode;
 import flixel.system.scaleModes.BaseScaleMode;
-//import mobile.flixel.FlxHitbox;
+
+import mobile.MobileControls;
 
 using StringTools;
 
@@ -89,7 +90,8 @@ typedef BasicSpeedChange = {
 class PlayState extends MusicBeatState
 {
 	//var _hitbox:FlxHitbox;
-
+	var hitBoxC = new MobileControls();
+	
 	var modchartedSongs:Array<String> = ['perdition', 'hedge']; // PUT THE SONG NAME HERE IF YOU WANT TO USE THE ANDROMEDA MODIFIER SYSTEM!!
 
 	// THEN GOTO MODCHARTSHIT.HX TO DEFINE MODIFIERS ETC
@@ -2572,7 +2574,7 @@ class PlayState extends MusicBeatState
 			keysArray = [
 				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_left')),
 				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_down')),
-				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_space')),
+				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_')),
 				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_up')),
 				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_right'))
 			];
@@ -4740,7 +4742,11 @@ class PlayState extends MusicBeatState
 			var left = controls.NOTE_LEFT;
 			var holdControls:Array<Bool> = [left, down, up, right];
 			if (SONG.isRing)
-				holdControls = [left, down, FlxG.keys.pressed.SPACE, up, right];
+				#if android
+					holdControls = [left, down, hitBoxC.buttonDodge.pressed, up, right];
+				#else
+					holdControls = [left, down, FlxG.keys.pressed.SPACE, up, right];
+				#end
 	       if(ClientPrefs.mariomaster) //dont ask, thanks
 		{
 			var controlArray:Array<Bool> = [controls.NOTE_LEFT_P, controls.NOTE_DOWN_P, controls.NOTE_UP_P, controls.NOTE_RIGHT_P];
@@ -6380,7 +6386,7 @@ class PlayState extends MusicBeatState
 
 	function noteMissPress(direction:Int = 1, ?ghostMiss:Bool = false):Void // You pressed a key when there was no notes to press for this key
 	{
-		if (!boyfriend.stunned && !(SONG.isRing && direction == 2))
+		if (!boyfriend.stunned && !(SONG.g && direction == 2))
 		{
 			var cHealth:Float = health;
 			if (isFear && cNum==0)
