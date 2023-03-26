@@ -124,15 +124,18 @@ class MusicBeatState extends FlxUIState
 		}
 	}
 
-	public function addHitbox(?usesDodge = false, Type:FlxHitboxType):Void
+	public function addHitbox(?usesDodge = false):Void
 	{
 		if (hitbox != null)
 			removeHitbox();
-
-		if(usesDodge) {
-			controls.setHitBox(mobileControls.hitbox, SPACE);
+		if (usesDodge) {
+			hitbox = new FlxHitbox(SPACE);
+			hitbox.visible = visible;
+			add(hitbox);
 		} else {
-			controls.setHitBox(mobileControls.hitbox, DEFAULT);
+			hitbox = new FlxHitbox(DEFAULT);
+			hitbox.visible = visible;
+			add(hitbox);
 		}
 
 		controls.setHitBox(hitbox);
