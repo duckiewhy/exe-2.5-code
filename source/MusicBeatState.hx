@@ -80,7 +80,12 @@ class MusicBeatState extends FlxUIState
 			case 'Pad-Duo':
 				controls.setVirtualPadNOTES(mobileControls.virtualPad, BOTH_FULL, NONE);
 			case 'Hitbox':
-				controls.setHitBox(mobileControls.hitbox, usesDodge ? SPACE : DEFAULT);
+			if(usesDodge){
+				controls.setHitBox(mobileControls.hitbox, SPACE);
+			}else{
+			  controls.setHitBox(mobileControls.hitbox, DEFAULT);
+			}
+				
 			case 'Keyboard': // do nothing
 		}
 
