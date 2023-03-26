@@ -53,6 +53,8 @@ class ClientPrefs {
 		keyBinds.set('back', [BACKSPACE, ESCAPE]);
 		keyBinds.set('pause', [ENTER, ESCAPE]);
 		keyBinds.set('reset', [R, NONE]);
+		
+		keyBinds.set('note_space', [SPACE, NONE]);
 
 
 		// Don't delete this
