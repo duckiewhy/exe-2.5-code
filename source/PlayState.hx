@@ -2178,6 +2178,7 @@ class PlayState extends MusicBeatState
 		#if mobile
 			if (SONG.song.toLowerCase()=='triple-trouble') {
 				addHitbox(true);
+				addHitboxCamera();
 				hitbox.visible = false;
 			} else {
 				addMobileControls(false);  
