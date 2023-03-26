@@ -2874,7 +2874,7 @@ class PlayState extends MusicBeatState
 		}
 
 		#if mobile
-			if (SONG.isRinSONG.isRing && SONG.song.toLowerCase()=='triple-trouble') {
+			if (SONG.isRing && SONG.song.toLowerCase()=='triple-trouble') {
 				hitbox.visible = true;
 			} else {
 				mobileControls.visible = true;
@@ -5843,7 +5843,7 @@ class PlayState extends MusicBeatState
 			FlxG.mouse.unload();
 		}
 		#if mobile
-			if (SONG.isRinSONG.isRing && SONG.song.toLowerCase()=='triple-trouble') {
+			if (SONG.isRing && SONG.song.toLowerCase()=='triple-trouble') {
 				hitbox.visible = false;
 			} else {
 				mobileControls.visible = false;
