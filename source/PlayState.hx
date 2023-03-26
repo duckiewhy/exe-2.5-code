@@ -4747,7 +4747,7 @@ class PlayState extends MusicBeatState
 			var holdControls:Array<Bool> = [left, down, up, right];
 			if (SONG.isRing)
 				#if mobile
-					holdControls = [left, down, hitbox.buttonDodge.pressed, up, right];
+		    holdControls = [controls.NOTE_LEFT_P, controls.NOTE_DOWN_P, controls.NOTE_SPACE_P, controls.NOTE_UP_P, controls.NOTE_RIGHT_P];
 				#else
 					holdControls = [left, down, FlxG.keys.pressed.SPACE, up, right];
 				#end
