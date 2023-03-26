@@ -2176,7 +2176,7 @@ class PlayState extends MusicBeatState
 		bottomBar.cameras = [camOther];
 		
 		#if mobile
-			if (SONG.isRing && SONG.song.toLowerCase()=='triple-trouble') {
+			if (SONG.isRing) {
 				addHitbox(true);
 				addHitboxCamera();
 				hitbox.visible = false;
@@ -2874,7 +2874,7 @@ class PlayState extends MusicBeatState
 		}
 
 		#if mobile
-			if (SONG.isRing && SONG.song.toLowerCase()=='triple-trouble') {
+			if (SONG.isRing) {
 				hitbox.visible = true;
 			} else {
 				mobileControls.visible = true;
@@ -4746,11 +4746,7 @@ class PlayState extends MusicBeatState
 			var left = controls.NOTE_LEFT;
 			var holdControls:Array<Bool> = [left, down, up, right];
 			if (SONG.isRing)
-				#if mobile
-		    holdControls = [controls.NOTE_LEFT_P, controls.NOTE_DOWN_P, controls.NOTE_SPACE_P, controls.NOTE_UP_P, controls.NOTE_RIGHT_P];
-				#else
-					holdControls = [left, down, FlxG.keys.pressed.SPACE, up, right];
-				#end
+				holdControls = [left, down, controls.NOTE_SPACE, up, right];
 	       if(ClientPrefs.mariomaster) //dont ask, thanks
 		{
 			var controlArray:Array<Bool> = [controls.NOTE_LEFT_P, controls.NOTE_DOWN_P, controls.NOTE_UP_P, controls.NOTE_RIGHT_P];
@@ -5843,7 +5839,7 @@ class PlayState extends MusicBeatState
 			FlxG.mouse.unload();
 		}
 		#if mobile
-			if (SONG.isRing && SONG.song.toLowerCase()=='triple-trouble') {
+			if (SONG.isRing) {
 				hitbox.visible = false;
 			} else {
 				mobileControls.visible = false;
@@ -7553,9 +7549,15 @@ class PlayState extends MusicBeatState
 					var olddy = dad.y;
 					dad = new Character(olddx, olddy, 'fatal-glitched');
 					dadGroup.add(dad);
-       #if !windows
+       #if !desktop
         case 1984:
-        fatalTransistionThingDos();
+       		fatalTransistionThingDos();
+		case 2230:
+			camGame.shake(0.02, 0.8);
+			camHUD.shake(0.02, 0.8);
+		case 2528:
+			camGame.shake(0.02, 2);
+			camHUD.shake(0.02, 2);
        #else
 				case 1984:
 					Xamount += 2;
