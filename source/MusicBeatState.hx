@@ -124,7 +124,7 @@ class MusicBeatState extends FlxUIState
 		}
 	}
 
-	public function addHitbox(?usesDodge = false):Void
+	public function addHitbox(?usesDodge = false, Type:FlxHitboxType):Void
 	{
 		if (hitbox != null)
 			removeHitbox();
