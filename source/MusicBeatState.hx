@@ -128,6 +128,7 @@ class MusicBeatState extends FlxUIState
 	{
 		if (hitbox != null)
 			removeHitbox();
+
 		if (usesDodge) {
 			hitbox = new FlxHitbox(SPACE);
 			hitbox.visible = visible;
