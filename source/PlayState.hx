@@ -2562,13 +2562,6 @@ class PlayState extends MusicBeatState
 		CoolUtil.precacheSound('missnote2');
 		CoolUtil.precacheSound('missnote3');
 
-		keysArray = [
-			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_left')),
-			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_down')),
-			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_up')),
-			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_right'))
-		];
-
 		if (SONG.isRing)
 		{
 			keysArray = [
@@ -2578,7 +2571,15 @@ class PlayState extends MusicBeatState
 				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_up')),
 				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_right'))
 			];
-		}
+		} else {
+			keysArray = [
+				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_left')),
+				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_down')),
+				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_up')),
+				ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_right'))
+			];
+		} //Ralsei' fix, when triple trouble, it'll go get 5k input
+
         if(!ClientPrefs.mariomaster) //what
 		{
 		FlxG.stage.addEventListener(KeyboardEvent.KEY_DOWN, onKeyPress);
@@ -4758,8 +4759,6 @@ class PlayState extends MusicBeatState
 						onKeyPress(new KeyboardEvent(KeyboardEvent.KEY_DOWN, true, true, -1, keysArray[i][0]));
 				}
 			}
-		}
-
 			if (holdControls.contains(true) && /*!boyfriend.stunned && */ generatedMusic)
 			{
 				notes.forEachAlive(function(daNote:Note)
@@ -4782,18 +4781,6 @@ class PlayState extends MusicBeatState
 			}
 			cameraDisplacement(boyfriend, true);
 			cameraDisplacement(dad, false);
-		}
-        if(ClientPrefs.mariomaster)	  
-		{
-			var controlArray:Array<Bool> = [controls.NOTE_LEFT_R, controls.NOTE_DOWN_R, controls.NOTE_UP_R, controls.NOTE_RIGHT_R];
-			if(controlArray.contains(true))										  
-			{
-				for (i in 0...controlArray.length)
-				{
-					if(controlArray[i])
-						onKeyRelease(new KeyboardEvent(KeyboardEvent.KEY_UP, true, true, -1, keysArray[i][0]));
-				}
-			}
 		}
 		checkEventNote();
 
