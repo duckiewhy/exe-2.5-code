@@ -125,14 +125,16 @@ class MusicBeatState extends FlxUIState
 	}
 	#end
 
-	public function addHitbox(?visible = true):Void
+	public function addHitbox(?usesDodge = false):Void
 	{
 		if (hitbox != null)
 			removeHitbox();
 
-		hitbox = new FlxHitbox();
-		hitbox.visible = visible;
-		add(hitbox);
+		if(usesDodge) {
+			controls.setHitBox(mobileControls.hitbox, SPACE);
+		} else {
+			controls.setHitBox(mobileControls.hitbox, DEFAULT);
+		}
 
 		controls.setHitBox(hitbox);
 		trackedInputsHitbox = controls.trackedInputsNOTES;
