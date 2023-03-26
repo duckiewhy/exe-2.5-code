@@ -2183,7 +2183,7 @@ class PlayState extends MusicBeatState
 		if (SONG.song.toLowerCase()=='triple-trouble') {
     curhbox = hitBoxC;
 		} else {
-		 curhbox = new FlxHitbox(DEFAULT);
+		 curhbox = DEFAULT;
 		}
 		addMobileControls(false);  
     mobileControls.visible = false;
