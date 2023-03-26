@@ -90,7 +90,7 @@ typedef BasicSpeedChange = {
 class PlayState extends MusicBeatState
 {
 	//var _hitbox:FlxHitbox;
-	var hitBoxC = new FlxHitbox(SPACE);
+	var hitBoxC = new MobileControls(hitbox);
 	
 	var modchartedSongs:Array<String> = ['perdition', 'hedge']; // PUT THE SONG NAME HERE IF YOU WANT TO USE THE ANDROMEDA MODIFIER SYSTEM!!
 
