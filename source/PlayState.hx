@@ -67,8 +67,8 @@ import flixel.tweens.FlxTween.FlxTweenManager;
 import flixel.system.scaleModes.StageSizeScaleMode;
 import flixel.system.scaleModes.BaseScaleMode;
 
-import mobile.flixel.FlxHitbox;
-import mobile.MobileControls;
+/*import mobile.flixel.FlxHitbox;
+import mobile.MobileControls;*/
 
 using StringTools;
 
@@ -90,10 +90,6 @@ typedef BasicSpeedChange = {
 
 class PlayState extends MusicBeatState
 {
-	//var _hitbox:FlxHitbox;
-	var hitBoxC = new MobileControls();
-	var hitBoxCB = new FlxHitbox();
-	
 	var modchartedSongs:Array<String> = ['perdition', 'hedge']; // PUT THE SONG NAME HERE IF YOU WANT TO USE THE ANDROMEDA MODIFIER SYSTEM!!
 
 	// THEN GOTO MODCHARTSHIT.HX TO DEFINE MODIFIERS ETC
@@ -2181,7 +2177,7 @@ class PlayState extends MusicBeatState
 		
 		#if mobile
 			if (SONG.song.toLowerCase()=='triple-trouble') {
-				addMobileControls(true);
+				addHitbox(false);
 			} else {
 				addMobileControls(false);  
 			}
@@ -2875,9 +2871,12 @@ class PlayState extends MusicBeatState
 			return;
 		}
 
-                #if mobile
-                mobileControls.visible = true;
-                #end
+		#if mobile
+			if (SONG.song.toLowerCase()=='triple-trouble') {
+				hitbox.visible = true;
+			} else {
+				mobileControls.visible = true;
+		#end
 
 		inCutscene = false;
 		var ret:Dynamic = callOnLuas('onStartCountdown', []);
@@ -4745,7 +4744,7 @@ class PlayState extends MusicBeatState
 			var holdControls:Array<Bool> = [left, down, up, right];
 			if (SONG.isRing)
 				#if mobile
-					holdControls = [left, down, hitBoxC.buttonDodge.pressed, up, right];
+					holdControls = [left, down, hitbox.buttonDodge.pressed, up, right];
 				#else
 					holdControls = [left, down, FlxG.keys.pressed.SPACE, up, right];
 				#end
@@ -5840,9 +5839,13 @@ class PlayState extends MusicBeatState
 			FlxG.mouse.visible = false;
 			FlxG.mouse.unload();
 		}
-                #if mobile
-                mobileControls.visible = false;
-                #end
+		#if mobile
+			if (SONG.song.toLowerCase()=='triple-trouble') {
+				hitbox.visible = false;
+			} else {
+				mobileControls.visible = false;
+		#end
+
 		timeBarBG.visible = false;
 		timeBar.visible = false;
 		timeTxt.visible = false;
