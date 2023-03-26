@@ -123,7 +123,6 @@ class MusicBeatState extends FlxUIState
 			virtualPad.cameras = [camControls];
 		}
 	}
-	#end
 
 	public function addHitbox(?usesDodge = false):Void
 	{
