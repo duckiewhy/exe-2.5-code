@@ -2181,7 +2181,7 @@ class PlayState extends MusicBeatState
   var curhbox = new FlxHitbox();
    curhbox = DEFAULT;
 		if (SONG.song.toLowerCase()=='triple-trouble') {
-    curhbox = hitBoxC;
+    curhbox = hitBoxC(SPACE);
 		} else {
 		 curhbox = DEFAULT;
 		}
