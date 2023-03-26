@@ -66,7 +66,7 @@ import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
 import flixel.tweens.FlxTween.FlxTweenManager;
 import flixel.system.scaleModes.StageSizeScaleMode;
 import flixel.system.scaleModes.BaseScaleMode;
-import mobile.MobileControls;
+//import mobile.flixel.FlxHitbox;
 
 using StringTools;
 
