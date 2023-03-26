@@ -66,6 +66,7 @@ import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
 import flixel.tweens.FlxTween.FlxTweenManager;
 import flixel.system.scaleModes.StageSizeScaleMode;
 import flixel.system.scaleModes.BaseScaleMode;
+
 import mobile.flixel.FlxHitbox;
 import mobile.MobileControls;
 
@@ -90,7 +91,8 @@ typedef BasicSpeedChange = {
 class PlayState extends MusicBeatState
 {
 	//var _hitbox:FlxHitbox;
-	var hitBoxC = new MobileControls(hitbox);
+	var hitBoxC = new MobileControls();
+	var hitBoxCB = new FlxHitbox();
 	
 	var modchartedSongs:Array<String> = ['perdition', 'hedge']; // PUT THE SONG NAME HERE IF YOU WANT TO USE THE ANDROMEDA MODIFIER SYSTEM!!
 
@@ -2176,17 +2178,14 @@ class PlayState extends MusicBeatState
 		blackFuck.cameras = [camOther];
 		topBar.cameras = [camOther];
 		bottomBar.cameras = [camOther];
-
+		
 		#if mobile
-  var curhbox = new FlxHitbox();
-   curhbox = DEFAULT;
-		if (SONG.song.toLowerCase()=='triple-trouble') {
-    curhbox = hitBoxC(SPACE);
-		} else {
-		 curhbox = DEFAULT;
-		}
-		addMobileControls(false);  
-    mobileControls.visible = false;
+			if (SONG.song.toLowerCase()=='triple-trouble') {
+				addMobileControls(true);
+			} else {
+				addMobileControls(false);  
+			}
+			mobileControls.visible = false;
 		#end
 
 		var centerP = new FlxSprite(0, 0);
