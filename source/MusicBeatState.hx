@@ -18,6 +18,7 @@ import flixel.system.scaleModes.RatioScaleMode;
 #if mobile
 import mobile.MobileControls;
 import mobile.flixel.FlxVirtualPad;
+import mobile.flixel.FlxHitbox;
 import flixel.FlxCamera;
 import flixel.input.actions.FlxActionInput;
 import flixel.util.FlxDestroyUtil;
@@ -41,6 +42,8 @@ class MusicBeatState extends FlxUIState
 	#if mobile
 	var mobileControls:MobileControls;
 	var virtualPad:FlxVirtualPad;
+	var hitbox:FlxHitbox;
+	var trackedInputsHitbox:Array<FlxActionInput> = [];
 	var trackedInputsMobileControls:Array<FlxActionInput> = [];
 	var trackedInputsVirtualPad:Array<FlxActionInput> = [];
 
@@ -122,9 +125,47 @@ class MusicBeatState extends FlxUIState
 	}
 	#end
 
+	public function addHitbox(?visible = true):Void
+	{
+		if (hitbox != null)
+			removeHitbox();
+
+		hitbox = new FlxHitbox();
+		hitbox.visible = visible;
+		add(hitbox);
+
+		controls.setHitBox(hitbox);
+		trackedInputsHitbox = controls.trackedInputsNOTES;
+		controls.trackedInputsNOTES = [];
+	}
+
+	public function addHitboxCamera(DefaultDrawTarget:Bool = true):Void
+	{
+		if (hitbox != null)
+		{
+			var camControls:FlxCamera = new FlxCamera();
+			FlxG.cameras.add(camControls, DefaultDrawTarget);
+			camControls.bgColor.alpha = 0;
+			hitbox.cameras = [camControls];
+		}
+	}
+
+	public function removeHitbox():Void
+	{
+		if (trackedInputsHitbox.length > 0)
+			controls.removeVirtualControlsInput(trackedInputsHitbox);
+
+		if (hitbox != null)
+			remove(hitbox);
+	}
+	#end
+
 	override function destroy()
 	{
 		#if mobile
+		if (trackedInputsHitbox.length > 0)
+			controls.removeVirtualControlsInput(trackedInputsHitbox);
+
 		if (trackedInputsMobileControls.length > 0)
 			controls.removeVirtualControlsInput(trackedInputsMobileControls);
 
@@ -140,6 +181,9 @@ class MusicBeatState extends FlxUIState
 
 		if (mobileControls != null)
 			mobileControls = FlxDestroyUtil.destroy(mobileControls);
+
+		if (hitbox != null)
+			hitbox = FlxDestroyUtil.destroy(hitbox);
 		#end
 	}
 
