@@ -133,13 +133,14 @@ class MusicBeatState extends FlxUIState
 			hitbox = new FlxHitbox(SPACE);
 			hitbox.visible = visible;
 			add(hitbox);
+			hitboxDiff = SPACE;
 		} else {
 			hitbox = new FlxHitbox(DEFAULT);
 			hitbox.visible = visible;
-			add(hitbox);
+			hitboxDiff = DEFAULT;
 		}
 
-		controls.setHitBox(hitbox);
+		controls.setHitBox(hitbox, hitboxDiff);
 		trackedInputsHitbox = controls.trackedInputsNOTES;
 		controls.trackedInputsNOTES = [];
 	}
