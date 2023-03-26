@@ -2178,7 +2178,7 @@ class PlayState extends MusicBeatState
 		bottomBar.cameras = [camOther];
 
 		#if mobile
-  var curhbox = new FlxHitbox()
+  var curhbox = new FlxHitbox();
    curhbox = DEFAULT;
 		if (SONG.song.toLowerCase()=='triple-trouble') {
     curhbox = hitBoxC;
